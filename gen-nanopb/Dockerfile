@@ -13,4 +13,4 @@ RUN . ./bin/activate \
     && pip uninstall --yes pip \
     && rm -f requirements.txt bin/activate.fish bin/activate.csh bin/Activate.ps1
 
-ENTRYPOINT ["protoc", "--proto_path=/proto", "--plugin=/app/bin/protoc-gen-nanopb", "--nanopb_out=/gen", "--nanopb_opt=--options-path=/proto"]
+ENTRYPOINT ["protoc", "--proto_path=/proto", "--plugin=/app/bin/protoc-gen-nanopb", "--nanopb_out=/gen", "--nanopb_opt=--options-path=/proto", "--nanopb_opt=--library-include-format=quote"]
