@@ -1,0 +1,17 @@
+{
+  "name": "KivseeProto",
+  "keywords": "protobuf, protocol-buffers, nanopb, kivsee",
+  "description": "Protobuf files for the Kivsee project",
+  "homepage": "https://github.com/KivSee/kivsee-proto",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KivSee/kivsee-proto"
+  },
+  "version": "0.0.1",
+  "platforms": "*",
+  "dependencies": [
+    {
+      "name": "Nanopb"
+    }
+  ]
+}
