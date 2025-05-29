@@ -4,5 +4,5 @@ plugins:
     out: gen/python
   - remote: buf.build/protocolbuffers/cpp:v31.0
     out: gen/cpp
-inputs:
-  - directory: kivsee/proto
+# inputs:
+#   - directory: kivsee/proto/v1
