@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-import "functions.proto";
+package kivsee.proto.render.v1;
+
+import "kivsee/proto/render/v1/functions.proto";
 
 message HSV {
   float hue = 1;

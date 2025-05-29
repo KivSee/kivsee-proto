@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package kivsee.proto;
+package kivsee.proto.render.v1;
 
 message Pixel {
   uint32 index = 1;
