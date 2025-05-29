@@ -13,5 +13,9 @@
     {
       "name": "Nanopb"
     }
-  ]
+  ],
+  "build": {
+    "srcDir": "gen/nanopb",
+    "includeDir": "gen/nanopb"
+  }
 }
