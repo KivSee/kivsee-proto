@@ -15,3 +15,7 @@ jobs:
 
       - name: Run make generate
         run: make generate
+
+      - name: Check for generation changes not committed to git by user
+        run: |
+          git diff --exit-code || (echo 'Error: Files were changed after make generate. Please run make generate and commit the results.' && exit 1)
