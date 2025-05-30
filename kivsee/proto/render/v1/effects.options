@@ -1,27 +1,27 @@
-EffectProto.effect no_unions:true
-EffectConfig.segments max_size:10
+kivsee.proto.render.v1.EffectProto.effect no_unions:true
+kivsee.proto.render.v1.EffectConfig.segments max_size:10
 
 // const_color
-EffectProto.const_color type:FT_CALLBACK
+kivsee.proto.render.v1.EffectProto.const_color type:FT_CALLBACK
 
 // rainbow
-EffectProto.rainbow type:FT_CALLBACK
-RainbowEffectConfig.hue_start type:FT_CALLBACK
-RainbowEffectConfig.hue_end type:FT_CALLBACK
+kivsee.proto.render.v1.EffectProto.rainbow type:FT_CALLBACK
+kivsee.proto.render.v1.RainbowEffectConfig.hue_start type:FT_CALLBACK
+kivsee.proto.render.v1.RainbowEffectConfig.hue_end type:FT_CALLBACK
 
 // brightness
-EffectProto.brightness type:FT_CALLBACK
-BrightnessEffectConfig.mult_factor type:FT_CALLBACK
+kivsee.proto.render.v1.EffectProto.brightness type:FT_CALLBACK
+kivsee.proto.render.v1.BrightnessEffectConfig.mult_factor type:FT_CALLBACK
 
 // hue
-EffectProto.hue type:FT_CALLBACK
-HueEffectConfig.offset_factor type:FT_CALLBACK
+kivsee.proto.render.v1.EffectProto.hue type:FT_CALLBACK
+kivsee.proto.render.v1.HueEffectConfig.offset_factor type:FT_CALLBACK
 
 // saturation
-EffectProto.saturation type:FT_CALLBACK
-SaturationEffectConfig.mult_factor type:FT_CALLBACK
+kivsee.proto.render.v1.EffectProto.saturation type:FT_CALLBACK
+kivsee.proto.render.v1.SaturationEffectConfig.mult_factor type:FT_CALLBACK
 
 // snake
-EffectProto.snake type:FT_CALLBACK
-SnakeEffectConfig.head type:FT_CALLBACK
-SnakeEffectConfig.tail_length type:FT_CALLBACK
+kivsee.proto.render.v1.EffectProto.snake type:FT_CALLBACK
+kivsee.proto.render.v1.SnakeEffectConfig.head type:FT_CALLBACK
+kivsee.proto.render.v1.SnakeEffectConfig.tail_length type:FT_CALLBACK

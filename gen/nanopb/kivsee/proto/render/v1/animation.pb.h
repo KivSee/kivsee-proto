@@ -12,8 +12,7 @@
 
 /* Struct definitions */
 typedef struct _kivsee_proto_render_v1_TimedAnimationProto {
-    bool has_animation;
-    kivsee_proto_render_v1_AnimationProto animation;
+    pb_callback_t animation;
     /* id empty - run imidiately when message is received */
     pb_callback_t trigger_name;
     /* for animation which starts imidiately, use this time sync as the
@@ -28,8 +27,8 @@ extern "C" {
 #endif
 
 /* Initializer values for message structs */
-#define kivsee_proto_render_v1_TimedAnimationProto_init_default {false, kivsee_proto_render_v1_AnimationProto_init_default, {{NULL}, NULL}, 0}
-#define kivsee_proto_render_v1_TimedAnimationProto_init_zero {false, kivsee_proto_render_v1_AnimationProto_init_zero, {{NULL}, NULL}, 0}
+#define kivsee_proto_render_v1_TimedAnimationProto_init_default {{{NULL}, NULL}, {{NULL}, NULL}, 0}
+#define kivsee_proto_render_v1_TimedAnimationProto_init_zero {{{NULL}, NULL}, {{NULL}, NULL}, 0}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define kivsee_proto_render_v1_TimedAnimationProto_animation_tag 1
@@ -38,7 +37,7 @@ extern "C" {
 
 /* Struct field encoding specification for nanopb */
 #define kivsee_proto_render_v1_TimedAnimationProto_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  animation,         1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  animation,         1) \
 X(a, CALLBACK, SINGULAR, STRING,   trigger_name,      2) \
 X(a, STATIC,   SINGULAR, UINT64,   start_time_ms_since_epoch,   3)
 #define kivsee_proto_render_v1_TimedAnimationProto_CALLBACK pb_default_field_callback
