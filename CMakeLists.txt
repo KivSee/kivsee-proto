@@ -3,6 +3,15 @@
 cmake_minimum_required(VERSION 3.10)
 project(kivsee_proto_nanopb C)
 
+set(nanopb_BUILD_GENERATOR OFF CACHE BOOL "Don't build nanopb generator")
+include(FetchContent)
+FetchContent_Declare(
+    nanopb
+    GIT_REPOSITORY https://github.com/nanopb/nanopb.git
+    GIT_TAG nanopb-0.4.9
+)
+FetchContent_MakeAvailable(nanopb)
+
 # Collect all .c and .h files in gen/nanopb
 file(GLOB NANOPB_SRC
     "${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb/kivsee/proto/render/v1/*.c"
@@ -17,6 +26,7 @@ add_library(kivsee_proto_nanopb STATIC ${NANOPB_SRC})
 # so they can #include <kivsee/proto/render/v1/xxx.pb.h>
 target_include_directories(kivsee_proto_nanopb PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb
+    ${nanopb_SOURCE_DIR}
 )
 
 # set C standard
