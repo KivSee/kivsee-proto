@@ -27,13 +27,13 @@ PB_BIND(kivsee_proto_render_v1_SaturationEffectConfig, kivsee_proto_render_v1_Sa
 PB_BIND(kivsee_proto_render_v1_SnakeEffectConfig, kivsee_proto_render_v1_SnakeEffectConfig, AUTO)
 
 
-PB_BIND(kivsee_proto_render_v1_SegmentEffectConfig, kivsee_proto_render_v1_SegmentEffectConfig, AUTO)
+PB_BIND(kivsee_proto_render_v1_SegmentEffectConfig, kivsee_proto_render_v1_SegmentEffectConfig, 2)
 
 
-PB_BIND(kivsee_proto_render_v1_GlitterEffectConfig, kivsee_proto_render_v1_GlitterEffectConfig, AUTO)
+PB_BIND(kivsee_proto_render_v1_GlitterEffectConfig, kivsee_proto_render_v1_GlitterEffectConfig, 2)
 
 
-PB_BIND(kivsee_proto_render_v1_AlternateEffectConfig, kivsee_proto_render_v1_AlternateEffectConfig, AUTO)
+PB_BIND(kivsee_proto_render_v1_AlternateEffectConfig, kivsee_proto_render_v1_AlternateEffectConfig, 2)
 
 
 PB_BIND(kivsee_proto_render_v1_EffectConfig, kivsee_proto_render_v1_EffectConfig, AUTO)

@@ -32,40 +32,32 @@ typedef struct _kivsee_proto_render_v1_StepsFloatFunctionConfig {
     float first_step_value;
 } kivsee_proto_render_v1_StepsFloatFunctionConfig;
 
-typedef struct _kivsee_proto_render_v1_FloatFunction {
-    pb_size_t which_function;
-    union {
-        pb_callback_t const_value;
-        pb_callback_t linear;
-        pb_callback_t sin;
-        pb_callback_t steps;
-        pb_callback_t repeat;
-        pb_callback_t half;
-        pb_callback_t comb2;
-    } function;
-} kivsee_proto_render_v1_FloatFunction;
-
 typedef struct _kivsee_proto_render_v1_RepeatFloatFunctionConfig {
     float numberOfTimes;
-    bool has_funcToRepeat;
-    kivsee_proto_render_v1_FloatFunction funcToRepeat;
+    pb_callback_t funcToRepeat;
 } kivsee_proto_render_v1_RepeatFloatFunctionConfig;
 
 typedef struct _kivsee_proto_render_v1_HalfFloatFunctionConfig {
-    bool has_f1;
-    kivsee_proto_render_v1_FloatFunction f1;
-    bool has_f2;
-    kivsee_proto_render_v1_FloatFunction f2;
+    pb_callback_t f1;
+    pb_callback_t f2;
 } kivsee_proto_render_v1_HalfFloatFunctionConfig;
 
 typedef struct _kivsee_proto_render_v1_Comb2FloatFunctionConfig {
-    bool has_f1;
-    kivsee_proto_render_v1_FloatFunction f1;
+    pb_callback_t f1;
     float amount1;
-    bool has_f2;
-    kivsee_proto_render_v1_FloatFunction f2;
+    pb_callback_t f2;
     float amount2;
 } kivsee_proto_render_v1_Comb2FloatFunctionConfig;
+
+typedef struct _kivsee_proto_render_v1_FloatFunction {
+    pb_callback_t const_value;
+    pb_callback_t linear;
+    pb_callback_t sin;
+    pb_callback_t steps;
+    pb_callback_t repeat;
+    pb_callback_t half;
+    pb_callback_t comb2;
+} kivsee_proto_render_v1_FloatFunction;
 
 
 #ifdef __cplusplus
@@ -77,18 +69,18 @@ extern "C" {
 #define kivsee_proto_render_v1_LinearFloatFunctionConfig_init_default {0, 0}
 #define kivsee_proto_render_v1_SinFloatFunctionConfig_init_default {0, 0, 0, 0}
 #define kivsee_proto_render_v1_StepsFloatFunctionConfig_init_default {0, 0, 0}
-#define kivsee_proto_render_v1_RepeatFloatFunctionConfig_init_default {0, false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_HalfFloatFunctionConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_Comb2FloatFunctionConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default, 0, false, kivsee_proto_render_v1_FloatFunction_init_default, 0}
-#define kivsee_proto_render_v1_FloatFunction_init_default {0, {{{NULL}, NULL}}}
+#define kivsee_proto_render_v1_RepeatFloatFunctionConfig_init_default {0, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_HalfFloatFunctionConfig_init_default {{{NULL}, NULL}, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_Comb2FloatFunctionConfig_init_default {{{NULL}, NULL}, 0, {{NULL}, NULL}, 0}
+#define kivsee_proto_render_v1_FloatFunction_init_default {{{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define kivsee_proto_render_v1_ConstValueFloatFunctionConfig_init_zero {0}
 #define kivsee_proto_render_v1_LinearFloatFunctionConfig_init_zero {0, 0}
 #define kivsee_proto_render_v1_SinFloatFunctionConfig_init_zero {0, 0, 0, 0}
 #define kivsee_proto_render_v1_StepsFloatFunctionConfig_init_zero {0, 0, 0}
-#define kivsee_proto_render_v1_RepeatFloatFunctionConfig_init_zero {0, false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_HalfFloatFunctionConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_Comb2FloatFunctionConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero, 0, false, kivsee_proto_render_v1_FloatFunction_init_zero, 0}
-#define kivsee_proto_render_v1_FloatFunction_init_zero {0, {{{NULL}, NULL}}}
+#define kivsee_proto_render_v1_RepeatFloatFunctionConfig_init_zero {0, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_HalfFloatFunctionConfig_init_zero {{{NULL}, NULL}, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_Comb2FloatFunctionConfig_init_zero {{{NULL}, NULL}, 0, {{NULL}, NULL}, 0}
+#define kivsee_proto_render_v1_FloatFunction_init_zero {{{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define kivsee_proto_render_v1_ConstValueFloatFunctionConfig_value_tag 1
@@ -101,13 +93,6 @@ extern "C" {
 #define kivsee_proto_render_v1_StepsFloatFunctionConfig_num_steps_tag 1
 #define kivsee_proto_render_v1_StepsFloatFunctionConfig_diff_per_step_tag 2
 #define kivsee_proto_render_v1_StepsFloatFunctionConfig_first_step_value_tag 3
-#define kivsee_proto_render_v1_FloatFunction_const_value_tag 1
-#define kivsee_proto_render_v1_FloatFunction_linear_tag 2
-#define kivsee_proto_render_v1_FloatFunction_sin_tag 3
-#define kivsee_proto_render_v1_FloatFunction_steps_tag 4
-#define kivsee_proto_render_v1_FloatFunction_repeat_tag 5
-#define kivsee_proto_render_v1_FloatFunction_half_tag 6
-#define kivsee_proto_render_v1_FloatFunction_comb2_tag 7
 #define kivsee_proto_render_v1_RepeatFloatFunctionConfig_numberOfTimes_tag 1
 #define kivsee_proto_render_v1_RepeatFloatFunctionConfig_funcToRepeat_tag 2
 #define kivsee_proto_render_v1_HalfFloatFunctionConfig_f1_tag 1
@@ -116,6 +101,13 @@ extern "C" {
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_amount1_tag 2
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_f2_tag 3
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_amount2_tag 4
+#define kivsee_proto_render_v1_FloatFunction_const_value_tag 1
+#define kivsee_proto_render_v1_FloatFunction_linear_tag 2
+#define kivsee_proto_render_v1_FloatFunction_sin_tag 3
+#define kivsee_proto_render_v1_FloatFunction_steps_tag 4
+#define kivsee_proto_render_v1_FloatFunction_repeat_tag 5
+#define kivsee_proto_render_v1_FloatFunction_half_tag 6
+#define kivsee_proto_render_v1_FloatFunction_comb2_tag 7
 
 /* Struct field encoding specification for nanopb */
 #define kivsee_proto_render_v1_ConstValueFloatFunctionConfig_FIELDLIST(X, a) \
@@ -146,46 +138,46 @@ X(a, STATIC,   SINGULAR, FLOAT,    first_step_value,   3)
 
 #define kivsee_proto_render_v1_RepeatFloatFunctionConfig_FIELDLIST(X, a) \
 X(a, STATIC,   SINGULAR, FLOAT,    numberOfTimes,     1) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  funcToRepeat,      2)
-#define kivsee_proto_render_v1_RepeatFloatFunctionConfig_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  funcToRepeat,      2)
+#define kivsee_proto_render_v1_RepeatFloatFunctionConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_RepeatFloatFunctionConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_RepeatFloatFunctionConfig_funcToRepeat_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_HalfFloatFunctionConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  f1,                1) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  f2,                2)
-#define kivsee_proto_render_v1_HalfFloatFunctionConfig_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  f1,                1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  f2,                2)
+#define kivsee_proto_render_v1_HalfFloatFunctionConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_HalfFloatFunctionConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_HalfFloatFunctionConfig_f1_MSGTYPE kivsee_proto_render_v1_FloatFunction
 #define kivsee_proto_render_v1_HalfFloatFunctionConfig_f2_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  f1,                1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  f1,                1) \
 X(a, STATIC,   SINGULAR, FLOAT,    amount1,           2) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  f2,                3) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  f2,                3) \
 X(a, STATIC,   SINGULAR, FLOAT,    amount2,           4)
-#define kivsee_proto_render_v1_Comb2FloatFunctionConfig_CALLBACK NULL
+#define kivsee_proto_render_v1_Comb2FloatFunctionConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_f1_MSGTYPE kivsee_proto_render_v1_FloatFunction
 #define kivsee_proto_render_v1_Comb2FloatFunctionConfig_f2_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_FloatFunction_FIELDLIST(X, a) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,const_value,function.const_value),   1) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,linear,function.linear),   2) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,sin,function.sin),   3) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,steps,function.steps),   4) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,repeat,function.repeat),   5) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,half,function.half),   6) \
-X(a, CALLBACK, ONEOF,    MESSAGE,  (function,comb2,function.comb2),   7)
+X(a, CALLBACK, OPTIONAL, MESSAGE,  const_value,       1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  linear,            2) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  sin,               3) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  steps,             4) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  repeat,            5) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  half,              6) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  comb2,             7)
 #define kivsee_proto_render_v1_FloatFunction_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_FloatFunction_DEFAULT NULL
-#define kivsee_proto_render_v1_FloatFunction_function_const_value_MSGTYPE kivsee_proto_render_v1_ConstValueFloatFunctionConfig
-#define kivsee_proto_render_v1_FloatFunction_function_linear_MSGTYPE kivsee_proto_render_v1_LinearFloatFunctionConfig
-#define kivsee_proto_render_v1_FloatFunction_function_sin_MSGTYPE kivsee_proto_render_v1_SinFloatFunctionConfig
-#define kivsee_proto_render_v1_FloatFunction_function_steps_MSGTYPE kivsee_proto_render_v1_StepsFloatFunctionConfig
-#define kivsee_proto_render_v1_FloatFunction_function_repeat_MSGTYPE kivsee_proto_render_v1_RepeatFloatFunctionConfig
-#define kivsee_proto_render_v1_FloatFunction_function_half_MSGTYPE kivsee_proto_render_v1_HalfFloatFunctionConfig
-#define kivsee_proto_render_v1_FloatFunction_function_comb2_MSGTYPE kivsee_proto_render_v1_Comb2FloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_const_value_MSGTYPE kivsee_proto_render_v1_ConstValueFloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_linear_MSGTYPE kivsee_proto_render_v1_LinearFloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_sin_MSGTYPE kivsee_proto_render_v1_SinFloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_steps_MSGTYPE kivsee_proto_render_v1_StepsFloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_repeat_MSGTYPE kivsee_proto_render_v1_RepeatFloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_half_MSGTYPE kivsee_proto_render_v1_HalfFloatFunctionConfig
+#define kivsee_proto_render_v1_FloatFunction_comb2_MSGTYPE kivsee_proto_render_v1_Comb2FloatFunctionConfig
 
 extern const pb_msgdesc_t kivsee_proto_render_v1_ConstValueFloatFunctionConfig_msg;
 extern const pb_msgdesc_t kivsee_proto_render_v1_LinearFloatFunctionConfig_msg;

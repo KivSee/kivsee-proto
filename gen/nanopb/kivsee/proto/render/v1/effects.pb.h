@@ -23,32 +23,25 @@ typedef struct _kivsee_proto_render_v1_ConstColorEffectConfig {
 } kivsee_proto_render_v1_ConstColorEffectConfig;
 
 typedef struct _kivsee_proto_render_v1_RainbowEffectConfig {
-    bool has_hue_start;
-    kivsee_proto_render_v1_FloatFunction hue_start;
-    bool has_hue_end;
-    kivsee_proto_render_v1_FloatFunction hue_end;
+    pb_callback_t hue_start;
+    pb_callback_t hue_end;
 } kivsee_proto_render_v1_RainbowEffectConfig;
 
 typedef struct _kivsee_proto_render_v1_BrightnessEffectConfig {
-    bool has_mult_factor;
-    kivsee_proto_render_v1_FloatFunction mult_factor;
+    pb_callback_t mult_factor;
 } kivsee_proto_render_v1_BrightnessEffectConfig;
 
 typedef struct _kivsee_proto_render_v1_HueEffectConfig {
-    bool has_offset_factor;
-    kivsee_proto_render_v1_FloatFunction offset_factor;
+    pb_callback_t offset_factor;
 } kivsee_proto_render_v1_HueEffectConfig;
 
 typedef struct _kivsee_proto_render_v1_SaturationEffectConfig {
-    bool has_mult_factor;
-    kivsee_proto_render_v1_FloatFunction mult_factor;
+    pb_callback_t mult_factor;
 } kivsee_proto_render_v1_SaturationEffectConfig;
 
 typedef struct _kivsee_proto_render_v1_SnakeEffectConfig {
-    bool has_head;
-    kivsee_proto_render_v1_FloatFunction head;
-    bool has_tail_length;
-    kivsee_proto_render_v1_FloatFunction tail_length;
+    pb_callback_t head;
+    pb_callback_t tail_length;
     bool cyclic;
 } kivsee_proto_render_v1_SnakeEffectConfig;
 
@@ -79,7 +72,7 @@ typedef struct _kivsee_proto_render_v1_AlternateEffectConfig {
 typedef struct _kivsee_proto_render_v1_EffectConfig {
     uint32_t start_time;
     uint32_t end_time;
-    pb_callback_t segments;
+    char segments[10];
     float repeat_num;
     float repeat_start;
     float repeat_end;
@@ -88,15 +81,12 @@ typedef struct _kivsee_proto_render_v1_EffectConfig {
 typedef struct _kivsee_proto_render_v1_EffectProto {
     bool has_effect_config;
     kivsee_proto_render_v1_EffectConfig effect_config;
-    pb_size_t which_effect;
-    union {
-        kivsee_proto_render_v1_ConstColorEffectConfig const_color;
-        kivsee_proto_render_v1_RainbowEffectConfig rainbow;
-        kivsee_proto_render_v1_BrightnessEffectConfig brightness;
-        kivsee_proto_render_v1_HueEffectConfig hue;
-        kivsee_proto_render_v1_SaturationEffectConfig saturation;
-        kivsee_proto_render_v1_SnakeEffectConfig snake;
-    } effect;
+    pb_callback_t const_color;
+    pb_callback_t rainbow;
+    pb_callback_t brightness;
+    pb_callback_t hue;
+    pb_callback_t saturation;
+    pb_callback_t snake;
 } kivsee_proto_render_v1_EffectProto;
 
 typedef struct _kivsee_proto_render_v1_AnimationProto {
@@ -113,29 +103,29 @@ extern "C" {
 /* Initializer values for message structs */
 #define kivsee_proto_render_v1_HSV_init_default  {0, 0, 0}
 #define kivsee_proto_render_v1_ConstColorEffectConfig_init_default {false, kivsee_proto_render_v1_HSV_init_default}
-#define kivsee_proto_render_v1_RainbowEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_BrightnessEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_HueEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_SaturationEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_SnakeEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default, 0}
+#define kivsee_proto_render_v1_RainbowEffectConfig_init_default {{{NULL}, NULL}, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_BrightnessEffectConfig_init_default {{{NULL}, NULL}}
+#define kivsee_proto_render_v1_HueEffectConfig_init_default {{{NULL}, NULL}}
+#define kivsee_proto_render_v1_SaturationEffectConfig_init_default {{{NULL}, NULL}}
+#define kivsee_proto_render_v1_SnakeEffectConfig_init_default {{{NULL}, NULL}, {{NULL}, NULL}, 0}
 #define kivsee_proto_render_v1_SegmentEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default}
 #define kivsee_proto_render_v1_GlitterEffectConfig_init_default {false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default}
 #define kivsee_proto_render_v1_AlternateEffectConfig_init_default {0, false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default, false, kivsee_proto_render_v1_FloatFunction_init_default}
-#define kivsee_proto_render_v1_EffectConfig_init_default {0, 0, {{NULL}, NULL}, 0, 0, 0}
-#define kivsee_proto_render_v1_EffectProto_init_default {false, kivsee_proto_render_v1_EffectConfig_init_default, 0, {kivsee_proto_render_v1_ConstColorEffectConfig_init_default}}
+#define kivsee_proto_render_v1_EffectConfig_init_default {0, 0, "", 0, 0, 0}
+#define kivsee_proto_render_v1_EffectProto_init_default {false, kivsee_proto_render_v1_EffectConfig_init_default, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define kivsee_proto_render_v1_AnimationProto_init_default {{{NULL}, NULL}, 0, 0}
 #define kivsee_proto_render_v1_HSV_init_zero     {0, 0, 0}
 #define kivsee_proto_render_v1_ConstColorEffectConfig_init_zero {false, kivsee_proto_render_v1_HSV_init_zero}
-#define kivsee_proto_render_v1_RainbowEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_BrightnessEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_HueEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_SaturationEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_SnakeEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero, 0}
+#define kivsee_proto_render_v1_RainbowEffectConfig_init_zero {{{NULL}, NULL}, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_BrightnessEffectConfig_init_zero {{{NULL}, NULL}}
+#define kivsee_proto_render_v1_HueEffectConfig_init_zero {{{NULL}, NULL}}
+#define kivsee_proto_render_v1_SaturationEffectConfig_init_zero {{{NULL}, NULL}}
+#define kivsee_proto_render_v1_SnakeEffectConfig_init_zero {{{NULL}, NULL}, {{NULL}, NULL}, 0}
 #define kivsee_proto_render_v1_SegmentEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero}
 #define kivsee_proto_render_v1_GlitterEffectConfig_init_zero {false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero}
 #define kivsee_proto_render_v1_AlternateEffectConfig_init_zero {0, false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero, false, kivsee_proto_render_v1_FloatFunction_init_zero}
-#define kivsee_proto_render_v1_EffectConfig_init_zero {0, 0, {{NULL}, NULL}, 0, 0, 0}
-#define kivsee_proto_render_v1_EffectProto_init_zero {false, kivsee_proto_render_v1_EffectConfig_init_zero, 0, {kivsee_proto_render_v1_ConstColorEffectConfig_init_zero}}
+#define kivsee_proto_render_v1_EffectConfig_init_zero {0, 0, "", 0, 0, 0}
+#define kivsee_proto_render_v1_EffectProto_init_zero {false, kivsee_proto_render_v1_EffectConfig_init_zero, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define kivsee_proto_render_v1_AnimationProto_init_zero {{{NULL}, NULL}, 0, 0}
 
 /* Field tags (for use in manual encoding/decoding) */
@@ -191,36 +181,36 @@ X(a, STATIC,   OPTIONAL, MESSAGE,  color,             1)
 #define kivsee_proto_render_v1_ConstColorEffectConfig_color_MSGTYPE kivsee_proto_render_v1_HSV
 
 #define kivsee_proto_render_v1_RainbowEffectConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  hue_start,         1) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  hue_end,           2)
-#define kivsee_proto_render_v1_RainbowEffectConfig_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  hue_start,         1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  hue_end,           2)
+#define kivsee_proto_render_v1_RainbowEffectConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_RainbowEffectConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_RainbowEffectConfig_hue_start_MSGTYPE kivsee_proto_render_v1_FloatFunction
 #define kivsee_proto_render_v1_RainbowEffectConfig_hue_end_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_BrightnessEffectConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  mult_factor,       1)
-#define kivsee_proto_render_v1_BrightnessEffectConfig_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  mult_factor,       1)
+#define kivsee_proto_render_v1_BrightnessEffectConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_BrightnessEffectConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_BrightnessEffectConfig_mult_factor_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_HueEffectConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  offset_factor,     1)
-#define kivsee_proto_render_v1_HueEffectConfig_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  offset_factor,     1)
+#define kivsee_proto_render_v1_HueEffectConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_HueEffectConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_HueEffectConfig_offset_factor_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_SaturationEffectConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  mult_factor,       1)
-#define kivsee_proto_render_v1_SaturationEffectConfig_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  mult_factor,       1)
+#define kivsee_proto_render_v1_SaturationEffectConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_SaturationEffectConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_SaturationEffectConfig_mult_factor_MSGTYPE kivsee_proto_render_v1_FloatFunction
 
 #define kivsee_proto_render_v1_SnakeEffectConfig_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  head,              1) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  tail_length,       2) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  head,              1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  tail_length,       2) \
 X(a, STATIC,   SINGULAR, BOOL,     cyclic,            3)
-#define kivsee_proto_render_v1_SnakeEffectConfig_CALLBACK NULL
+#define kivsee_proto_render_v1_SnakeEffectConfig_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_SnakeEffectConfig_DEFAULT NULL
 #define kivsee_proto_render_v1_SnakeEffectConfig_head_MSGTYPE kivsee_proto_render_v1_FloatFunction
 #define kivsee_proto_render_v1_SnakeEffectConfig_tail_length_MSGTYPE kivsee_proto_render_v1_FloatFunction
@@ -255,30 +245,30 @@ X(a, STATIC,   OPTIONAL, MESSAGE,  brightness_mult,   4)
 #define kivsee_proto_render_v1_EffectConfig_FIELDLIST(X, a) \
 X(a, STATIC,   SINGULAR, UINT32,   start_time,        1) \
 X(a, STATIC,   SINGULAR, UINT32,   end_time,          2) \
-X(a, CALLBACK, SINGULAR, STRING,   segments,          3) \
+X(a, STATIC,   SINGULAR, STRING,   segments,          3) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_num,        4) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_start,      5) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_end,        6)
-#define kivsee_proto_render_v1_EffectConfig_CALLBACK pb_default_field_callback
+#define kivsee_proto_render_v1_EffectConfig_CALLBACK NULL
 #define kivsee_proto_render_v1_EffectConfig_DEFAULT NULL
 
 #define kivsee_proto_render_v1_EffectProto_FIELDLIST(X, a) \
 X(a, STATIC,   OPTIONAL, MESSAGE,  effect_config,     1) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect,const_color,effect.const_color),   2) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect,rainbow,effect.rainbow),   3) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect,brightness,effect.brightness),   4) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect,hue,effect.hue),   5) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect,saturation,effect.saturation),   6) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect,snake,effect.snake),   7)
-#define kivsee_proto_render_v1_EffectProto_CALLBACK NULL
+X(a, CALLBACK, OPTIONAL, MESSAGE,  const_color,       2) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  rainbow,           3) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  brightness,        4) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  hue,               5) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  saturation,        6) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  snake,             7)
+#define kivsee_proto_render_v1_EffectProto_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_EffectProto_DEFAULT NULL
 #define kivsee_proto_render_v1_EffectProto_effect_config_MSGTYPE kivsee_proto_render_v1_EffectConfig
-#define kivsee_proto_render_v1_EffectProto_effect_const_color_MSGTYPE kivsee_proto_render_v1_ConstColorEffectConfig
-#define kivsee_proto_render_v1_EffectProto_effect_rainbow_MSGTYPE kivsee_proto_render_v1_RainbowEffectConfig
-#define kivsee_proto_render_v1_EffectProto_effect_brightness_MSGTYPE kivsee_proto_render_v1_BrightnessEffectConfig
-#define kivsee_proto_render_v1_EffectProto_effect_hue_MSGTYPE kivsee_proto_render_v1_HueEffectConfig
-#define kivsee_proto_render_v1_EffectProto_effect_saturation_MSGTYPE kivsee_proto_render_v1_SaturationEffectConfig
-#define kivsee_proto_render_v1_EffectProto_effect_snake_MSGTYPE kivsee_proto_render_v1_SnakeEffectConfig
+#define kivsee_proto_render_v1_EffectProto_const_color_MSGTYPE kivsee_proto_render_v1_ConstColorEffectConfig
+#define kivsee_proto_render_v1_EffectProto_rainbow_MSGTYPE kivsee_proto_render_v1_RainbowEffectConfig
+#define kivsee_proto_render_v1_EffectProto_brightness_MSGTYPE kivsee_proto_render_v1_BrightnessEffectConfig
+#define kivsee_proto_render_v1_EffectProto_hue_MSGTYPE kivsee_proto_render_v1_HueEffectConfig
+#define kivsee_proto_render_v1_EffectProto_saturation_MSGTYPE kivsee_proto_render_v1_SaturationEffectConfig
+#define kivsee_proto_render_v1_EffectProto_snake_MSGTYPE kivsee_proto_render_v1_SnakeEffectConfig
 
 #define kivsee_proto_render_v1_AnimationProto_FIELDLIST(X, a) \
 X(a, CALLBACK, REPEATED, MESSAGE,  effects,           1) \
@@ -318,27 +308,22 @@ extern const pb_msgdesc_t kivsee_proto_render_v1_AnimationProto_msg;
 #define kivsee_proto_render_v1_AnimationProto_fields &kivsee_proto_render_v1_AnimationProto_msg
 
 /* Maximum encoded size of messages (where known) */
-#if defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size)
-union kivsee_proto_render_v1_EffectProto_effect_size_union {char f3[(18 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)]; char f4[(12 + kivsee_proto_render_v1_FloatFunction_size)]; char f5[(12 + kivsee_proto_render_v1_FloatFunction_size)]; char f6[(12 + kivsee_proto_render_v1_FloatFunction_size)]; char f7[(20 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)]; char f0[19];};
-#endif
-/* kivsee_proto_render_v1_EffectConfig_size depends on runtime parameters */
+/* kivsee_proto_render_v1_RainbowEffectConfig_size depends on runtime parameters */
+/* kivsee_proto_render_v1_BrightnessEffectConfig_size depends on runtime parameters */
+/* kivsee_proto_render_v1_HueEffectConfig_size depends on runtime parameters */
+/* kivsee_proto_render_v1_SaturationEffectConfig_size depends on runtime parameters */
+/* kivsee_proto_render_v1_SnakeEffectConfig_size depends on runtime parameters */
 /* kivsee_proto_render_v1_EffectProto_size depends on runtime parameters */
 /* kivsee_proto_render_v1_AnimationProto_size depends on runtime parameters */
+#define KIVSEE_PROTO_RENDER_V1_KIVSEE_PROTO_RENDER_V1_EFFECTS_PB_H_MAX_SIZE kivsee_proto_render_v1_EffectConfig_size
 #define kivsee_proto_render_v1_ConstColorEffectConfig_size 17
+#define kivsee_proto_render_v1_EffectConfig_size 38
 #define kivsee_proto_render_v1_HSV_size          15
 #if defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size)
 #define kivsee_proto_render_v1_GlitterEffectConfig_size (12 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)
-#define kivsee_proto_render_v1_RainbowEffectConfig_size (12 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)
 #define kivsee_proto_render_v1_SegmentEffectConfig_size (12 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)
-#define kivsee_proto_render_v1_SnakeEffectConfig_size (14 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)
-#endif
-#if defined(kivsee_proto_render_v1_FloatFunction_size)
-#define kivsee_proto_render_v1_BrightnessEffectConfig_size (6 + kivsee_proto_render_v1_FloatFunction_size)
-#define kivsee_proto_render_v1_HueEffectConfig_size (6 + kivsee_proto_render_v1_FloatFunction_size)
-#define kivsee_proto_render_v1_SaturationEffectConfig_size (6 + kivsee_proto_render_v1_FloatFunction_size)
 #endif
 #if defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size) && defined(kivsee_proto_render_v1_FloatFunction_size)
-#define KIVSEE_PROTO_RENDER_V1_KIVSEE_PROTO_RENDER_V1_EFFECTS_PB_H_MAX_SIZE kivsee_proto_render_v1_AlternateEffectConfig_size
 #define kivsee_proto_render_v1_AlternateEffectConfig_size (24 + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size + kivsee_proto_render_v1_FloatFunction_size)
 #endif
 
