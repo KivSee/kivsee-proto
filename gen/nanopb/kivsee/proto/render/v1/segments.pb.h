@@ -18,7 +18,7 @@ typedef struct _kivsee_proto_render_v1_Pixel {
 /* a single segment with a unique name that identifies it,
 and the pixels that define the segment. */
 typedef struct _kivsee_proto_render_v1_Segment {
-    pb_callback_t name;
+    char name[10];
     pb_callback_t pixels;
 } kivsee_proto_render_v1_Segment;
 
@@ -38,10 +38,10 @@ extern "C" {
 
 /* Initializer values for message structs */
 #define kivsee_proto_render_v1_Pixel_init_default {0, 0}
-#define kivsee_proto_render_v1_Segment_init_default {{{NULL}, NULL}, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_Segment_init_default {"", {{NULL}, NULL}}
 #define kivsee_proto_render_v1_ThingSegments_init_default {0, 0, {{NULL}, NULL}}
 #define kivsee_proto_render_v1_Pixel_init_zero   {0, 0}
-#define kivsee_proto_render_v1_Segment_init_zero {{{NULL}, NULL}, {{NULL}, NULL}}
+#define kivsee_proto_render_v1_Segment_init_zero {"", {{NULL}, NULL}}
 #define kivsee_proto_render_v1_ThingSegments_init_zero {0, 0, {{NULL}, NULL}}
 
 /* Field tags (for use in manual encoding/decoding) */
@@ -61,7 +61,7 @@ X(a, STATIC,   SINGULAR, FLOAT,    rel_pos,           2)
 #define kivsee_proto_render_v1_Pixel_DEFAULT NULL
 
 #define kivsee_proto_render_v1_Segment_FIELDLIST(X, a) \
-X(a, CALLBACK, SINGULAR, STRING,   name,              1) \
+X(a, STATIC,   SINGULAR, STRING,   name,              1) \
 X(a, CALLBACK, REPEATED, MESSAGE,  pixels,            2)
 #define kivsee_proto_render_v1_Segment_CALLBACK pb_default_field_callback
 #define kivsee_proto_render_v1_Segment_DEFAULT NULL

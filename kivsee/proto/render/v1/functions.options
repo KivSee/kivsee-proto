@@ -1,14 +1,14 @@
-FloatFunction.const_value type:FT_CALLBACK
-FloatFunction.linear type:FT_CALLBACK
-FloatFunction.sin type:FT_CALLBACK
-FloatFunction.steps type:FT_CALLBACK
-FloatFunction.repeat type:FT_CALLBACK
-FloatFunction.half type:FT_CALLBACK
-FloatFunction.comb2 type:FT_CALLBACK
-FloatFunction.function no_unions:true
+kivsee.proto.render.v1.FloatFunction.const_value type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.linear type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.sin type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.steps type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.repeat type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.half type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.comb2 type:FT_CALLBACK
+kivsee.proto.render.v1.FloatFunction.function no_unions:true
 
-RepeatFloatFunctionConfig.funcToRepeat type:FT_CALLBACK
-HalfFloatFunctionConfig.f1 type:FT_CALLBACK
-HalfFloatFunctionConfig.f2 type:FT_CALLBACK
-Comb2FloatFunctionConfig.f1 type:FT_CALLBACK
-Comb2FloatFunctionConfig.f2 type:FT_CALLBACK
+kivsee.proto.render.v1.RepeatFloatFunctionConfig.funcToRepeat type:FT_CALLBACK
+kivsee.proto.render.v1.HalfFloatFunctionConfig.f1 type:FT_CALLBACK
+kivsee.proto.render.v1.HalfFloatFunctionConfig.f2 type:FT_CALLBACK
+kivsee.proto.render.v1.Comb2FloatFunctionConfig.f1 type:FT_CALLBACK
+kivsee.proto.render.v1.Comb2FloatFunctionConfig.f2 type:FT_CALLBACK
