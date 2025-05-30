@@ -34,3 +34,21 @@ set_target_properties(kivsee_proto_nanopb PROPERTIES
     C_STANDARD 99
     C_STANDARD_REQUIRED YES
 )
+
+install(TARGETS kivsee_proto_nanopb
+    EXPORT kivsee_proto_nanopbTargets
+    ARCHIVE DESTINATION lib
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION bin
+    INCLUDES DESTINATION include
+)
+
+install(EXPORT kivsee_proto_nanopbTargets
+    FILE kivsee_proto_nanopbTargets.cmake
+    NAMESPACE kivsee::
+    DESTINATION lib/cmake/kivsee_proto_nanopb
+)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb/
+    DESTINATION include
+)
