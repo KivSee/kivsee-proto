@@ -1,7 +1,9 @@
-# CMakeLists.txt for kivsee-proto nanopb generated sources
-
 cmake_minimum_required(VERSION 3.10)
 project(kivsee_proto_nanopb C)
+
+set(CMAKE_CXX_STANDARD 99)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 
 set(nanopb_BUILD_GENERATOR OFF CACHE BOOL "Don't build nanopb generator")
 include(FetchContent)
@@ -24,27 +26,4 @@ target_include_directories(kivsee_proto_nanopb PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb
     ${nanopb_SOURCE_DIR}
 )
-
-# set C standard
-set_target_properties(kivsee_proto_nanopb PROPERTIES
-    C_STANDARD 99
-    C_STANDARD_REQUIRED YES
-)
-
-# install(TARGETS kivsee_proto_nanopb
-#     EXPORT kivsee_proto_nanopbTargets
-#     ARCHIVE DESTINATION lib
-#     LIBRARY DESTINATION lib
-#     RUNTIME DESTINATION bin
-#     INCLUDES DESTINATION include
-# )
-
-# install(EXPORT kivsee_proto_nanopbTargets
-#     FILE kivsee_proto_nanopbTargets.cmake
-#     NAMESPACE kivsee::
-#     DESTINATION lib/cmake/kivsee_proto_nanopb
-# )
-
-# install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb/
-#     DESTINATION include
-# )
+target_link_libraries(kivsee_proto_nanopb PUBLIC protobuf-nanopb-static)
