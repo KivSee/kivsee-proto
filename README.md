@@ -24,3 +24,10 @@ The following `make` targets are available:
 
 - `gen/nanopb/` - nanopb generated code
 - (other language outputs can be configured in `buf.gen.yaml`)
+
+## Consume as CMake library
+
+The nanopb generated files can be consumed with CMake.
+To test building the CMake static library, run:
+
+- `make build-cmake`
