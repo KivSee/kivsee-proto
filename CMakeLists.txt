@@ -12,12 +12,8 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(nanopb)
 
-# Collect all .c and .h files in gen/nanopb
 file(GLOB NANOPB_SRC
     "${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb/kivsee/proto/render/v1/*.c"
-)
-file(GLOB NANOPB_HDR
-    "${CMAKE_CURRENT_SOURCE_DIR}/gen/nanopb/kivsee/proto/render/v1/*.h"
 )
 
 add_library(kivsee_proto_nanopb STATIC ${NANOPB_SRC})
