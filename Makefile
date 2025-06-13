@@ -1,7 +1,15 @@
+# Detect OS
+ifeq ($(OS),Windows_NT)
+    RM_CMD = if exist gen rmdir /s /q gen
+    MKDIR_CMD = if not exist build mkdir build
+else
+    RM_CMD = rm -rf gen
+    MKDIR_CMD = mkdir -p build
+endif
 
 .PHONY: all clean
 clean:
-	@rm -rf gen
+	@$(RM_CMD)
 
 .PHONY: generate
 generate: clean
@@ -14,7 +22,6 @@ lint:
 
 .PHONY: build-cmake
 build-cmake:
-	mkdir -p build
+	$(MKDIR_CMD)
 	cmake -S . -B build
 	cmake --build build
-	
