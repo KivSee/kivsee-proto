@@ -37,21 +37,73 @@ message SnakeEffectConfig {
   bool cyclic = 3;
 }
 
-message SegmentEffectConfig {
-  FloatFunction start = 1;
-  FloatFunction end = 2;
+message TimedBrightnessEffectConfig {
+  oneof mult_factor {
+    FloatFunction mult_factor_increase = 1;
+    FloatFunction mult_factor_decrease = 2;
+  }
 }
 
-message GlitterEffectConfig {
-  FloatFunction intensity = 1;
-  FloatFunction sat_mult_factor = 2;
+message TimedHueEffectConfig {
+  FloatFunction offset_factor = 1;
 }
 
-message AlternateEffectConfig {
-  uint32 numberOfPixels = 1;
-  FloatFunction hue_offset = 2;
-  FloatFunction sat_mult = 3;
-  FloatFunction brightness_mult = 4;
+message TimedSaturationEffectConfig {
+  oneof mult_factor {
+    FloatFunction mult_factor_increase = 1;
+    FloatFunction mult_factor_decrease = 2;
+  }
+}
+
+message PositionBrightnessEffectConfig {
+  oneof mult_factor {
+    FloatFunction mult_factor_increase = 1;
+    FloatFunction mult_factor_decrease = 2;
+  }
+}
+
+message PositionHueEffectConfig {
+  FloatFunction offset_factor = 1;
+}
+
+message PositionSaturationEffectConfig {
+  oneof mult_factor {
+    FloatFunction mult_factor_increase = 1;
+    FloatFunction mult_factor_decrease = 2;
+  }
+}
+
+message SnakeBrightnessEffectConfig {
+  FloatFunction head = 1;
+  FloatFunction tail_length = 2;
+  bool cyclic = 3;
+  float repeat_num = 4;
+
+  oneof mult_factor {
+    FloatFunction mult_factor_increase = 5;
+    FloatFunction mult_factor_decrease = 6;
+  }
+}
+
+message SnakeHueEffectConfig {
+  FloatFunction head = 1;
+  FloatFunction tail_length = 2;
+  bool cyclic = 3;
+  float repeat_num = 4;
+
+  FloatFunction offset_factor = 5;
+}
+
+message SnakeSaturationEffectConfig {
+  FloatFunction head = 1;
+  FloatFunction tail_length = 2;
+  bool cyclic = 3;
+  float repeat_num = 4;
+
+  oneof mult_factor {
+    FloatFunction mult_factor_increase = 5;
+    FloatFunction mult_factor_decrease = 6;
+  }
 }
 
 message EffectConfig {
@@ -74,6 +126,15 @@ message EffectProto {
     HueEffectConfig hue = 5;
     SaturationEffectConfig saturation = 6;
     SnakeEffectConfig snake = 7;
+    TimedBrightnessEffectConfig timed_brightness = 8;
+    TimedHueEffectConfig timed_hue = 9;
+    TimedSaturationEffectConfig timed_saturation = 10;
+    PositionBrightnessEffectConfig position_brightness = 11;
+    PositionHueEffectConfig position_hue = 12;
+    PositionSaturationEffectConfig position_saturation = 13;
+    SnakeBrightnessEffectConfig snake_brightness = 14;
+    SnakeHueEffectConfig snake_hue = 15;
+    SnakeSaturationEffectConfig snake_saturation = 16;
   }
 }
 
