@@ -38,7 +38,7 @@ message SnakeEffectConfig {
 }
 
 message TimedBrightnessEffectConfig {
-  oneof function {
+  oneof mult_factor {
     FloatFunction mult_factor_increase = 1;
     FloatFunction mult_factor_decrease = 2;
   }
@@ -49,14 +49,14 @@ message TimedHueEffectConfig {
 }
 
 message TimedSaturationEffectConfig {
-  oneof function {
+  oneof mult_factor {
     FloatFunction mult_factor_increase = 1;
     FloatFunction mult_factor_decrease = 2;
   }
 }
 
 message PositionBrightnessEffectConfig {
-  oneof function {
+  oneof mult_factor {
     FloatFunction mult_factor_increase = 1;
     FloatFunction mult_factor_decrease = 2;
   }
@@ -67,7 +67,7 @@ message PositionHueEffectConfig {
 }
 
 message PositionSaturationEffectConfig {
-  oneof function {
+  oneof mult_factor {
     FloatFunction mult_factor_increase = 1;
     FloatFunction mult_factor_decrease = 2;
   }
@@ -77,9 +77,9 @@ message SnakeBrightnessEffectConfig {
   FloatFunction head = 1;
   FloatFunction tail_length = 2;
   bool cyclic = 3;
-  uint8 repeat_num = 4;
+  float repeat_num = 4;
 
-  oneof function {
+  oneof mult_factor {
     FloatFunction mult_factor_increase = 5;
     FloatFunction mult_factor_decrease = 6;
   }
@@ -89,21 +89,18 @@ message SnakeHueEffectConfig {
   FloatFunction head = 1;
   FloatFunction tail_length = 2;
   bool cyclic = 3;
-  uint8 repeat_num = 4;
+  float repeat_num = 4;
 
-  oneof function {
-    FloatFunction mult_factor_increase = 5;
-    FloatFunction mult_factor_decrease = 6;
-  }
+  FloatFunction offset_factor = 5;
 }
 
 message SnakeSaturationEffectConfig {
   FloatFunction head = 1;
   FloatFunction tail_length = 2;
   bool cyclic = 3;
-  uint8 repeat_num = 4;
+  float repeat_num = 4;
 
-  oneof function {
+  oneof mult_factor {
     FloatFunction mult_factor_increase = 5;
     FloatFunction mult_factor_decrease = 6;
   }

@@ -28,6 +28,7 @@ kivsee.proto.render.v1.SnakeEffectConfig.tail_length type:FT_CALLBACK
 
 // timed_brightness
 kivsee.proto.render.v1.EffectProto.timed_brightness type:FT_CALLBACK
+kivsee.proto.render.v1.TimedBrightnessEffectConfig.mult_factor no_unions:true
 kivsee.proto.render.v1.TimedBrightnessEffectConfig.mult_factor_increase type:FT_CALLBACK
 kivsee.proto.render.v1.TimedBrightnessEffectConfig.mult_factor_decrease type:FT_CALLBACK
 
@@ -37,11 +38,13 @@ kivsee.proto.render.v1.TimedHueEffectConfig.offset_factor type:FT_CALLBACK
 
 // timed_saturation
 kivsee.proto.render.v1.EffectProto.timed_saturation type:FT_CALLBACK
+kivsee.proto.render.v1.TimedSaturationEffectConfig.mult_factor no_unions:true
 kivsee.proto.render.v1.TimedSaturationEffectConfig.mult_factor_increase type:FT_CALLBACK
 kivsee.proto.render.v1.TimedSaturationEffectConfig.mult_factor_decrease type:FT_CALLBACK
 
 // position_brightness
 kivsee.proto.render.v1.EffectProto.position_brightness type:FT_CALLBACK
+kivsee.proto.render.v1.PositionBrightnessEffectConfig.mult_factor no_unions:true
 kivsee.proto.render.v1.PositionBrightnessEffectConfig.mult_factor_increase type:FT_CALLBACK
 kivsee.proto.render.v1.PositionBrightnessEffectConfig.mult_factor_decrease type:FT_CALLBACK
 
@@ -51,6 +54,7 @@ kivsee.proto.render.v1.PositionHueEffectConfig.offset_factor type:FT_CALLBACK
 
 // position_saturation
 kivsee.proto.render.v1.EffectProto.position_saturation type:FT_CALLBACK
+kivsee.proto.render.v1.PositionSaturationEffectConfig.mult_factor no_unions:true
 kivsee.proto.render.v1.PositionSaturationEffectConfig.mult_factor_increase type:FT_CALLBACK
 kivsee.proto.render.v1.PositionSaturationEffectConfig.mult_factor_decrease type:FT_CALLBACK
 
@@ -58,6 +62,7 @@ kivsee.proto.render.v1.PositionSaturationEffectConfig.mult_factor_decrease type:
 kivsee.proto.render.v1.EffectProto.snake_brightness type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeBrightnessEffectConfig.head type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeBrightnessEffectConfig.tail_length type:FT_CALLBACK
+kivsee.proto.render.v1.SnakeBrightnessEffectConfig.mult_factor no_unions:true
 kivsee.proto.render.v1.SnakeBrightnessEffectConfig.mult_factor_increase type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeBrightnessEffectConfig.mult_factor_decrease type:FT_CALLBACK
 
@@ -65,12 +70,12 @@ kivsee.proto.render.v1.SnakeBrightnessEffectConfig.mult_factor_decrease type:FT_
 kivsee.proto.render.v1.EffectProto.snake_hue type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeHueEffectConfig.head type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeHueEffectConfig.tail_length type:FT_CALLBACK
-kivsee.proto.render.v1.SnakeHueEffectConfig.mult_factor_increase type:FT_CALLBACK
-kivsee.proto.render.v1.SnakeHueEffectConfig.mult_factor_decrease type:FT_CALLBACK
+kivsee.proto.render.v1.SnakeHueEffectConfig.offset_factor type:FT_CALLBACK
 
 // snake_saturation
 kivsee.proto.render.v1.EffectProto.snake_saturation type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeSaturationEffectConfig.head type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeSaturationEffectConfig.tail_length type:FT_CALLBACK
+kivsee.proto.render.v1.SnakeSaturationEffectConfig.mult_factor no_unions:true
 kivsee.proto.render.v1.SnakeSaturationEffectConfig.mult_factor_increase type:FT_CALLBACK
 kivsee.proto.render.v1.SnakeSaturationEffectConfig.mult_factor_decrease type:FT_CALLBACK

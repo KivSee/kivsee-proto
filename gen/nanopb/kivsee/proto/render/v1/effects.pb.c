@@ -27,19 +27,37 @@ PB_BIND(kivsee_proto_render_v1_SaturationEffectConfig, kivsee_proto_render_v1_Sa
 PB_BIND(kivsee_proto_render_v1_SnakeEffectConfig, kivsee_proto_render_v1_SnakeEffectConfig, AUTO)
 
 
-PB_BIND(kivsee_proto_render_v1_SegmentEffectConfig, kivsee_proto_render_v1_SegmentEffectConfig, 2)
+PB_BIND(kivsee_proto_render_v1_TimedBrightnessEffectConfig, kivsee_proto_render_v1_TimedBrightnessEffectConfig, AUTO)
 
 
-PB_BIND(kivsee_proto_render_v1_GlitterEffectConfig, kivsee_proto_render_v1_GlitterEffectConfig, 2)
+PB_BIND(kivsee_proto_render_v1_TimedHueEffectConfig, kivsee_proto_render_v1_TimedHueEffectConfig, AUTO)
 
 
-PB_BIND(kivsee_proto_render_v1_AlternateEffectConfig, kivsee_proto_render_v1_AlternateEffectConfig, 2)
+PB_BIND(kivsee_proto_render_v1_TimedSaturationEffectConfig, kivsee_proto_render_v1_TimedSaturationEffectConfig, AUTO)
+
+
+PB_BIND(kivsee_proto_render_v1_PositionBrightnessEffectConfig, kivsee_proto_render_v1_PositionBrightnessEffectConfig, AUTO)
+
+
+PB_BIND(kivsee_proto_render_v1_PositionHueEffectConfig, kivsee_proto_render_v1_PositionHueEffectConfig, AUTO)
+
+
+PB_BIND(kivsee_proto_render_v1_PositionSaturationEffectConfig, kivsee_proto_render_v1_PositionSaturationEffectConfig, AUTO)
+
+
+PB_BIND(kivsee_proto_render_v1_SnakeBrightnessEffectConfig, kivsee_proto_render_v1_SnakeBrightnessEffectConfig, AUTO)
+
+
+PB_BIND(kivsee_proto_render_v1_SnakeHueEffectConfig, kivsee_proto_render_v1_SnakeHueEffectConfig, AUTO)
+
+
+PB_BIND(kivsee_proto_render_v1_SnakeSaturationEffectConfig, kivsee_proto_render_v1_SnakeSaturationEffectConfig, AUTO)
 
 
 PB_BIND(kivsee_proto_render_v1_EffectConfig, kivsee_proto_render_v1_EffectConfig, AUTO)
 
 
-PB_BIND(kivsee_proto_render_v1_EffectProto, kivsee_proto_render_v1_EffectProto, AUTO)
+PB_BIND(kivsee_proto_render_v1_EffectProto, kivsee_proto_render_v1_EffectProto, 2)
 
 
 PB_BIND(kivsee_proto_render_v1_AnimationProto, kivsee_proto_render_v1_AnimationProto, AUTO)

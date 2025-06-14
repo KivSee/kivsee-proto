@@ -113,6 +113,142 @@ struct ConstColorEffectConfigDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ConstColorEffectConfigDefaultTypeInternal _ConstColorEffectConfig_default_instance_;
 
+inline constexpr TimedSaturationEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR TimedSaturationEffectConfig::TimedSaturationEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(TimedSaturationEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct TimedSaturationEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR TimedSaturationEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~TimedSaturationEffectConfigDefaultTypeInternal() {}
+  union {
+    TimedSaturationEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TimedSaturationEffectConfigDefaultTypeInternal _TimedSaturationEffectConfig_default_instance_;
+
+inline constexpr TimedHueEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : _cached_size_{0},
+        offset_factor_{nullptr} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR TimedHueEffectConfig::TimedHueEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(TimedHueEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct TimedHueEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR TimedHueEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~TimedHueEffectConfigDefaultTypeInternal() {}
+  union {
+    TimedHueEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TimedHueEffectConfigDefaultTypeInternal _TimedHueEffectConfig_default_instance_;
+
+inline constexpr TimedBrightnessEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR TimedBrightnessEffectConfig::TimedBrightnessEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(TimedBrightnessEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct TimedBrightnessEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR TimedBrightnessEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~TimedBrightnessEffectConfigDefaultTypeInternal() {}
+  union {
+    TimedBrightnessEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TimedBrightnessEffectConfigDefaultTypeInternal _TimedBrightnessEffectConfig_default_instance_;
+
+inline constexpr SnakeSaturationEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : _cached_size_{0},
+        head_{nullptr},
+        tail_length_{nullptr},
+        cyclic_{false},
+        repeat_num_{0},
+        mult_factor_{},
+        _oneof_case_{} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR SnakeSaturationEffectConfig::SnakeSaturationEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(SnakeSaturationEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct SnakeSaturationEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SnakeSaturationEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SnakeSaturationEffectConfigDefaultTypeInternal() {}
+  union {
+    SnakeSaturationEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SnakeSaturationEffectConfigDefaultTypeInternal _SnakeSaturationEffectConfig_default_instance_;
+
+inline constexpr SnakeHueEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : _cached_size_{0},
+        head_{nullptr},
+        tail_length_{nullptr},
+        offset_factor_{nullptr},
+        cyclic_{false},
+        repeat_num_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR SnakeHueEffectConfig::SnakeHueEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(SnakeHueEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct SnakeHueEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SnakeHueEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SnakeHueEffectConfigDefaultTypeInternal() {}
+  union {
+    SnakeHueEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SnakeHueEffectConfigDefaultTypeInternal _SnakeHueEffectConfig_default_instance_;
+
 inline constexpr SnakeEffectConfig::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : _cached_size_{0},
@@ -140,31 +276,35 @@ struct SnakeEffectConfigDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SnakeEffectConfigDefaultTypeInternal _SnakeEffectConfig_default_instance_;
 
-inline constexpr SegmentEffectConfig::Impl_::Impl_(
+inline constexpr SnakeBrightnessEffectConfig::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : _cached_size_{0},
-        start_{nullptr},
-        end_{nullptr} {}
+        head_{nullptr},
+        tail_length_{nullptr},
+        cyclic_{false},
+        repeat_num_{0},
+        mult_factor_{},
+        _oneof_case_{} {}
 
 template <typename>
-PROTOBUF_CONSTEXPR SegmentEffectConfig::SegmentEffectConfig(::_pbi::ConstantInitialized)
+PROTOBUF_CONSTEXPR SnakeBrightnessEffectConfig::SnakeBrightnessEffectConfig(::_pbi::ConstantInitialized)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(SegmentEffectConfig_class_data_.base()),
+    : ::google::protobuf::Message(SnakeBrightnessEffectConfig_class_data_.base()),
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(),
 #endif  // PROTOBUF_CUSTOM_VTABLE
       _impl_(::_pbi::ConstantInitialized()) {
 }
-struct SegmentEffectConfigDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SegmentEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SegmentEffectConfigDefaultTypeInternal() {}
+struct SnakeBrightnessEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SnakeBrightnessEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SnakeBrightnessEffectConfigDefaultTypeInternal() {}
   union {
-    SegmentEffectConfig _instance;
+    SnakeBrightnessEffectConfig _instance;
   };
 };
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SegmentEffectConfigDefaultTypeInternal _SegmentEffectConfig_default_instance_;
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SnakeBrightnessEffectConfigDefaultTypeInternal _SnakeBrightnessEffectConfig_default_instance_;
 
 inline constexpr SaturationEffectConfig::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -217,6 +357,83 @@ struct RainbowEffectConfigDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RainbowEffectConfigDefaultTypeInternal _RainbowEffectConfig_default_instance_;
 
+inline constexpr PositionSaturationEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR PositionSaturationEffectConfig::PositionSaturationEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(PositionSaturationEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct PositionSaturationEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PositionSaturationEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PositionSaturationEffectConfigDefaultTypeInternal() {}
+  union {
+    PositionSaturationEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PositionSaturationEffectConfigDefaultTypeInternal _PositionSaturationEffectConfig_default_instance_;
+
+inline constexpr PositionHueEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : _cached_size_{0},
+        offset_factor_{nullptr} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR PositionHueEffectConfig::PositionHueEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(PositionHueEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct PositionHueEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PositionHueEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PositionHueEffectConfigDefaultTypeInternal() {}
+  union {
+    PositionHueEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PositionHueEffectConfigDefaultTypeInternal _PositionHueEffectConfig_default_instance_;
+
+inline constexpr PositionBrightnessEffectConfig::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR PositionBrightnessEffectConfig::PositionBrightnessEffectConfig(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(PositionBrightnessEffectConfig_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct PositionBrightnessEffectConfigDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR PositionBrightnessEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~PositionBrightnessEffectConfigDefaultTypeInternal() {}
+  union {
+    PositionBrightnessEffectConfig _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PositionBrightnessEffectConfigDefaultTypeInternal _PositionBrightnessEffectConfig_default_instance_;
+
 inline constexpr HueEffectConfig::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : _cached_size_{0},
@@ -242,32 +459,6 @@ struct HueEffectConfigDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 HueEffectConfigDefaultTypeInternal _HueEffectConfig_default_instance_;
 
-inline constexpr GlitterEffectConfig::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        intensity_{nullptr},
-        sat_mult_factor_{nullptr} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR GlitterEffectConfig::GlitterEffectConfig(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(GlitterEffectConfig_class_data_.base()),
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(),
-#endif  // PROTOBUF_CUSTOM_VTABLE
-      _impl_(::_pbi::ConstantInitialized()) {
-}
-struct GlitterEffectConfigDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR GlitterEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~GlitterEffectConfigDefaultTypeInternal() {}
-  union {
-    GlitterEffectConfig _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GlitterEffectConfigDefaultTypeInternal _GlitterEffectConfig_default_instance_;
-
 inline constexpr BrightnessEffectConfig::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : _cached_size_{0},
@@ -292,34 +483,6 @@ struct BrightnessEffectConfigDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 BrightnessEffectConfigDefaultTypeInternal _BrightnessEffectConfig_default_instance_;
-
-inline constexpr AlternateEffectConfig::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : _cached_size_{0},
-        hue_offset_{nullptr},
-        sat_mult_{nullptr},
-        brightness_mult_{nullptr},
-        numberofpixels_{0u} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR AlternateEffectConfig::AlternateEffectConfig(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(AlternateEffectConfig_class_data_.base()),
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(),
-#endif  // PROTOBUF_CUSTOM_VTABLE
-      _impl_(::_pbi::ConstantInitialized()) {
-}
-struct AlternateEffectConfigDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR AlternateEffectConfigDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~AlternateEffectConfigDefaultTypeInternal() {}
-  union {
-    AlternateEffectConfig _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AlternateEffectConfigDefaultTypeInternal _AlternateEffectConfig_default_instance_;
 
 inline constexpr EffectProto::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -430,31 +593,83 @@ const ::uint32_t
         0,
         1,
         2,
+        0x004, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedBrightnessEffectConfig, _impl_._oneof_case_[0]),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedBrightnessEffectConfig, _impl_.mult_factor_),
         0x081, // bitmap
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SegmentEffectConfig, _impl_._has_bits_),
-        5, // hasbit index offset
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SegmentEffectConfig, _impl_.start_),
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SegmentEffectConfig, _impl_.end_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedHueEffectConfig, _impl_._has_bits_),
+        4, // hasbit index offset
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedHueEffectConfig, _impl_.offset_factor_),
         0,
-        1,
+        0x004, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedSaturationEffectConfig, _impl_._oneof_case_[0]),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedSaturationEffectConfig, _impl_.mult_factor_),
+        0x004, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionBrightnessEffectConfig, _impl_._oneof_case_[0]),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionBrightnessEffectConfig, _impl_.mult_factor_),
         0x081, // bitmap
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::GlitterEffectConfig, _impl_._has_bits_),
-        5, // hasbit index offset
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::GlitterEffectConfig, _impl_.intensity_),
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::GlitterEffectConfig, _impl_.sat_mult_factor_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionHueEffectConfig, _impl_._has_bits_),
+        4, // hasbit index offset
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionHueEffectConfig, _impl_.offset_factor_),
         0,
-        1,
-        0x081, // bitmap
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::AlternateEffectConfig, _impl_._has_bits_),
-        7, // hasbit index offset
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::AlternateEffectConfig, _impl_.numberofpixels_),
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::AlternateEffectConfig, _impl_.hue_offset_),
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::AlternateEffectConfig, _impl_.sat_mult_),
-        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::AlternateEffectConfig, _impl_.brightness_mult_),
-        3,
+        0x004, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionSaturationEffectConfig, _impl_._oneof_case_[0]),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionSaturationEffectConfig, _impl_.mult_factor_),
+        0x085, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_._oneof_case_[0]),
+        11, // hasbit index offset
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_.head_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_.tail_length_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_.cyclic_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_.repeat_num_),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_.mult_factor_),
         0,
         1,
         2,
+        3,
+        ~0u,
+        ~0u,
+        0x081, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeHueEffectConfig, _impl_._has_bits_),
+        8, // hasbit index offset
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeHueEffectConfig, _impl_.head_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeHueEffectConfig, _impl_.tail_length_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeHueEffectConfig, _impl_.cyclic_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeHueEffectConfig, _impl_.repeat_num_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeHueEffectConfig, _impl_.offset_factor_),
+        0,
+        1,
+        3,
+        4,
+        2,
+        0x085, // bitmap
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_._oneof_case_[0]),
+        11, // hasbit index offset
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_.head_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_.tail_length_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_.cyclic_),
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_.repeat_num_),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_.mult_factor_),
+        0,
+        1,
+        2,
+        3,
+        ~0u,
+        ~0u,
         0x081, // bitmap
         PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::EffectConfig, _impl_._has_bits_),
         9, // hasbit index offset
@@ -473,8 +688,17 @@ const ::uint32_t
         0x085, // bitmap
         PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::EffectProto, _impl_._has_bits_),
         PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::EffectProto, _impl_._oneof_case_[0]),
-        12, // hasbit index offset
+        21, // hasbit index offset
         PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::EffectProto, _impl_.effect_config_),
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
+        ::_pbi::kInvalidFieldOffsetTag,
         ::_pbi::kInvalidFieldOffsetTag,
         ::_pbi::kInvalidFieldOffsetTag,
         ::_pbi::kInvalidFieldOffsetTag,
@@ -483,6 +707,15 @@ const ::uint32_t
         ::_pbi::kInvalidFieldOffsetTag,
         PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::EffectProto, _impl_.effect_),
         0,
+        ~0u,
+        ~0u,
+        ~0u,
+        ~0u,
+        ~0u,
+        ~0u,
+        ~0u,
+        ~0u,
+        ~0u,
         ~0u,
         ~0u,
         ~0u,
@@ -509,12 +742,18 @@ static const ::_pbi::MigrationSchema
         {26, sizeof(::kivsee::proto::render::v1::HueEffectConfig)},
         {31, sizeof(::kivsee::proto::render::v1::SaturationEffectConfig)},
         {36, sizeof(::kivsee::proto::render::v1::SnakeEffectConfig)},
-        {45, sizeof(::kivsee::proto::render::v1::SegmentEffectConfig)},
-        {52, sizeof(::kivsee::proto::render::v1::GlitterEffectConfig)},
-        {59, sizeof(::kivsee::proto::render::v1::AlternateEffectConfig)},
-        {70, sizeof(::kivsee::proto::render::v1::EffectConfig)},
-        {85, sizeof(::kivsee::proto::render::v1::EffectProto)},
-        {104, sizeof(::kivsee::proto::render::v1::AnimationProto)},
+        {45, sizeof(::kivsee::proto::render::v1::TimedBrightnessEffectConfig)},
+        {50, sizeof(::kivsee::proto::render::v1::TimedHueEffectConfig)},
+        {55, sizeof(::kivsee::proto::render::v1::TimedSaturationEffectConfig)},
+        {60, sizeof(::kivsee::proto::render::v1::PositionBrightnessEffectConfig)},
+        {65, sizeof(::kivsee::proto::render::v1::PositionHueEffectConfig)},
+        {70, sizeof(::kivsee::proto::render::v1::PositionSaturationEffectConfig)},
+        {75, sizeof(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig)},
+        {92, sizeof(::kivsee::proto::render::v1::SnakeHueEffectConfig)},
+        {105, sizeof(::kivsee::proto::render::v1::SnakeSaturationEffectConfig)},
+        {122, sizeof(::kivsee::proto::render::v1::EffectConfig)},
+        {137, sizeof(::kivsee::proto::render::v1::EffectProto)},
+        {174, sizeof(::kivsee::proto::render::v1::AnimationProto)},
 };
 static const ::_pb::Message* PROTOBUF_NONNULL const file_default_instances[] = {
     &::kivsee::proto::render::v1::_HSV_default_instance_._instance,
@@ -524,9 +763,15 @@ static const ::_pb::Message* PROTOBUF_NONNULL const file_default_instances[] = {
     &::kivsee::proto::render::v1::_HueEffectConfig_default_instance_._instance,
     &::kivsee::proto::render::v1::_SaturationEffectConfig_default_instance_._instance,
     &::kivsee::proto::render::v1::_SnakeEffectConfig_default_instance_._instance,
-    &::kivsee::proto::render::v1::_SegmentEffectConfig_default_instance_._instance,
-    &::kivsee::proto::render::v1::_GlitterEffectConfig_default_instance_._instance,
-    &::kivsee::proto::render::v1::_AlternateEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_TimedBrightnessEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_TimedHueEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_TimedSaturationEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_PositionBrightnessEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_PositionHueEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_PositionSaturationEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_SnakeBrightnessEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_SnakeHueEffectConfig_default_instance_._instance,
+    &::kivsee::proto::render::v1::_SnakeSaturationEffectConfig_default_instance_._instance,
     &::kivsee::proto::render::v1::_EffectConfig_default_instance_._instance,
     &::kivsee::proto::render::v1::_EffectProto_default_instance_._instance,
     &::kivsee::proto::render::v1::_AnimationProto_default_instance_._instance,
@@ -554,45 +799,107 @@ const char descriptor_table_protodef_kivsee_2fproto_2frender_2fv1_2feffects_2epr
     "\001(\0132%.kivsee.proto.render.v1.FloatFuncti"
     "onR\004head\022F\n\013tail_length\030\002 \001(\0132%.kivsee.p"
     "roto.render.v1.FloatFunctionR\ntailLength"
-    "\022\026\n\006cyclic\030\003 \001(\010R\006cyclic\"\213\001\n\023SegmentEffe"
-    "ctConfig\022;\n\005start\030\001 \001(\0132%.kivsee.proto.r"
-    "ender.v1.FloatFunctionR\005start\0227\n\003end\030\002 \001"
-    "(\0132%.kivsee.proto.render.v1.FloatFunctio"
-    "nR\003end\"\251\001\n\023GlitterEffectConfig\022C\n\tintens"
-    "ity\030\001 \001(\0132%.kivsee.proto.render.v1.Float"
-    "FunctionR\tintensity\022M\n\017sat_mult_factor\030\002"
-    " \001(\0132%.kivsee.proto.render.v1.FloatFunct"
-    "ionR\rsatMultFactor\"\227\002\n\025AlternateEffectCo"
-    "nfig\022&\n\016numberOfPixels\030\001 \001(\rR\016numberOfPi"
-    "xels\022D\n\nhue_offset\030\002 \001(\0132%.kivsee.proto."
-    "render.v1.FloatFunctionR\thueOffset\022@\n\010sa"
-    "t_mult\030\003 \001(\0132%.kivsee.proto.render.v1.Fl"
-    "oatFunctionR\007satMult\022N\n\017brightness_mult\030"
-    "\004 \001(\0132%.kivsee.proto.render.v1.FloatFunc"
-    "tionR\016brightnessMult\"\305\001\n\014EffectConfig\022\035\n"
-    "\nstart_time\030\001 \001(\rR\tstartTime\022\031\n\010end_time"
-    "\030\002 \001(\rR\007endTime\022\032\n\010segments\030\003 \001(\tR\010segme"
-    "nts\022\035\n\nrepeat_num\030\004 \001(\002R\trepeatNum\022!\n\014re"
-    "peat_start\030\005 \001(\002R\013repeatStart\022\035\n\nrepeat_"
-    "end\030\006 \001(\002R\trepeatEnd\"\242\004\n\013EffectProto\022I\n\r"
-    "effect_config\030\001 \001(\0132$.kivsee.proto.rende"
-    "r.v1.EffectConfigR\014effectConfig\022Q\n\013const"
-    "_color\030\002 \001(\0132..kivsee.proto.render.v1.Co"
-    "nstColorEffectConfigH\000R\nconstColor\022G\n\007ra"
-    "inbow\030\003 \001(\0132+.kivsee.proto.render.v1.Rai"
-    "nbowEffectConfigH\000R\007rainbow\022P\n\nbrightnes"
-    "s\030\004 \001(\0132..kivsee.proto.render.v1.Brightn"
-    "essEffectConfigH\000R\nbrightness\022;\n\003hue\030\005 \001"
-    "(\0132\'.kivsee.proto.render.v1.HueEffectCon"
-    "figH\000R\003hue\022P\n\nsaturation\030\006 \001(\0132..kivsee."
-    "proto.render.v1.SaturationEffectConfigH\000"
-    "R\nsaturation\022A\n\005snake\030\007 \001(\0132).kivsee.pro"
-    "to.render.v1.SnakeEffectConfigH\000R\005snakeB"
-    "\010\n\006effect\"\221\001\n\016AnimationProto\022=\n\007effects\030"
-    "\001 \003(\0132#.kivsee.proto.render.v1.EffectPro"
-    "toR\007effects\022\037\n\013duration_ms\030\002 \001(\rR\ndurati"
-    "onMs\022\037\n\013num_repeats\030\003 \001(\rR\nnumRepeatsb\006p"
-    "roto3"
+    "\022\026\n\006cyclic\030\003 \001(\010R\006cyclic\"\342\001\n\033TimedBright"
+    "nessEffectConfig\022Y\n\024mult_factor_increase"
+    "\030\001 \001(\0132%.kivsee.proto.render.v1.FloatFun"
+    "ctionH\000R\022multFactorIncrease\022Y\n\024mult_fact"
+    "or_decrease\030\002 \001(\0132%.kivsee.proto.render."
+    "v1.FloatFunctionH\000R\022multFactorDecreaseB\r"
+    "\n\013mult_factor\"b\n\024TimedHueEffectConfig\022J\n"
+    "\roffset_factor\030\001 \001(\0132%.kivsee.proto.rend"
+    "er.v1.FloatFunctionR\014offsetFactor\"\342\001\n\033Ti"
+    "medSaturationEffectConfig\022Y\n\024mult_factor"
+    "_increase\030\001 \001(\0132%.kivsee.proto.render.v1"
+    ".FloatFunctionH\000R\022multFactorIncrease\022Y\n\024"
+    "mult_factor_decrease\030\002 \001(\0132%.kivsee.prot"
+    "o.render.v1.FloatFunctionH\000R\022multFactorD"
+    "ecreaseB\r\n\013mult_factor\"\345\001\n\036PositionBrigh"
+    "tnessEffectConfig\022Y\n\024mult_factor_increas"
+    "e\030\001 \001(\0132%.kivsee.proto.render.v1.FloatFu"
+    "nctionH\000R\022multFactorIncrease\022Y\n\024mult_fac"
+    "tor_decrease\030\002 \001(\0132%.kivsee.proto.render"
+    ".v1.FloatFunctionH\000R\022multFactorDecreaseB"
+    "\r\n\013mult_factor\"e\n\027PositionHueEffectConfi"
+    "g\022J\n\roffset_factor\030\001 \001(\0132%.kivsee.proto."
+    "render.v1.FloatFunctionR\014offsetFactor\"\345\001"
+    "\n\036PositionSaturationEffectConfig\022Y\n\024mult"
+    "_factor_increase\030\001 \001(\0132%.kivsee.proto.re"
+    "nder.v1.FloatFunctionH\000R\022multFactorIncre"
+    "ase\022Y\n\024mult_factor_decrease\030\002 \001(\0132%.kivs"
+    "ee.proto.render.v1.FloatFunctionH\000R\022mult"
+    "FactorDecreaseB\r\n\013mult_factor\"\234\003\n\033SnakeB"
+    "rightnessEffectConfig\0229\n\004head\030\001 \001(\0132%.ki"
+    "vsee.proto.render.v1.FloatFunctionR\004head"
+    "\022F\n\013tail_length\030\002 \001(\0132%.kivsee.proto.ren"
+    "der.v1.FloatFunctionR\ntailLength\022\026\n\006cycl"
+    "ic\030\003 \001(\010R\006cyclic\022\035\n\nrepeat_num\030\004 \001(\002R\tre"
+    "peatNum\022Y\n\024mult_factor_increase\030\005 \001(\0132%."
+    "kivsee.proto.render.v1.FloatFunctionH\000R\022"
+    "multFactorIncrease\022Y\n\024mult_factor_decrea"
+    "se\030\006 \001(\0132%.kivsee.proto.render.v1.FloatF"
+    "unctionH\000R\022multFactorDecreaseB\r\n\013mult_fa"
+    "ctor\"\234\002\n\024SnakeHueEffectConfig\0229\n\004head\030\001 "
+    "\001(\0132%.kivsee.proto.render.v1.FloatFuncti"
+    "onR\004head\022F\n\013tail_length\030\002 \001(\0132%.kivsee.p"
+    "roto.render.v1.FloatFunctionR\ntailLength"
+    "\022\026\n\006cyclic\030\003 \001(\010R\006cyclic\022\035\n\nrepeat_num\030\004"
+    " \001(\002R\trepeatNum\022J\n\roffset_factor\030\005 \001(\0132%"
+    ".kivsee.proto.render.v1.FloatFunctionR\014o"
+    "ffsetFactor\"\234\003\n\033SnakeSaturationEffectCon"
+    "fig\0229\n\004head\030\001 \001(\0132%.kivsee.proto.render."
+    "v1.FloatFunctionR\004head\022F\n\013tail_length\030\002 "
+    "\001(\0132%.kivsee.proto.render.v1.FloatFuncti"
+    "onR\ntailLength\022\026\n\006cyclic\030\003 \001(\010R\006cyclic\022\035"
+    "\n\nrepeat_num\030\004 \001(\002R\trepeatNum\022Y\n\024mult_fa"
+    "ctor_increase\030\005 \001(\0132%.kivsee.proto.rende"
+    "r.v1.FloatFunctionH\000R\022multFactorIncrease"
+    "\022Y\n\024mult_factor_decrease\030\006 \001(\0132%.kivsee."
+    "proto.render.v1.FloatFunctionH\000R\022multFac"
+    "torDecreaseB\r\n\013mult_factor\"\305\001\n\014EffectCon"
+    "fig\022\035\n\nstart_time\030\001 \001(\rR\tstartTime\022\031\n\010en"
+    "d_time\030\002 \001(\rR\007endTime\022\032\n\010segments\030\003 \001(\tR"
+    "\010segments\022\035\n\nrepeat_num\030\004 \001(\002R\trepeatNum"
+    "\022!\n\014repeat_start\030\005 \001(\002R\013repeatStart\022\035\n\nr"
+    "epeat_end\030\006 \001(\002R\trepeatEnd\"\360\n\n\013EffectPro"
+    "to\022I\n\reffect_config\030\001 \001(\0132$.kivsee.proto"
+    ".render.v1.EffectConfigR\014effectConfig\022Q\n"
+    "\013const_color\030\002 \001(\0132..kivsee.proto.render"
+    ".v1.ConstColorEffectConfigH\000R\nconstColor"
+    "\022G\n\007rainbow\030\003 \001(\0132+.kivsee.proto.render."
+    "v1.RainbowEffectConfigH\000R\007rainbow\022P\n\nbri"
+    "ghtness\030\004 \001(\0132..kivsee.proto.render.v1.B"
+    "rightnessEffectConfigH\000R\nbrightness\022;\n\003h"
+    "ue\030\005 \001(\0132\'.kivsee.proto.render.v1.HueEff"
+    "ectConfigH\000R\003hue\022P\n\nsaturation\030\006 \001(\0132..k"
+    "ivsee.proto.render.v1.SaturationEffectCo"
+    "nfigH\000R\nsaturation\022A\n\005snake\030\007 \001(\0132).kivs"
+    "ee.proto.render.v1.SnakeEffectConfigH\000R\005"
+    "snake\022`\n\020timed_brightness\030\010 \001(\01323.kivsee"
+    ".proto.render.v1.TimedBrightnessEffectCo"
+    "nfigH\000R\017timedBrightness\022K\n\ttimed_hue\030\t \001"
+    "(\0132,.kivsee.proto.render.v1.TimedHueEffe"
+    "ctConfigH\000R\010timedHue\022`\n\020timed_saturation"
+    "\030\n \001(\01323.kivsee.proto.render.v1.TimedSat"
+    "urationEffectConfigH\000R\017timedSaturation\022i"
+    "\n\023position_brightness\030\013 \001(\01326.kivsee.pro"
+    "to.render.v1.PositionBrightnessEffectCon"
+    "figH\000R\022positionBrightness\022T\n\014position_hu"
+    "e\030\014 \001(\0132/.kivsee.proto.render.v1.Positio"
+    "nHueEffectConfigH\000R\013positionHue\022i\n\023posit"
+    "ion_saturation\030\r \001(\01326.kivsee.proto.rend"
+    "er.v1.PositionSaturationEffectConfigH\000R\022"
+    "positionSaturation\022`\n\020snake_brightness\030\016"
+    " \001(\01323.kivsee.proto.render.v1.SnakeBrigh"
+    "tnessEffectConfigH\000R\017snakeBrightness\022K\n\t"
+    "snake_hue\030\017 \001(\0132,.kivsee.proto.render.v1"
+    ".SnakeHueEffectConfigH\000R\010snakeHue\022`\n\020sna"
+    "ke_saturation\030\020 \001(\01323.kivsee.proto.rende"
+    "r.v1.SnakeSaturationEffectConfigH\000R\017snak"
+    "eSaturationB\010\n\006effect\"\221\001\n\016AnimationProto"
+    "\022=\n\007effects\030\001 \003(\0132#.kivsee.proto.render."
+    "v1.EffectProtoR\007effects\022\037\n\013duration_ms\030\002"
+    " \001(\rR\ndurationMs\022\037\n\013num_repeats\030\003 \001(\rR\nn"
+    "umRepeatsb\006proto3"
 };
 static const ::_pbi::DescriptorTable* PROTOBUF_NONNULL const
     descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto_deps[1] = {
@@ -602,13 +909,13 @@ static ::absl::once_flag descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects
 PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto = {
     false,
     false,
-    2365,
+    4857,
     descriptor_table_protodef_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
     "kivsee/proto/render/v1/effects.proto",
     &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto_once,
     descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto_deps,
     1,
-    13,
+    19,
     schemas,
     file_default_instances,
     TableStruct_kivsee_2fproto_2frender_2fv1_2feffects_2eproto::offsets,
@@ -2644,167 +2951,227 @@ void SnakeEffectConfig::InternalSwap(SnakeEffectConfig* PROTOBUF_RESTRICT PROTOB
 }
 // ===================================================================
 
-class SegmentEffectConfig::_Internal {
+class TimedBrightnessEffectConfig::_Internal {
  public:
-  using HasBits =
-      decltype(::std::declval<SegmentEffectConfig>()._impl_._has_bits_);
-  static constexpr ::int32_t kHasBitsOffset =
-      8 * PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_._has_bits_);
+  static constexpr ::int32_t kOneofCaseOffset =
+      PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedBrightnessEffectConfig, _impl_._oneof_case_);
 };
 
-void SegmentEffectConfig::clear_start() {
-  ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.start_ != nullptr) _impl_.start_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000001u;
+void TimedBrightnessEffectConfig::set_allocated_mult_factor_increase(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_increase) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_increase) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_increase)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_increase = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_increase, submessage_arena);
+    }
+    set_has_mult_factor_increase();
+    _impl_.mult_factor_.mult_factor_increase_ = mult_factor_increase;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.TimedBrightnessEffectConfig.mult_factor_increase)
 }
-void SegmentEffectConfig::clear_end() {
+void TimedBrightnessEffectConfig::clear_mult_factor_increase() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.end_ != nullptr) _impl_.end_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000002u;
+  if (mult_factor_case() == kMultFactorIncrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_increase_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+    }
+    clear_has_mult_factor();
+  }
 }
-SegmentEffectConfig::SegmentEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+void TimedBrightnessEffectConfig::set_allocated_mult_factor_decrease(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_decrease) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_decrease) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_decrease)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_decrease = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_decrease, submessage_arena);
+    }
+    set_has_mult_factor_decrease();
+    _impl_.mult_factor_.mult_factor_decrease_ = mult_factor_decrease;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.TimedBrightnessEffectConfig.mult_factor_decrease)
+}
+void TimedBrightnessEffectConfig::clear_mult_factor_decrease() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorDecrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_decrease_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+    }
+    clear_has_mult_factor();
+  }
+}
+TimedBrightnessEffectConfig::TimedBrightnessEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, SegmentEffectConfig_class_data_.base()) {
+    : ::google::protobuf::Message(arena, TimedBrightnessEffectConfig_class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.SegmentEffectConfig)
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
 }
-PROTOBUF_NDEBUG_INLINE SegmentEffectConfig::Impl_::Impl_(
+PROTOBUF_NDEBUG_INLINE TimedBrightnessEffectConfig::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
-    const ::kivsee::proto::render::v1::SegmentEffectConfig& from_msg)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0} {}
+    const ::kivsee::proto::render::v1::TimedBrightnessEffectConfig& from_msg)
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{from._oneof_case_[0]} {}
 
-SegmentEffectConfig::SegmentEffectConfig(
+TimedBrightnessEffectConfig::TimedBrightnessEffectConfig(
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
-    const SegmentEffectConfig& from)
+    const TimedBrightnessEffectConfig& from)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, SegmentEffectConfig_class_data_.base()) {
+    : ::google::protobuf::Message(arena, TimedBrightnessEffectConfig_class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  SegmentEffectConfig* const _this = this;
+  TimedBrightnessEffectConfig* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.start_ = ((cached_has_bits & 0x00000001u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.start_)
-                : nullptr;
-  _impl_.end_ = ((cached_has_bits & 0x00000002u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.end_)
-                : nullptr;
+  switch (mult_factor_case()) {
+    case MULT_FACTOR_NOT_SET:
+      break;
+      case kMultFactorIncrease:
+        _impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        break;
+      case kMultFactorDecrease:
+        _impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        break;
+  }
 
-  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.SegmentEffectConfig)
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
 }
-PROTOBUF_NDEBUG_INLINE SegmentEffectConfig::Impl_::Impl_(
+PROTOBUF_NDEBUG_INLINE TimedBrightnessEffectConfig::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
-      : _cached_size_{0} {}
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
 
-inline void SegmentEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+inline void TimedBrightnessEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, start_),
-           0,
-           offsetof(Impl_, end_) -
-               offsetof(Impl_, start_) +
-               sizeof(Impl_::end_));
 }
-SegmentEffectConfig::~SegmentEffectConfig() {
-  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.SegmentEffectConfig)
+TimedBrightnessEffectConfig::~TimedBrightnessEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
   SharedDtor(*this);
 }
-inline void SegmentEffectConfig::SharedDtor(MessageLite& self) {
-  SegmentEffectConfig& this_ = static_cast<SegmentEffectConfig&>(self);
+inline void TimedBrightnessEffectConfig::SharedDtor(MessageLite& self) {
+  TimedBrightnessEffectConfig& this_ = static_cast<TimedBrightnessEffectConfig&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
-  delete this_._impl_.start_;
-  delete this_._impl_.end_;
+  if (this_.has_mult_factor()) {
+    this_.clear_mult_factor();
+  }
   this_._impl_.~Impl_();
 }
 
-inline void* PROTOBUF_NONNULL SegmentEffectConfig::PlacementNew_(
+void TimedBrightnessEffectConfig::clear_mult_factor() {
+// @@protoc_insertion_point(one_of_clear_start:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  switch (mult_factor_case()) {
+    case kMultFactorIncrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_increase_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+      }
+      break;
+    }
+    case kMultFactorDecrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_decrease_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+      }
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = MULT_FACTOR_NOT_SET;
+}
+
+
+inline void* PROTOBUF_NONNULL TimedBrightnessEffectConfig::PlacementNew_(
     const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
-  return ::new (mem) SegmentEffectConfig(arena);
+  return ::new (mem) TimedBrightnessEffectConfig(arena);
 }
-constexpr auto SegmentEffectConfig::InternalNewImpl_() {
-  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(SegmentEffectConfig),
-                                            alignof(SegmentEffectConfig));
+constexpr auto TimedBrightnessEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(TimedBrightnessEffectConfig),
+                                            alignof(TimedBrightnessEffectConfig));
 }
-constexpr auto SegmentEffectConfig::InternalGenerateClassData_() {
+constexpr auto TimedBrightnessEffectConfig::InternalGenerateClassData_() {
   return ::google::protobuf::internal::ClassDataFull{
       ::google::protobuf::internal::ClassData{
-          &_SegmentEffectConfig_default_instance_._instance,
+          &_TimedBrightnessEffectConfig_default_instance_._instance,
           &_table_.header,
           nullptr,  // OnDemandRegisterArenaDtor
           nullptr,  // IsInitialized
-          &SegmentEffectConfig::MergeImpl,
-          ::google::protobuf::Message::GetNewImpl<SegmentEffectConfig>(),
+          &TimedBrightnessEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<TimedBrightnessEffectConfig>(),
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-          &SegmentEffectConfig::SharedDtor,
-          ::google::protobuf::Message::GetClearImpl<SegmentEffectConfig>(), &SegmentEffectConfig::ByteSizeLong,
-              &SegmentEffectConfig::_InternalSerialize,
+          &TimedBrightnessEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<TimedBrightnessEffectConfig>(), &TimedBrightnessEffectConfig::ByteSizeLong,
+              &TimedBrightnessEffectConfig::_InternalSerialize,
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_._cached_size_),
+          PROTOBUF_FIELD_OFFSET(TimedBrightnessEffectConfig, _impl_._cached_size_),
           false,
       },
-      &SegmentEffectConfig::kDescriptorMethods,
+      &TimedBrightnessEffectConfig::kDescriptorMethods,
       &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
       nullptr,  // tracker
   };
 }
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
-    ::google::protobuf::internal::ClassDataFull SegmentEffectConfig_class_data_ =
-        SegmentEffectConfig::InternalGenerateClassData_();
+    ::google::protobuf::internal::ClassDataFull TimedBrightnessEffectConfig_class_data_ =
+        TimedBrightnessEffectConfig::InternalGenerateClassData_();
 
 PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
-SegmentEffectConfig::GetClassData() const {
-  ::google::protobuf::internal::PrefetchToLocalCache(&SegmentEffectConfig_class_data_);
-  ::google::protobuf::internal::PrefetchToLocalCache(SegmentEffectConfig_class_data_.tc_table);
-  return SegmentEffectConfig_class_data_.base();
+TimedBrightnessEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&TimedBrightnessEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(TimedBrightnessEffectConfig_class_data_.tc_table);
+  return TimedBrightnessEffectConfig_class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 2, 0, 2>
-SegmentEffectConfig::_table_ = {
+const ::_pbi::TcParseTable<0, 2, 2, 0, 2>
+TimedBrightnessEffectConfig::_table_ = {
   {
-    PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_._has_bits_),
+    0,  // no _has_bits_
     0, // no _extensions_
-    2, 8,  // max_field_number, fast_idx_mask
+    2, 0,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
     4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
     2,  // num_field_entries
     2,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
-    SegmentEffectConfig_class_data_.base(),
+    TimedBrightnessEffectConfig_class_data_.base(),
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SegmentEffectConfig>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::TimedBrightnessEffectConfig>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // .kivsee.proto.render.v1.FloatFunction end = 2 [json_name = "end"];
-    {::_pbi::TcParser::FastMtS1,
-     {18, 1, 1, PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_.end_)}},
-    // .kivsee.proto.render.v1.FloatFunction start = 1 [json_name = "start"];
-    {::_pbi::TcParser::FastMtS1,
-     {10, 0, 0, PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_.start_)}},
+    {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
-    // .kivsee.proto.render.v1.FloatFunction start = 1 [json_name = "start"];
-    {PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_.start_), _Internal::kHasBitsOffset + 0, 0,
-    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
-    // .kivsee.proto.render.v1.FloatFunction end = 2 [json_name = "end"];
-    {PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_.end_), _Internal::kHasBitsOffset + 1, 1,
-    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    {PROTOBUF_FIELD_OFFSET(TimedBrightnessEffectConfig, _impl_.mult_factor_.mult_factor_increase_), _Internal::kOneofCaseOffset + 0, 0,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    {PROTOBUF_FIELD_OFFSET(TimedBrightnessEffectConfig, _impl_.mult_factor_.mult_factor_decrease_), _Internal::kOneofCaseOffset + 0, 1,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
   }},
   {{
       {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
@@ -2813,55 +3180,339 @@ SegmentEffectConfig::_table_ = {
   {{
   }},
 };
-PROTOBUF_NOINLINE void SegmentEffectConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.SegmentEffectConfig)
+PROTOBUF_NOINLINE void TimedBrightnessEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_mult_factor();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::uint8_t* PROTOBUF_NONNULL TimedBrightnessEffectConfig::_InternalSerialize(
+    const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
+  const TimedBrightnessEffectConfig& this_ = static_cast<const TimedBrightnessEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::uint8_t* PROTOBUF_NONNULL TimedBrightnessEffectConfig::_InternalSerialize(
+    ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
+  const TimedBrightnessEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    case kMultFactorIncrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          1, *this_._impl_.mult_factor_.mult_factor_increase_, this_._impl_.mult_factor_.mult_factor_increase_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kMultFactorDecrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          2, *this_._impl_.mult_factor_.mult_factor_decrease_, this_._impl_.mult_factor_.mult_factor_decrease_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    default:
+      break;
+  }
+  if (ABSL_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  return target;
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::size_t TimedBrightnessEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const TimedBrightnessEffectConfig& this_ = static_cast<const TimedBrightnessEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::size_t TimedBrightnessEffectConfig::ByteSizeLong() const {
+  const TimedBrightnessEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    case kMultFactorIncrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_increase_);
+      break;
+    }
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    case kMultFactorDecrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_decrease_);
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                             &this_._impl_._cached_size_);
+}
+
+void TimedBrightnessEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<TimedBrightnessEffectConfig*>(&to_msg);
+  auto& from = static_cast<const TimedBrightnessEffectConfig&>(from_msg);
+  ::google::protobuf::Arena* arena = _this->GetArena();
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (const uint32_t oneof_from_case = from._impl_._oneof_case_[0]) {
+    const uint32_t oneof_to_case = _this->_impl_._oneof_case_[0];
+    const bool oneof_needs_init = oneof_to_case != oneof_from_case;
+    if (oneof_needs_init) {
+      if (oneof_to_case != 0) {
+        _this->clear_mult_factor();
+      }
+      _this->_impl_._oneof_case_[0] = oneof_from_case;
+    }
+
+    switch (oneof_from_case) {
+      case kMultFactorIncrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_increase_->MergeFrom(*from._impl_.mult_factor_.mult_factor_increase_);
+        }
+        break;
+      }
+      case kMultFactorDecrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_decrease_->MergeFrom(*from._impl_.mult_factor_.mult_factor_decrease_);
+        }
+        break;
+      }
+      case MULT_FACTOR_NOT_SET:
+        break;
+    }
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TimedBrightnessEffectConfig::CopyFrom(const TimedBrightnessEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.TimedBrightnessEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void TimedBrightnessEffectConfig::InternalSwap(TimedBrightnessEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+  using ::std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.mult_factor_, other->_impl_.mult_factor_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+}
+
+::google::protobuf::Metadata TimedBrightnessEffectConfig::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class TimedHueEffectConfig::_Internal {
+ public:
+  using HasBits =
+      decltype(::std::declval<TimedHueEffectConfig>()._impl_._has_bits_);
+  static constexpr ::int32_t kHasBitsOffset =
+      8 * PROTOBUF_FIELD_OFFSET(TimedHueEffectConfig, _impl_._has_bits_);
+};
+
+void TimedHueEffectConfig::clear_offset_factor() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.offset_factor_ != nullptr) _impl_.offset_factor_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+TimedHueEffectConfig::TimedHueEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, TimedHueEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.TimedHueEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE TimedHueEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
+    const ::kivsee::proto::render::v1::TimedHueEffectConfig& from_msg)
+      : _has_bits_{from._has_bits_},
+        _cached_size_{0} {}
+
+TimedHueEffectConfig::TimedHueEffectConfig(
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
+    const TimedHueEffectConfig& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, TimedHueEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  TimedHueEffectConfig* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
+  _impl_.offset_factor_ = ((cached_has_bits & 0x00000001u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.offset_factor_)
+                : nullptr;
+
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.TimedHueEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE TimedHueEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+      : _cached_size_{0} {}
+
+inline void TimedHueEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.offset_factor_ = {};
+}
+TimedHueEffectConfig::~TimedHueEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.TimedHueEffectConfig)
+  SharedDtor(*this);
+}
+inline void TimedHueEffectConfig::SharedDtor(MessageLite& self) {
+  TimedHueEffectConfig& this_ = static_cast<TimedHueEffectConfig&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  delete this_._impl_.offset_factor_;
+  this_._impl_.~Impl_();
+}
+
+inline void* PROTOBUF_NONNULL TimedHueEffectConfig::PlacementNew_(
+    const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
+  return ::new (mem) TimedHueEffectConfig(arena);
+}
+constexpr auto TimedHueEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(TimedHueEffectConfig),
+                                            alignof(TimedHueEffectConfig));
+}
+constexpr auto TimedHueEffectConfig::InternalGenerateClassData_() {
+  return ::google::protobuf::internal::ClassDataFull{
+      ::google::protobuf::internal::ClassData{
+          &_TimedHueEffectConfig_default_instance_._instance,
+          &_table_.header,
+          nullptr,  // OnDemandRegisterArenaDtor
+          nullptr,  // IsInitialized
+          &TimedHueEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<TimedHueEffectConfig>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+          &TimedHueEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<TimedHueEffectConfig>(), &TimedHueEffectConfig::ByteSizeLong,
+              &TimedHueEffectConfig::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          PROTOBUF_FIELD_OFFSET(TimedHueEffectConfig, _impl_._cached_size_),
+          false,
+      },
+      &TimedHueEffectConfig::kDescriptorMethods,
+      &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
+      nullptr,  // tracker
+  };
+}
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
+    ::google::protobuf::internal::ClassDataFull TimedHueEffectConfig_class_data_ =
+        TimedHueEffectConfig::InternalGenerateClassData_();
+
+PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
+TimedHueEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&TimedHueEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(TimedHueEffectConfig_class_data_.tc_table);
+  return TimedHueEffectConfig_class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 1, 0, 2>
+TimedHueEffectConfig::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(TimedHueEffectConfig, _impl_._has_bits_),
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    TimedHueEffectConfig_class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::TimedHueEffectConfig>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
+    {::_pbi::TcParser::FastMtS1,
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(TimedHueEffectConfig, _impl_.offset_factor_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
+    {PROTOBUF_FIELD_OFFSET(TimedHueEffectConfig, _impl_.offset_factor_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+  }},
+  {{
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+  }},
+  {{
+  }},
+};
+PROTOBUF_NOINLINE void TimedHueEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.TimedHueEffectConfig)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
-  if ((cached_has_bits & 0x00000003u) != 0) {
-    if ((cached_has_bits & 0x00000001u) != 0) {
-      ABSL_DCHECK(_impl_.start_ != nullptr);
-      _impl_.start_->Clear();
-    }
-    if ((cached_has_bits & 0x00000002u) != 0) {
-      ABSL_DCHECK(_impl_.end_ != nullptr);
-      _impl_.end_->Clear();
-    }
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    ABSL_DCHECK(_impl_.offset_factor_ != nullptr);
+    _impl_.offset_factor_->Clear();
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-::uint8_t* PROTOBUF_NONNULL SegmentEffectConfig::_InternalSerialize(
+::uint8_t* PROTOBUF_NONNULL TimedHueEffectConfig::_InternalSerialize(
     const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
     ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
-  const SegmentEffectConfig& this_ = static_cast<const SegmentEffectConfig&>(base);
+  const TimedHueEffectConfig& this_ = static_cast<const TimedHueEffectConfig&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-::uint8_t* PROTOBUF_NONNULL SegmentEffectConfig::_InternalSerialize(
+::uint8_t* PROTOBUF_NONNULL TimedHueEffectConfig::_InternalSerialize(
     ::uint8_t* PROTOBUF_NONNULL target,
     ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
-  const SegmentEffectConfig& this_ = *this;
+  const TimedHueEffectConfig& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.SegmentEffectConfig)
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.TimedHueEffectConfig)
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
   cached_has_bits = this_._impl_._has_bits_[0];
-  // .kivsee.proto.render.v1.FloatFunction start = 1 [json_name = "start"];
+  // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
   if ((cached_has_bits & 0x00000001u) != 0) {
     target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        1, *this_._impl_.start_, this_._impl_.start_->GetCachedSize(), target,
-        stream);
-  }
-
-  // .kivsee.proto.render.v1.FloatFunction end = 2 [json_name = "end"];
-  if ((cached_has_bits & 0x00000002u) != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        2, *this_._impl_.end_, this_._impl_.end_->GetCachedSize(), target,
+        1, *this_._impl_.offset_factor_, this_._impl_.offset_factor_->GetCachedSize(), target,
         stream);
   }
 
@@ -2870,260 +3521,299 @@ PROTOBUF_NOINLINE void SegmentEffectConfig::Clear() {
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
             this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.SegmentEffectConfig)
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.TimedHueEffectConfig)
   return target;
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-::size_t SegmentEffectConfig::ByteSizeLong(const MessageLite& base) {
-  const SegmentEffectConfig& this_ = static_cast<const SegmentEffectConfig&>(base);
+::size_t TimedHueEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const TimedHueEffectConfig& this_ = static_cast<const TimedHueEffectConfig&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-::size_t SegmentEffectConfig::ByteSizeLong() const {
-  const SegmentEffectConfig& this_ = *this;
+::size_t TimedHueEffectConfig::ByteSizeLong() const {
+  const TimedHueEffectConfig& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.SegmentEffectConfig)
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.TimedHueEffectConfig)
   ::size_t total_size = 0;
 
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void)cached_has_bits;
 
-  ::_pbi::Prefetch5LinesFrom7Lines(&this_);
-  cached_has_bits = this_._impl_._has_bits_[0];
-  if ((cached_has_bits & 0x00000003u) != 0) {
-    // .kivsee.proto.render.v1.FloatFunction start = 1 [json_name = "start"];
+   {
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
+    cached_has_bits = this_._impl_._has_bits_[0];
     if ((cached_has_bits & 0x00000001u) != 0) {
       total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.start_);
-    }
-    // .kivsee.proto.render.v1.FloatFunction end = 2 [json_name = "end"];
-    if ((cached_has_bits & 0x00000002u) != 0) {
-      total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.end_);
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.offset_factor_);
     }
   }
   return this_.MaybeComputeUnknownFieldsSize(total_size,
                                              &this_._impl_._cached_size_);
 }
 
-void SegmentEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
-  auto* const _this = static_cast<SegmentEffectConfig*>(&to_msg);
-  auto& from = static_cast<const SegmentEffectConfig&>(from_msg);
+void TimedHueEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<TimedHueEffectConfig*>(&to_msg);
+  auto& from = static_cast<const TimedHueEffectConfig&>(from_msg);
   ::google::protobuf::Arena* arena = _this->GetArena();
-  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.SegmentEffectConfig)
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.TimedHueEffectConfig)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._impl_._has_bits_[0];
-  if ((cached_has_bits & 0x00000003u) != 0) {
-    if ((cached_has_bits & 0x00000001u) != 0) {
-      ABSL_DCHECK(from._impl_.start_ != nullptr);
-      if (_this->_impl_.start_ == nullptr) {
-        _this->_impl_.start_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.start_);
-      } else {
-        _this->_impl_.start_->MergeFrom(*from._impl_.start_);
-      }
-    }
-    if ((cached_has_bits & 0x00000002u) != 0) {
-      ABSL_DCHECK(from._impl_.end_ != nullptr);
-      if (_this->_impl_.end_ == nullptr) {
-        _this->_impl_.end_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.end_);
-      } else {
-        _this->_impl_.end_->MergeFrom(*from._impl_.end_);
-      }
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    ABSL_DCHECK(from._impl_.offset_factor_ != nullptr);
+    if (_this->_impl_.offset_factor_ == nullptr) {
+      _this->_impl_.offset_factor_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.offset_factor_);
+    } else {
+      _this->_impl_.offset_factor_->MergeFrom(*from._impl_.offset_factor_);
     }
   }
   _this->_impl_._has_bits_[0] |= cached_has_bits;
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void SegmentEffectConfig::CopyFrom(const SegmentEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.SegmentEffectConfig)
+void TimedHueEffectConfig::CopyFrom(const TimedHueEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.TimedHueEffectConfig)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 
-void SegmentEffectConfig::InternalSwap(SegmentEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+void TimedHueEffectConfig::InternalSwap(TimedHueEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
   using ::std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_.end_)
-      + sizeof(SegmentEffectConfig::_impl_.end_)
-      - PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, _impl_.start_)>(
-          reinterpret_cast<char*>(&_impl_.start_),
-          reinterpret_cast<char*>(&other->_impl_.start_));
+  swap(_impl_.offset_factor_, other->_impl_.offset_factor_);
 }
 
-::google::protobuf::Metadata SegmentEffectConfig::GetMetadata() const {
+::google::protobuf::Metadata TimedHueEffectConfig::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // ===================================================================
 
-class GlitterEffectConfig::_Internal {
+class TimedSaturationEffectConfig::_Internal {
  public:
-  using HasBits =
-      decltype(::std::declval<GlitterEffectConfig>()._impl_._has_bits_);
-  static constexpr ::int32_t kHasBitsOffset =
-      8 * PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_._has_bits_);
+  static constexpr ::int32_t kOneofCaseOffset =
+      PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::TimedSaturationEffectConfig, _impl_._oneof_case_);
 };
 
-void GlitterEffectConfig::clear_intensity() {
-  ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.intensity_ != nullptr) _impl_.intensity_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000001u;
+void TimedSaturationEffectConfig::set_allocated_mult_factor_increase(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_increase) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_increase) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_increase)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_increase = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_increase, submessage_arena);
+    }
+    set_has_mult_factor_increase();
+    _impl_.mult_factor_.mult_factor_increase_ = mult_factor_increase;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.TimedSaturationEffectConfig.mult_factor_increase)
 }
-void GlitterEffectConfig::clear_sat_mult_factor() {
+void TimedSaturationEffectConfig::clear_mult_factor_increase() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.sat_mult_factor_ != nullptr) _impl_.sat_mult_factor_->Clear();
-  _impl_._has_bits_[0] &= ~0x00000002u;
+  if (mult_factor_case() == kMultFactorIncrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_increase_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+    }
+    clear_has_mult_factor();
+  }
 }
-GlitterEffectConfig::GlitterEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+void TimedSaturationEffectConfig::set_allocated_mult_factor_decrease(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_decrease) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_decrease) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_decrease)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_decrease = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_decrease, submessage_arena);
+    }
+    set_has_mult_factor_decrease();
+    _impl_.mult_factor_.mult_factor_decrease_ = mult_factor_decrease;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.TimedSaturationEffectConfig.mult_factor_decrease)
+}
+void TimedSaturationEffectConfig::clear_mult_factor_decrease() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorDecrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_decrease_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+    }
+    clear_has_mult_factor();
+  }
+}
+TimedSaturationEffectConfig::TimedSaturationEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, GlitterEffectConfig_class_data_.base()) {
+    : ::google::protobuf::Message(arena, TimedSaturationEffectConfig_class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.GlitterEffectConfig)
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.TimedSaturationEffectConfig)
 }
-PROTOBUF_NDEBUG_INLINE GlitterEffectConfig::Impl_::Impl_(
+PROTOBUF_NDEBUG_INLINE TimedSaturationEffectConfig::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
-    const ::kivsee::proto::render::v1::GlitterEffectConfig& from_msg)
-      : _has_bits_{from._has_bits_},
-        _cached_size_{0} {}
+    const ::kivsee::proto::render::v1::TimedSaturationEffectConfig& from_msg)
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{from._oneof_case_[0]} {}
 
-GlitterEffectConfig::GlitterEffectConfig(
+TimedSaturationEffectConfig::TimedSaturationEffectConfig(
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
-    const GlitterEffectConfig& from)
+    const TimedSaturationEffectConfig& from)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, GlitterEffectConfig_class_data_.base()) {
+    : ::google::protobuf::Message(arena, TimedSaturationEffectConfig_class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  GlitterEffectConfig* const _this = this;
+  TimedSaturationEffectConfig* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
-  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.intensity_ = ((cached_has_bits & 0x00000001u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.intensity_)
-                : nullptr;
-  _impl_.sat_mult_factor_ = ((cached_has_bits & 0x00000002u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.sat_mult_factor_)
-                : nullptr;
+  switch (mult_factor_case()) {
+    case MULT_FACTOR_NOT_SET:
+      break;
+      case kMultFactorIncrease:
+        _impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        break;
+      case kMultFactorDecrease:
+        _impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        break;
+  }
 
-  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.GlitterEffectConfig)
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.TimedSaturationEffectConfig)
 }
-PROTOBUF_NDEBUG_INLINE GlitterEffectConfig::Impl_::Impl_(
+PROTOBUF_NDEBUG_INLINE TimedSaturationEffectConfig::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
-      : _cached_size_{0} {}
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
 
-inline void GlitterEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+inline void TimedSaturationEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
-  ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, intensity_),
-           0,
-           offsetof(Impl_, sat_mult_factor_) -
-               offsetof(Impl_, intensity_) +
-               sizeof(Impl_::sat_mult_factor_));
 }
-GlitterEffectConfig::~GlitterEffectConfig() {
-  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.GlitterEffectConfig)
+TimedSaturationEffectConfig::~TimedSaturationEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.TimedSaturationEffectConfig)
   SharedDtor(*this);
 }
-inline void GlitterEffectConfig::SharedDtor(MessageLite& self) {
-  GlitterEffectConfig& this_ = static_cast<GlitterEffectConfig&>(self);
+inline void TimedSaturationEffectConfig::SharedDtor(MessageLite& self) {
+  TimedSaturationEffectConfig& this_ = static_cast<TimedSaturationEffectConfig&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
-  delete this_._impl_.intensity_;
-  delete this_._impl_.sat_mult_factor_;
+  if (this_.has_mult_factor()) {
+    this_.clear_mult_factor();
+  }
   this_._impl_.~Impl_();
 }
 
-inline void* PROTOBUF_NONNULL GlitterEffectConfig::PlacementNew_(
+void TimedSaturationEffectConfig::clear_mult_factor() {
+// @@protoc_insertion_point(one_of_clear_start:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  switch (mult_factor_case()) {
+    case kMultFactorIncrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_increase_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+      }
+      break;
+    }
+    case kMultFactorDecrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_decrease_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+      }
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = MULT_FACTOR_NOT_SET;
+}
+
+
+inline void* PROTOBUF_NONNULL TimedSaturationEffectConfig::PlacementNew_(
     const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
-  return ::new (mem) GlitterEffectConfig(arena);
+  return ::new (mem) TimedSaturationEffectConfig(arena);
 }
-constexpr auto GlitterEffectConfig::InternalNewImpl_() {
-  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(GlitterEffectConfig),
-                                            alignof(GlitterEffectConfig));
+constexpr auto TimedSaturationEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(TimedSaturationEffectConfig),
+                                            alignof(TimedSaturationEffectConfig));
 }
-constexpr auto GlitterEffectConfig::InternalGenerateClassData_() {
+constexpr auto TimedSaturationEffectConfig::InternalGenerateClassData_() {
   return ::google::protobuf::internal::ClassDataFull{
       ::google::protobuf::internal::ClassData{
-          &_GlitterEffectConfig_default_instance_._instance,
+          &_TimedSaturationEffectConfig_default_instance_._instance,
           &_table_.header,
           nullptr,  // OnDemandRegisterArenaDtor
           nullptr,  // IsInitialized
-          &GlitterEffectConfig::MergeImpl,
-          ::google::protobuf::Message::GetNewImpl<GlitterEffectConfig>(),
+          &TimedSaturationEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<TimedSaturationEffectConfig>(),
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-          &GlitterEffectConfig::SharedDtor,
-          ::google::protobuf::Message::GetClearImpl<GlitterEffectConfig>(), &GlitterEffectConfig::ByteSizeLong,
-              &GlitterEffectConfig::_InternalSerialize,
+          &TimedSaturationEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<TimedSaturationEffectConfig>(), &TimedSaturationEffectConfig::ByteSizeLong,
+              &TimedSaturationEffectConfig::_InternalSerialize,
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_._cached_size_),
+          PROTOBUF_FIELD_OFFSET(TimedSaturationEffectConfig, _impl_._cached_size_),
           false,
       },
-      &GlitterEffectConfig::kDescriptorMethods,
+      &TimedSaturationEffectConfig::kDescriptorMethods,
       &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
       nullptr,  // tracker
   };
 }
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
-    ::google::protobuf::internal::ClassDataFull GlitterEffectConfig_class_data_ =
-        GlitterEffectConfig::InternalGenerateClassData_();
+    ::google::protobuf::internal::ClassDataFull TimedSaturationEffectConfig_class_data_ =
+        TimedSaturationEffectConfig::InternalGenerateClassData_();
 
 PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
-GlitterEffectConfig::GetClassData() const {
-  ::google::protobuf::internal::PrefetchToLocalCache(&GlitterEffectConfig_class_data_);
-  ::google::protobuf::internal::PrefetchToLocalCache(GlitterEffectConfig_class_data_.tc_table);
-  return GlitterEffectConfig_class_data_.base();
+TimedSaturationEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&TimedSaturationEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(TimedSaturationEffectConfig_class_data_.tc_table);
+  return TimedSaturationEffectConfig_class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 2, 0, 2>
-GlitterEffectConfig::_table_ = {
+const ::_pbi::TcParseTable<0, 2, 2, 0, 2>
+TimedSaturationEffectConfig::_table_ = {
   {
-    PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_._has_bits_),
+    0,  // no _has_bits_
     0, // no _extensions_
-    2, 8,  // max_field_number, fast_idx_mask
+    2, 0,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
     4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
     2,  // num_field_entries
     2,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
-    GlitterEffectConfig_class_data_.base(),
+    TimedSaturationEffectConfig_class_data_.base(),
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::GlitterEffectConfig>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::TimedSaturationEffectConfig>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // .kivsee.proto.render.v1.FloatFunction sat_mult_factor = 2 [json_name = "satMultFactor"];
-    {::_pbi::TcParser::FastMtS1,
-     {18, 1, 1, PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_.sat_mult_factor_)}},
-    // .kivsee.proto.render.v1.FloatFunction intensity = 1 [json_name = "intensity"];
-    {::_pbi::TcParser::FastMtS1,
-     {10, 0, 0, PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_.intensity_)}},
+    {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
-    // .kivsee.proto.render.v1.FloatFunction intensity = 1 [json_name = "intensity"];
-    {PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_.intensity_), _Internal::kHasBitsOffset + 0, 0,
-    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
-    // .kivsee.proto.render.v1.FloatFunction sat_mult_factor = 2 [json_name = "satMultFactor"];
-    {PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_.sat_mult_factor_), _Internal::kHasBitsOffset + 1, 1,
-    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    {PROTOBUF_FIELD_OFFSET(TimedSaturationEffectConfig, _impl_.mult_factor_.mult_factor_increase_), _Internal::kOneofCaseOffset + 0, 0,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    {PROTOBUF_FIELD_OFFSET(TimedSaturationEffectConfig, _impl_.mult_factor_.mult_factor_decrease_), _Internal::kOneofCaseOffset + 0, 1,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
   }},
   {{
       {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
@@ -3132,55 +3822,717 @@ GlitterEffectConfig::_table_ = {
   {{
   }},
 };
-PROTOBUF_NOINLINE void GlitterEffectConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.GlitterEffectConfig)
+PROTOBUF_NOINLINE void TimedSaturationEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_mult_factor();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::uint8_t* PROTOBUF_NONNULL TimedSaturationEffectConfig::_InternalSerialize(
+    const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
+  const TimedSaturationEffectConfig& this_ = static_cast<const TimedSaturationEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::uint8_t* PROTOBUF_NONNULL TimedSaturationEffectConfig::_InternalSerialize(
+    ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
+  const TimedSaturationEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    case kMultFactorIncrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          1, *this_._impl_.mult_factor_.mult_factor_increase_, this_._impl_.mult_factor_.mult_factor_increase_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kMultFactorDecrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          2, *this_._impl_.mult_factor_.mult_factor_decrease_, this_._impl_.mult_factor_.mult_factor_decrease_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    default:
+      break;
+  }
+  if (ABSL_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  return target;
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::size_t TimedSaturationEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const TimedSaturationEffectConfig& this_ = static_cast<const TimedSaturationEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::size_t TimedSaturationEffectConfig::ByteSizeLong() const {
+  const TimedSaturationEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    case kMultFactorIncrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_increase_);
+      break;
+    }
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    case kMultFactorDecrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_decrease_);
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                             &this_._impl_._cached_size_);
+}
+
+void TimedSaturationEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<TimedSaturationEffectConfig*>(&to_msg);
+  auto& from = static_cast<const TimedSaturationEffectConfig&>(from_msg);
+  ::google::protobuf::Arena* arena = _this->GetArena();
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (const uint32_t oneof_from_case = from._impl_._oneof_case_[0]) {
+    const uint32_t oneof_to_case = _this->_impl_._oneof_case_[0];
+    const bool oneof_needs_init = oneof_to_case != oneof_from_case;
+    if (oneof_needs_init) {
+      if (oneof_to_case != 0) {
+        _this->clear_mult_factor();
+      }
+      _this->_impl_._oneof_case_[0] = oneof_from_case;
+    }
+
+    switch (oneof_from_case) {
+      case kMultFactorIncrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_increase_->MergeFrom(*from._impl_.mult_factor_.mult_factor_increase_);
+        }
+        break;
+      }
+      case kMultFactorDecrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_decrease_->MergeFrom(*from._impl_.mult_factor_.mult_factor_decrease_);
+        }
+        break;
+      }
+      case MULT_FACTOR_NOT_SET:
+        break;
+    }
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TimedSaturationEffectConfig::CopyFrom(const TimedSaturationEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.TimedSaturationEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void TimedSaturationEffectConfig::InternalSwap(TimedSaturationEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+  using ::std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.mult_factor_, other->_impl_.mult_factor_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+}
+
+::google::protobuf::Metadata TimedSaturationEffectConfig::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class PositionBrightnessEffectConfig::_Internal {
+ public:
+  static constexpr ::int32_t kOneofCaseOffset =
+      PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionBrightnessEffectConfig, _impl_._oneof_case_);
+};
+
+void PositionBrightnessEffectConfig::set_allocated_mult_factor_increase(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_increase) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_increase) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_increase)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_increase = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_increase, submessage_arena);
+    }
+    set_has_mult_factor_increase();
+    _impl_.mult_factor_.mult_factor_increase_ = mult_factor_increase;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.PositionBrightnessEffectConfig.mult_factor_increase)
+}
+void PositionBrightnessEffectConfig::clear_mult_factor_increase() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorIncrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_increase_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+    }
+    clear_has_mult_factor();
+  }
+}
+void PositionBrightnessEffectConfig::set_allocated_mult_factor_decrease(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_decrease) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_decrease) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_decrease)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_decrease = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_decrease, submessage_arena);
+    }
+    set_has_mult_factor_decrease();
+    _impl_.mult_factor_.mult_factor_decrease_ = mult_factor_decrease;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.PositionBrightnessEffectConfig.mult_factor_decrease)
+}
+void PositionBrightnessEffectConfig::clear_mult_factor_decrease() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorDecrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_decrease_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+    }
+    clear_has_mult_factor();
+  }
+}
+PositionBrightnessEffectConfig::PositionBrightnessEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, PositionBrightnessEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE PositionBrightnessEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
+    const ::kivsee::proto::render::v1::PositionBrightnessEffectConfig& from_msg)
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{from._oneof_case_[0]} {}
+
+PositionBrightnessEffectConfig::PositionBrightnessEffectConfig(
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
+    const PositionBrightnessEffectConfig& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, PositionBrightnessEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  PositionBrightnessEffectConfig* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  switch (mult_factor_case()) {
+    case MULT_FACTOR_NOT_SET:
+      break;
+      case kMultFactorIncrease:
+        _impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        break;
+      case kMultFactorDecrease:
+        _impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        break;
+  }
+
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE PositionBrightnessEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
+
+inline void PositionBrightnessEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+PositionBrightnessEffectConfig::~PositionBrightnessEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  SharedDtor(*this);
+}
+inline void PositionBrightnessEffectConfig::SharedDtor(MessageLite& self) {
+  PositionBrightnessEffectConfig& this_ = static_cast<PositionBrightnessEffectConfig&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  if (this_.has_mult_factor()) {
+    this_.clear_mult_factor();
+  }
+  this_._impl_.~Impl_();
+}
+
+void PositionBrightnessEffectConfig::clear_mult_factor() {
+// @@protoc_insertion_point(one_of_clear_start:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  switch (mult_factor_case()) {
+    case kMultFactorIncrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_increase_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+      }
+      break;
+    }
+    case kMultFactorDecrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_decrease_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+      }
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = MULT_FACTOR_NOT_SET;
+}
+
+
+inline void* PROTOBUF_NONNULL PositionBrightnessEffectConfig::PlacementNew_(
+    const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
+  return ::new (mem) PositionBrightnessEffectConfig(arena);
+}
+constexpr auto PositionBrightnessEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(PositionBrightnessEffectConfig),
+                                            alignof(PositionBrightnessEffectConfig));
+}
+constexpr auto PositionBrightnessEffectConfig::InternalGenerateClassData_() {
+  return ::google::protobuf::internal::ClassDataFull{
+      ::google::protobuf::internal::ClassData{
+          &_PositionBrightnessEffectConfig_default_instance_._instance,
+          &_table_.header,
+          nullptr,  // OnDemandRegisterArenaDtor
+          nullptr,  // IsInitialized
+          &PositionBrightnessEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<PositionBrightnessEffectConfig>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+          &PositionBrightnessEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<PositionBrightnessEffectConfig>(), &PositionBrightnessEffectConfig::ByteSizeLong,
+              &PositionBrightnessEffectConfig::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          PROTOBUF_FIELD_OFFSET(PositionBrightnessEffectConfig, _impl_._cached_size_),
+          false,
+      },
+      &PositionBrightnessEffectConfig::kDescriptorMethods,
+      &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
+      nullptr,  // tracker
+  };
+}
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
+    ::google::protobuf::internal::ClassDataFull PositionBrightnessEffectConfig_class_data_ =
+        PositionBrightnessEffectConfig::InternalGenerateClassData_();
+
+PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
+PositionBrightnessEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&PositionBrightnessEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(PositionBrightnessEffectConfig_class_data_.tc_table);
+  return PositionBrightnessEffectConfig_class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 2, 2, 0, 2>
+PositionBrightnessEffectConfig::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    PositionBrightnessEffectConfig_class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::PositionBrightnessEffectConfig>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    {PROTOBUF_FIELD_OFFSET(PositionBrightnessEffectConfig, _impl_.mult_factor_.mult_factor_increase_), _Internal::kOneofCaseOffset + 0, 0,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    {PROTOBUF_FIELD_OFFSET(PositionBrightnessEffectConfig, _impl_.mult_factor_.mult_factor_decrease_), _Internal::kOneofCaseOffset + 0, 1,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+  }},
+  {{
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+  }},
+  {{
+  }},
+};
+PROTOBUF_NOINLINE void PositionBrightnessEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_mult_factor();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::uint8_t* PROTOBUF_NONNULL PositionBrightnessEffectConfig::_InternalSerialize(
+    const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
+  const PositionBrightnessEffectConfig& this_ = static_cast<const PositionBrightnessEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::uint8_t* PROTOBUF_NONNULL PositionBrightnessEffectConfig::_InternalSerialize(
+    ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
+  const PositionBrightnessEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    case kMultFactorIncrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          1, *this_._impl_.mult_factor_.mult_factor_increase_, this_._impl_.mult_factor_.mult_factor_increase_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kMultFactorDecrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          2, *this_._impl_.mult_factor_.mult_factor_decrease_, this_._impl_.mult_factor_.mult_factor_decrease_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    default:
+      break;
+  }
+  if (ABSL_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  return target;
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::size_t PositionBrightnessEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const PositionBrightnessEffectConfig& this_ = static_cast<const PositionBrightnessEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::size_t PositionBrightnessEffectConfig::ByteSizeLong() const {
+  const PositionBrightnessEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    case kMultFactorIncrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_increase_);
+      break;
+    }
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    case kMultFactorDecrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_decrease_);
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                             &this_._impl_._cached_size_);
+}
+
+void PositionBrightnessEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<PositionBrightnessEffectConfig*>(&to_msg);
+  auto& from = static_cast<const PositionBrightnessEffectConfig&>(from_msg);
+  ::google::protobuf::Arena* arena = _this->GetArena();
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (const uint32_t oneof_from_case = from._impl_._oneof_case_[0]) {
+    const uint32_t oneof_to_case = _this->_impl_._oneof_case_[0];
+    const bool oneof_needs_init = oneof_to_case != oneof_from_case;
+    if (oneof_needs_init) {
+      if (oneof_to_case != 0) {
+        _this->clear_mult_factor();
+      }
+      _this->_impl_._oneof_case_[0] = oneof_from_case;
+    }
+
+    switch (oneof_from_case) {
+      case kMultFactorIncrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_increase_->MergeFrom(*from._impl_.mult_factor_.mult_factor_increase_);
+        }
+        break;
+      }
+      case kMultFactorDecrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_decrease_->MergeFrom(*from._impl_.mult_factor_.mult_factor_decrease_);
+        }
+        break;
+      }
+      case MULT_FACTOR_NOT_SET:
+        break;
+    }
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PositionBrightnessEffectConfig::CopyFrom(const PositionBrightnessEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.PositionBrightnessEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void PositionBrightnessEffectConfig::InternalSwap(PositionBrightnessEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+  using ::std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.mult_factor_, other->_impl_.mult_factor_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+}
+
+::google::protobuf::Metadata PositionBrightnessEffectConfig::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class PositionHueEffectConfig::_Internal {
+ public:
+  using HasBits =
+      decltype(::std::declval<PositionHueEffectConfig>()._impl_._has_bits_);
+  static constexpr ::int32_t kHasBitsOffset =
+      8 * PROTOBUF_FIELD_OFFSET(PositionHueEffectConfig, _impl_._has_bits_);
+};
+
+void PositionHueEffectConfig::clear_offset_factor() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.offset_factor_ != nullptr) _impl_.offset_factor_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+PositionHueEffectConfig::PositionHueEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, PositionHueEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.PositionHueEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE PositionHueEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
+    const ::kivsee::proto::render::v1::PositionHueEffectConfig& from_msg)
+      : _has_bits_{from._has_bits_},
+        _cached_size_{0} {}
+
+PositionHueEffectConfig::PositionHueEffectConfig(
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
+    const PositionHueEffectConfig& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, PositionHueEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  PositionHueEffectConfig* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
+  _impl_.offset_factor_ = ((cached_has_bits & 0x00000001u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.offset_factor_)
+                : nullptr;
+
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.PositionHueEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE PositionHueEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+      : _cached_size_{0} {}
+
+inline void PositionHueEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.offset_factor_ = {};
+}
+PositionHueEffectConfig::~PositionHueEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.PositionHueEffectConfig)
+  SharedDtor(*this);
+}
+inline void PositionHueEffectConfig::SharedDtor(MessageLite& self) {
+  PositionHueEffectConfig& this_ = static_cast<PositionHueEffectConfig&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  delete this_._impl_.offset_factor_;
+  this_._impl_.~Impl_();
+}
+
+inline void* PROTOBUF_NONNULL PositionHueEffectConfig::PlacementNew_(
+    const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
+  return ::new (mem) PositionHueEffectConfig(arena);
+}
+constexpr auto PositionHueEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(PositionHueEffectConfig),
+                                            alignof(PositionHueEffectConfig));
+}
+constexpr auto PositionHueEffectConfig::InternalGenerateClassData_() {
+  return ::google::protobuf::internal::ClassDataFull{
+      ::google::protobuf::internal::ClassData{
+          &_PositionHueEffectConfig_default_instance_._instance,
+          &_table_.header,
+          nullptr,  // OnDemandRegisterArenaDtor
+          nullptr,  // IsInitialized
+          &PositionHueEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<PositionHueEffectConfig>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+          &PositionHueEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<PositionHueEffectConfig>(), &PositionHueEffectConfig::ByteSizeLong,
+              &PositionHueEffectConfig::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          PROTOBUF_FIELD_OFFSET(PositionHueEffectConfig, _impl_._cached_size_),
+          false,
+      },
+      &PositionHueEffectConfig::kDescriptorMethods,
+      &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
+      nullptr,  // tracker
+  };
+}
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
+    ::google::protobuf::internal::ClassDataFull PositionHueEffectConfig_class_data_ =
+        PositionHueEffectConfig::InternalGenerateClassData_();
+
+PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
+PositionHueEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&PositionHueEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(PositionHueEffectConfig_class_data_.tc_table);
+  return PositionHueEffectConfig_class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 1, 0, 2>
+PositionHueEffectConfig::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(PositionHueEffectConfig, _impl_._has_bits_),
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    PositionHueEffectConfig_class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::PositionHueEffectConfig>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
+    {::_pbi::TcParser::FastMtS1,
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(PositionHueEffectConfig, _impl_.offset_factor_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
+    {PROTOBUF_FIELD_OFFSET(PositionHueEffectConfig, _impl_.offset_factor_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+  }},
+  {{
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+  }},
+  {{
+  }},
+};
+PROTOBUF_NOINLINE void PositionHueEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.PositionHueEffectConfig)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
-  if ((cached_has_bits & 0x00000003u) != 0) {
-    if ((cached_has_bits & 0x00000001u) != 0) {
-      ABSL_DCHECK(_impl_.intensity_ != nullptr);
-      _impl_.intensity_->Clear();
-    }
-    if ((cached_has_bits & 0x00000002u) != 0) {
-      ABSL_DCHECK(_impl_.sat_mult_factor_ != nullptr);
-      _impl_.sat_mult_factor_->Clear();
-    }
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    ABSL_DCHECK(_impl_.offset_factor_ != nullptr);
+    _impl_.offset_factor_->Clear();
   }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-::uint8_t* PROTOBUF_NONNULL GlitterEffectConfig::_InternalSerialize(
+::uint8_t* PROTOBUF_NONNULL PositionHueEffectConfig::_InternalSerialize(
     const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
     ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
-  const GlitterEffectConfig& this_ = static_cast<const GlitterEffectConfig&>(base);
+  const PositionHueEffectConfig& this_ = static_cast<const PositionHueEffectConfig&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-::uint8_t* PROTOBUF_NONNULL GlitterEffectConfig::_InternalSerialize(
+::uint8_t* PROTOBUF_NONNULL PositionHueEffectConfig::_InternalSerialize(
     ::uint8_t* PROTOBUF_NONNULL target,
     ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
-  const GlitterEffectConfig& this_ = *this;
+  const PositionHueEffectConfig& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.GlitterEffectConfig)
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.PositionHueEffectConfig)
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
   cached_has_bits = this_._impl_._has_bits_[0];
-  // .kivsee.proto.render.v1.FloatFunction intensity = 1 [json_name = "intensity"];
+  // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
   if ((cached_has_bits & 0x00000001u) != 0) {
     target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        1, *this_._impl_.intensity_, this_._impl_.intensity_->GetCachedSize(), target,
-        stream);
-  }
-
-  // .kivsee.proto.render.v1.FloatFunction sat_mult_factor = 2 [json_name = "satMultFactor"];
-  if ((cached_has_bits & 0x00000002u) != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        2, *this_._impl_.sat_mult_factor_, this_._impl_.sat_mult_factor_->GetCachedSize(), target,
+        1, *this_._impl_.offset_factor_, this_._impl_.offset_factor_->GetCachedSize(), target,
         stream);
   }
 
@@ -3189,18 +4541,856 @@ PROTOBUF_NOINLINE void GlitterEffectConfig::Clear() {
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
             this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.GlitterEffectConfig)
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.PositionHueEffectConfig)
   return target;
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-::size_t GlitterEffectConfig::ByteSizeLong(const MessageLite& base) {
-  const GlitterEffectConfig& this_ = static_cast<const GlitterEffectConfig&>(base);
+::size_t PositionHueEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const PositionHueEffectConfig& this_ = static_cast<const PositionHueEffectConfig&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-::size_t GlitterEffectConfig::ByteSizeLong() const {
-  const GlitterEffectConfig& this_ = *this;
+::size_t PositionHueEffectConfig::ByteSizeLong() const {
+  const PositionHueEffectConfig& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.GlitterEffectConfig)
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.PositionHueEffectConfig)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void)cached_has_bits;
+
+   {
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 1 [json_name = "offsetFactor"];
+    cached_has_bits = this_._impl_._has_bits_[0];
+    if ((cached_has_bits & 0x00000001u) != 0) {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.offset_factor_);
+    }
+  }
+  return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                             &this_._impl_._cached_size_);
+}
+
+void PositionHueEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<PositionHueEffectConfig*>(&to_msg);
+  auto& from = static_cast<const PositionHueEffectConfig&>(from_msg);
+  ::google::protobuf::Arena* arena = _this->GetArena();
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.PositionHueEffectConfig)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    ABSL_DCHECK(from._impl_.offset_factor_ != nullptr);
+    if (_this->_impl_.offset_factor_ == nullptr) {
+      _this->_impl_.offset_factor_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.offset_factor_);
+    } else {
+      _this->_impl_.offset_factor_->MergeFrom(*from._impl_.offset_factor_);
+    }
+  }
+  _this->_impl_._has_bits_[0] |= cached_has_bits;
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PositionHueEffectConfig::CopyFrom(const PositionHueEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.PositionHueEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void PositionHueEffectConfig::InternalSwap(PositionHueEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+  using ::std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.offset_factor_, other->_impl_.offset_factor_);
+}
+
+::google::protobuf::Metadata PositionHueEffectConfig::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class PositionSaturationEffectConfig::_Internal {
+ public:
+  static constexpr ::int32_t kOneofCaseOffset =
+      PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::PositionSaturationEffectConfig, _impl_._oneof_case_);
+};
+
+void PositionSaturationEffectConfig::set_allocated_mult_factor_increase(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_increase) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_increase) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_increase)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_increase = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_increase, submessage_arena);
+    }
+    set_has_mult_factor_increase();
+    _impl_.mult_factor_.mult_factor_increase_ = mult_factor_increase;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.PositionSaturationEffectConfig.mult_factor_increase)
+}
+void PositionSaturationEffectConfig::clear_mult_factor_increase() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorIncrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_increase_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+    }
+    clear_has_mult_factor();
+  }
+}
+void PositionSaturationEffectConfig::set_allocated_mult_factor_decrease(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_decrease) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_decrease) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_decrease)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_decrease = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_decrease, submessage_arena);
+    }
+    set_has_mult_factor_decrease();
+    _impl_.mult_factor_.mult_factor_decrease_ = mult_factor_decrease;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.PositionSaturationEffectConfig.mult_factor_decrease)
+}
+void PositionSaturationEffectConfig::clear_mult_factor_decrease() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorDecrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_decrease_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+    }
+    clear_has_mult_factor();
+  }
+}
+PositionSaturationEffectConfig::PositionSaturationEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, PositionSaturationEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE PositionSaturationEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
+    const ::kivsee::proto::render::v1::PositionSaturationEffectConfig& from_msg)
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{from._oneof_case_[0]} {}
+
+PositionSaturationEffectConfig::PositionSaturationEffectConfig(
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
+    const PositionSaturationEffectConfig& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, PositionSaturationEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  PositionSaturationEffectConfig* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  switch (mult_factor_case()) {
+    case MULT_FACTOR_NOT_SET:
+      break;
+      case kMultFactorIncrease:
+        _impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        break;
+      case kMultFactorDecrease:
+        _impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        break;
+  }
+
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE PositionSaturationEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+      : mult_factor_{},
+        _cached_size_{0},
+        _oneof_case_{} {}
+
+inline void PositionSaturationEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+PositionSaturationEffectConfig::~PositionSaturationEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  SharedDtor(*this);
+}
+inline void PositionSaturationEffectConfig::SharedDtor(MessageLite& self) {
+  PositionSaturationEffectConfig& this_ = static_cast<PositionSaturationEffectConfig&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  if (this_.has_mult_factor()) {
+    this_.clear_mult_factor();
+  }
+  this_._impl_.~Impl_();
+}
+
+void PositionSaturationEffectConfig::clear_mult_factor() {
+// @@protoc_insertion_point(one_of_clear_start:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  switch (mult_factor_case()) {
+    case kMultFactorIncrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_increase_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+      }
+      break;
+    }
+    case kMultFactorDecrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_decrease_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+      }
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = MULT_FACTOR_NOT_SET;
+}
+
+
+inline void* PROTOBUF_NONNULL PositionSaturationEffectConfig::PlacementNew_(
+    const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
+  return ::new (mem) PositionSaturationEffectConfig(arena);
+}
+constexpr auto PositionSaturationEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(PositionSaturationEffectConfig),
+                                            alignof(PositionSaturationEffectConfig));
+}
+constexpr auto PositionSaturationEffectConfig::InternalGenerateClassData_() {
+  return ::google::protobuf::internal::ClassDataFull{
+      ::google::protobuf::internal::ClassData{
+          &_PositionSaturationEffectConfig_default_instance_._instance,
+          &_table_.header,
+          nullptr,  // OnDemandRegisterArenaDtor
+          nullptr,  // IsInitialized
+          &PositionSaturationEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<PositionSaturationEffectConfig>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+          &PositionSaturationEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<PositionSaturationEffectConfig>(), &PositionSaturationEffectConfig::ByteSizeLong,
+              &PositionSaturationEffectConfig::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          PROTOBUF_FIELD_OFFSET(PositionSaturationEffectConfig, _impl_._cached_size_),
+          false,
+      },
+      &PositionSaturationEffectConfig::kDescriptorMethods,
+      &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
+      nullptr,  // tracker
+  };
+}
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
+    ::google::protobuf::internal::ClassDataFull PositionSaturationEffectConfig_class_data_ =
+        PositionSaturationEffectConfig::InternalGenerateClassData_();
+
+PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
+PositionSaturationEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&PositionSaturationEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(PositionSaturationEffectConfig_class_data_.tc_table);
+  return PositionSaturationEffectConfig_class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 2, 2, 0, 2>
+PositionSaturationEffectConfig::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    PositionSaturationEffectConfig_class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::PositionSaturationEffectConfig>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    {PROTOBUF_FIELD_OFFSET(PositionSaturationEffectConfig, _impl_.mult_factor_.mult_factor_increase_), _Internal::kOneofCaseOffset + 0, 0,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    {PROTOBUF_FIELD_OFFSET(PositionSaturationEffectConfig, _impl_.mult_factor_.mult_factor_decrease_), _Internal::kOneofCaseOffset + 0, 1,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+  }},
+  {{
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+  }},
+  {{
+  }},
+};
+PROTOBUF_NOINLINE void PositionSaturationEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_mult_factor();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::uint8_t* PROTOBUF_NONNULL PositionSaturationEffectConfig::_InternalSerialize(
+    const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
+  const PositionSaturationEffectConfig& this_ = static_cast<const PositionSaturationEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::uint8_t* PROTOBUF_NONNULL PositionSaturationEffectConfig::_InternalSerialize(
+    ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
+  const PositionSaturationEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    case kMultFactorIncrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          1, *this_._impl_.mult_factor_.mult_factor_increase_, this_._impl_.mult_factor_.mult_factor_increase_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kMultFactorDecrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          2, *this_._impl_.mult_factor_.mult_factor_decrease_, this_._impl_.mult_factor_.mult_factor_decrease_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    default:
+      break;
+  }
+  if (ABSL_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  return target;
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::size_t PositionSaturationEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const PositionSaturationEffectConfig& this_ = static_cast<const PositionSaturationEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::size_t PositionSaturationEffectConfig::ByteSizeLong() const {
+  const PositionSaturationEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void)cached_has_bits;
+
+  switch (this_.mult_factor_case()) {
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 1 [json_name = "multFactorIncrease"];
+    case kMultFactorIncrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_increase_);
+      break;
+    }
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 2 [json_name = "multFactorDecrease"];
+    case kMultFactorDecrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_decrease_);
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                             &this_._impl_._cached_size_);
+}
+
+void PositionSaturationEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<PositionSaturationEffectConfig*>(&to_msg);
+  auto& from = static_cast<const PositionSaturationEffectConfig&>(from_msg);
+  ::google::protobuf::Arena* arena = _this->GetArena();
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (const uint32_t oneof_from_case = from._impl_._oneof_case_[0]) {
+    const uint32_t oneof_to_case = _this->_impl_._oneof_case_[0];
+    const bool oneof_needs_init = oneof_to_case != oneof_from_case;
+    if (oneof_needs_init) {
+      if (oneof_to_case != 0) {
+        _this->clear_mult_factor();
+      }
+      _this->_impl_._oneof_case_[0] = oneof_from_case;
+    }
+
+    switch (oneof_from_case) {
+      case kMultFactorIncrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_increase_->MergeFrom(*from._impl_.mult_factor_.mult_factor_increase_);
+        }
+        break;
+      }
+      case kMultFactorDecrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_decrease_->MergeFrom(*from._impl_.mult_factor_.mult_factor_decrease_);
+        }
+        break;
+      }
+      case MULT_FACTOR_NOT_SET:
+        break;
+    }
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PositionSaturationEffectConfig::CopyFrom(const PositionSaturationEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.PositionSaturationEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void PositionSaturationEffectConfig::InternalSwap(PositionSaturationEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+  using ::std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.mult_factor_, other->_impl_.mult_factor_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+}
+
+::google::protobuf::Metadata PositionSaturationEffectConfig::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class SnakeBrightnessEffectConfig::_Internal {
+ public:
+  using HasBits =
+      decltype(::std::declval<SnakeBrightnessEffectConfig>()._impl_._has_bits_);
+  static constexpr ::int32_t kHasBitsOffset =
+      8 * PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_._has_bits_);
+  static constexpr ::int32_t kOneofCaseOffset =
+      PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig, _impl_._oneof_case_);
+};
+
+void SnakeBrightnessEffectConfig::clear_head() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.head_ != nullptr) _impl_.head_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+void SnakeBrightnessEffectConfig::clear_tail_length() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.tail_length_ != nullptr) _impl_.tail_length_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+void SnakeBrightnessEffectConfig::set_allocated_mult_factor_increase(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_increase) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_increase) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_increase)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_increase = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_increase, submessage_arena);
+    }
+    set_has_mult_factor_increase();
+    _impl_.mult_factor_.mult_factor_increase_ = mult_factor_increase;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.SnakeBrightnessEffectConfig.mult_factor_increase)
+}
+void SnakeBrightnessEffectConfig::clear_mult_factor_increase() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorIncrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_increase_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+    }
+    clear_has_mult_factor();
+  }
+}
+void SnakeBrightnessEffectConfig::set_allocated_mult_factor_decrease(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_decrease) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_decrease) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_decrease)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_decrease = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_decrease, submessage_arena);
+    }
+    set_has_mult_factor_decrease();
+    _impl_.mult_factor_.mult_factor_decrease_ = mult_factor_decrease;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.SnakeBrightnessEffectConfig.mult_factor_decrease)
+}
+void SnakeBrightnessEffectConfig::clear_mult_factor_decrease() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorDecrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_decrease_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+    }
+    clear_has_mult_factor();
+  }
+}
+SnakeBrightnessEffectConfig::SnakeBrightnessEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, SnakeBrightnessEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE SnakeBrightnessEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
+    const ::kivsee::proto::render::v1::SnakeBrightnessEffectConfig& from_msg)
+      : _has_bits_{from._has_bits_},
+        _cached_size_{0},
+        mult_factor_{},
+        _oneof_case_{from._oneof_case_[0]} {}
+
+SnakeBrightnessEffectConfig::SnakeBrightnessEffectConfig(
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
+    const SnakeBrightnessEffectConfig& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, SnakeBrightnessEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SnakeBrightnessEffectConfig* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
+  _impl_.head_ = ((cached_has_bits & 0x00000001u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.head_)
+                : nullptr;
+  _impl_.tail_length_ = ((cached_has_bits & 0x00000002u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.tail_length_)
+                : nullptr;
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, cyclic_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, cyclic_),
+           offsetof(Impl_, repeat_num_) -
+               offsetof(Impl_, cyclic_) +
+               sizeof(Impl_::repeat_num_));
+  switch (mult_factor_case()) {
+    case MULT_FACTOR_NOT_SET:
+      break;
+      case kMultFactorIncrease:
+        _impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        break;
+      case kMultFactorDecrease:
+        _impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        break;
+  }
+
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE SnakeBrightnessEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+      : _cached_size_{0},
+        mult_factor_{},
+        _oneof_case_{} {}
+
+inline void SnakeBrightnessEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, head_),
+           0,
+           offsetof(Impl_, repeat_num_) -
+               offsetof(Impl_, head_) +
+               sizeof(Impl_::repeat_num_));
+}
+SnakeBrightnessEffectConfig::~SnakeBrightnessEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+  SharedDtor(*this);
+}
+inline void SnakeBrightnessEffectConfig::SharedDtor(MessageLite& self) {
+  SnakeBrightnessEffectConfig& this_ = static_cast<SnakeBrightnessEffectConfig&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  delete this_._impl_.head_;
+  delete this_._impl_.tail_length_;
+  if (this_.has_mult_factor()) {
+    this_.clear_mult_factor();
+  }
+  this_._impl_.~Impl_();
+}
+
+void SnakeBrightnessEffectConfig::clear_mult_factor() {
+// @@protoc_insertion_point(one_of_clear_start:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  switch (mult_factor_case()) {
+    case kMultFactorIncrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_increase_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+      }
+      break;
+    }
+    case kMultFactorDecrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_decrease_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+      }
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = MULT_FACTOR_NOT_SET;
+}
+
+
+inline void* PROTOBUF_NONNULL SnakeBrightnessEffectConfig::PlacementNew_(
+    const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
+  return ::new (mem) SnakeBrightnessEffectConfig(arena);
+}
+constexpr auto SnakeBrightnessEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(SnakeBrightnessEffectConfig),
+                                            alignof(SnakeBrightnessEffectConfig));
+}
+constexpr auto SnakeBrightnessEffectConfig::InternalGenerateClassData_() {
+  return ::google::protobuf::internal::ClassDataFull{
+      ::google::protobuf::internal::ClassData{
+          &_SnakeBrightnessEffectConfig_default_instance_._instance,
+          &_table_.header,
+          nullptr,  // OnDemandRegisterArenaDtor
+          nullptr,  // IsInitialized
+          &SnakeBrightnessEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<SnakeBrightnessEffectConfig>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+          &SnakeBrightnessEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<SnakeBrightnessEffectConfig>(), &SnakeBrightnessEffectConfig::ByteSizeLong,
+              &SnakeBrightnessEffectConfig::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_._cached_size_),
+          false,
+      },
+      &SnakeBrightnessEffectConfig::kDescriptorMethods,
+      &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
+      nullptr,  // tracker
+  };
+}
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
+    ::google::protobuf::internal::ClassDataFull SnakeBrightnessEffectConfig_class_data_ =
+        SnakeBrightnessEffectConfig::InternalGenerateClassData_();
+
+PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
+SnakeBrightnessEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&SnakeBrightnessEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(SnakeBrightnessEffectConfig_class_data_.tc_table);
+  return SnakeBrightnessEffectConfig_class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 6, 4, 0, 2>
+SnakeBrightnessEffectConfig::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_._has_bits_),
+    0, // no _extensions_
+    6, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967232,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    6,  // num_field_entries
+    4,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    SnakeBrightnessEffectConfig_class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeBrightnessEffectConfig>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    {::_pbi::TcParser::FastF32S1,
+     {37, 3, 0, PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.repeat_num_)}},
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+    {::_pbi::TcParser::FastMtS1,
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.head_)}},
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+    {::_pbi::TcParser::FastMtS1,
+     {18, 1, 1, PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.tail_length_)}},
+    // bool cyclic = 3 [json_name = "cyclic"];
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(SnakeBrightnessEffectConfig, _impl_.cyclic_), 2>(),
+     {24, 2, 0, PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.cyclic_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+    {PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.head_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+    {PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.tail_length_), _Internal::kHasBitsOffset + 1, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // bool cyclic = 3 [json_name = "cyclic"];
+    {PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.cyclic_), _Internal::kHasBitsOffset + 2, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kBool)},
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    {PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.repeat_num_), _Internal::kHasBitsOffset + 3, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kFloat)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 5 [json_name = "multFactorIncrease"];
+    {PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.mult_factor_.mult_factor_increase_), _Internal::kOneofCaseOffset + 0, 2,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 6 [json_name = "multFactorDecrease"];
+    {PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.mult_factor_.mult_factor_decrease_), _Internal::kOneofCaseOffset + 0, 3,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+  }},
+  {{
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+  }},
+  {{
+  }},
+};
+PROTOBUF_NOINLINE void SnakeBrightnessEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if ((cached_has_bits & 0x00000003u) != 0) {
+    if ((cached_has_bits & 0x00000001u) != 0) {
+      ABSL_DCHECK(_impl_.head_ != nullptr);
+      _impl_.head_->Clear();
+    }
+    if ((cached_has_bits & 0x00000002u) != 0) {
+      ABSL_DCHECK(_impl_.tail_length_ != nullptr);
+      _impl_.tail_length_->Clear();
+    }
+  }
+  if ((cached_has_bits & 0x0000000cu) != 0) {
+    ::memset(&_impl_.cyclic_, 0, static_cast<::size_t>(
+        reinterpret_cast<char*>(&_impl_.repeat_num_) -
+        reinterpret_cast<char*>(&_impl_.cyclic_)) + sizeof(_impl_.repeat_num_));
+  }
+  clear_mult_factor();
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::uint8_t* PROTOBUF_NONNULL SnakeBrightnessEffectConfig::_InternalSerialize(
+    const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
+  const SnakeBrightnessEffectConfig& this_ = static_cast<const SnakeBrightnessEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::uint8_t* PROTOBUF_NONNULL SnakeBrightnessEffectConfig::_InternalSerialize(
+    ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
+  const SnakeBrightnessEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  cached_has_bits = this_._impl_._has_bits_[0];
+  // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        1, *this_._impl_.head_, this_._impl_.head_->GetCachedSize(), target,
+        stream);
+  }
+
+  // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+  if ((cached_has_bits & 0x00000002u) != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        2, *this_._impl_.tail_length_, this_._impl_.tail_length_->GetCachedSize(), target,
+        stream);
+  }
+
+  // bool cyclic = 3 [json_name = "cyclic"];
+  if ((cached_has_bits & 0x00000004u) != 0) {
+    if (this_._internal_cyclic() != 0) {
+      target = stream->EnsureSpace(target);
+      target = ::_pbi::WireFormatLite::WriteBoolToArray(
+          3, this_._internal_cyclic(), target);
+    }
+  }
+
+  // float repeat_num = 4 [json_name = "repeatNum"];
+  if ((cached_has_bits & 0x00000008u) != 0) {
+    if (::absl::bit_cast<::uint32_t>(this_._internal_repeat_num()) != 0) {
+      target = stream->EnsureSpace(target);
+      target = ::_pbi::WireFormatLite::WriteFloatToArray(
+          4, this_._internal_repeat_num(), target);
+    }
+  }
+
+  switch (this_.mult_factor_case()) {
+    case kMultFactorIncrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          5, *this_._impl_.mult_factor_.mult_factor_increase_, this_._impl_.mult_factor_.mult_factor_increase_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kMultFactorDecrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          6, *this_._impl_.mult_factor_.mult_factor_decrease_, this_._impl_.mult_factor_.mult_factor_decrease_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    default:
+      break;
+  }
+  if (ABSL_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
+  return target;
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::size_t SnakeBrightnessEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const SnakeBrightnessEffectConfig& this_ = static_cast<const SnakeBrightnessEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::size_t SnakeBrightnessEffectConfig::ByteSizeLong() const {
+  const SnakeBrightnessEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
   ::size_t total_size = 0;
 
   ::uint32_t cached_has_bits = 0;
@@ -3209,261 +5399,348 @@ PROTOBUF_NOINLINE void GlitterEffectConfig::Clear() {
 
   ::_pbi::Prefetch5LinesFrom7Lines(&this_);
   cached_has_bits = this_._impl_._has_bits_[0];
-  if ((cached_has_bits & 0x00000003u) != 0) {
-    // .kivsee.proto.render.v1.FloatFunction intensity = 1 [json_name = "intensity"];
+  if ((cached_has_bits & 0x0000000fu) != 0) {
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
     if ((cached_has_bits & 0x00000001u) != 0) {
       total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.intensity_);
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.head_);
     }
-    // .kivsee.proto.render.v1.FloatFunction sat_mult_factor = 2 [json_name = "satMultFactor"];
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
     if ((cached_has_bits & 0x00000002u) != 0) {
       total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.sat_mult_factor_);
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.tail_length_);
+    }
+    // bool cyclic = 3 [json_name = "cyclic"];
+    if ((cached_has_bits & 0x00000004u) != 0) {
+      if (this_._internal_cyclic() != 0) {
+        total_size += 2;
+      }
+    }
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    if ((cached_has_bits & 0x00000008u) != 0) {
+      if (::absl::bit_cast<::uint32_t>(this_._internal_repeat_num()) != 0) {
+        total_size += 5;
+      }
+    }
+  }
+  switch (this_.mult_factor_case()) {
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 5 [json_name = "multFactorIncrease"];
+    case kMultFactorIncrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_increase_);
+      break;
+    }
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 6 [json_name = "multFactorDecrease"];
+    case kMultFactorDecrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_decrease_);
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
     }
   }
   return this_.MaybeComputeUnknownFieldsSize(total_size,
                                              &this_._impl_._cached_size_);
 }
 
-void GlitterEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
-  auto* const _this = static_cast<GlitterEffectConfig*>(&to_msg);
-  auto& from = static_cast<const GlitterEffectConfig&>(from_msg);
+void SnakeBrightnessEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<SnakeBrightnessEffectConfig*>(&to_msg);
+  auto& from = static_cast<const SnakeBrightnessEffectConfig&>(from_msg);
   ::google::protobuf::Arena* arena = _this->GetArena();
-  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.GlitterEffectConfig)
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._impl_._has_bits_[0];
-  if ((cached_has_bits & 0x00000003u) != 0) {
+  if ((cached_has_bits & 0x0000000fu) != 0) {
     if ((cached_has_bits & 0x00000001u) != 0) {
-      ABSL_DCHECK(from._impl_.intensity_ != nullptr);
-      if (_this->_impl_.intensity_ == nullptr) {
-        _this->_impl_.intensity_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.intensity_);
+      ABSL_DCHECK(from._impl_.head_ != nullptr);
+      if (_this->_impl_.head_ == nullptr) {
+        _this->_impl_.head_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.head_);
       } else {
-        _this->_impl_.intensity_->MergeFrom(*from._impl_.intensity_);
+        _this->_impl_.head_->MergeFrom(*from._impl_.head_);
       }
     }
     if ((cached_has_bits & 0x00000002u) != 0) {
-      ABSL_DCHECK(from._impl_.sat_mult_factor_ != nullptr);
-      if (_this->_impl_.sat_mult_factor_ == nullptr) {
-        _this->_impl_.sat_mult_factor_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.sat_mult_factor_);
+      ABSL_DCHECK(from._impl_.tail_length_ != nullptr);
+      if (_this->_impl_.tail_length_ == nullptr) {
+        _this->_impl_.tail_length_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.tail_length_);
       } else {
-        _this->_impl_.sat_mult_factor_->MergeFrom(*from._impl_.sat_mult_factor_);
+        _this->_impl_.tail_length_->MergeFrom(*from._impl_.tail_length_);
+      }
+    }
+    if ((cached_has_bits & 0x00000004u) != 0) {
+      if (from._internal_cyclic() != 0) {
+        _this->_impl_.cyclic_ = from._impl_.cyclic_;
+      }
+    }
+    if ((cached_has_bits & 0x00000008u) != 0) {
+      if (::absl::bit_cast<::uint32_t>(from._internal_repeat_num()) != 0) {
+        _this->_impl_.repeat_num_ = from._impl_.repeat_num_;
       }
     }
   }
   _this->_impl_._has_bits_[0] |= cached_has_bits;
+  if (const uint32_t oneof_from_case = from._impl_._oneof_case_[0]) {
+    const uint32_t oneof_to_case = _this->_impl_._oneof_case_[0];
+    const bool oneof_needs_init = oneof_to_case != oneof_from_case;
+    if (oneof_needs_init) {
+      if (oneof_to_case != 0) {
+        _this->clear_mult_factor();
+      }
+      _this->_impl_._oneof_case_[0] = oneof_from_case;
+    }
+
+    switch (oneof_from_case) {
+      case kMultFactorIncrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_increase_->MergeFrom(*from._impl_.mult_factor_.mult_factor_increase_);
+        }
+        break;
+      }
+      case kMultFactorDecrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_decrease_->MergeFrom(*from._impl_.mult_factor_.mult_factor_decrease_);
+        }
+        break;
+      }
+      case MULT_FACTOR_NOT_SET:
+        break;
+    }
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void GlitterEffectConfig::CopyFrom(const GlitterEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.GlitterEffectConfig)
+void SnakeBrightnessEffectConfig::CopyFrom(const SnakeBrightnessEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.SnakeBrightnessEffectConfig)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 
-void GlitterEffectConfig::InternalSwap(GlitterEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+void SnakeBrightnessEffectConfig::InternalSwap(SnakeBrightnessEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
   using ::std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_.sat_mult_factor_)
-      + sizeof(GlitterEffectConfig::_impl_.sat_mult_factor_)
-      - PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, _impl_.intensity_)>(
-          reinterpret_cast<char*>(&_impl_.intensity_),
-          reinterpret_cast<char*>(&other->_impl_.intensity_));
+      PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.repeat_num_)
+      + sizeof(SnakeBrightnessEffectConfig::_impl_.repeat_num_)
+      - PROTOBUF_FIELD_OFFSET(SnakeBrightnessEffectConfig, _impl_.head_)>(
+          reinterpret_cast<char*>(&_impl_.head_),
+          reinterpret_cast<char*>(&other->_impl_.head_));
+  swap(_impl_.mult_factor_, other->_impl_.mult_factor_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
-::google::protobuf::Metadata GlitterEffectConfig::GetMetadata() const {
+::google::protobuf::Metadata SnakeBrightnessEffectConfig::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // ===================================================================
 
-class AlternateEffectConfig::_Internal {
+class SnakeHueEffectConfig::_Internal {
  public:
   using HasBits =
-      decltype(::std::declval<AlternateEffectConfig>()._impl_._has_bits_);
+      decltype(::std::declval<SnakeHueEffectConfig>()._impl_._has_bits_);
   static constexpr ::int32_t kHasBitsOffset =
-      8 * PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_._has_bits_);
+      8 * PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_._has_bits_);
 };
 
-void AlternateEffectConfig::clear_hue_offset() {
+void SnakeHueEffectConfig::clear_head() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.hue_offset_ != nullptr) _impl_.hue_offset_->Clear();
+  if (_impl_.head_ != nullptr) _impl_.head_->Clear();
   _impl_._has_bits_[0] &= ~0x00000001u;
 }
-void AlternateEffectConfig::clear_sat_mult() {
+void SnakeHueEffectConfig::clear_tail_length() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.sat_mult_ != nullptr) _impl_.sat_mult_->Clear();
+  if (_impl_.tail_length_ != nullptr) _impl_.tail_length_->Clear();
   _impl_._has_bits_[0] &= ~0x00000002u;
 }
-void AlternateEffectConfig::clear_brightness_mult() {
+void SnakeHueEffectConfig::clear_offset_factor() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  if (_impl_.brightness_mult_ != nullptr) _impl_.brightness_mult_->Clear();
+  if (_impl_.offset_factor_ != nullptr) _impl_.offset_factor_->Clear();
   _impl_._has_bits_[0] &= ~0x00000004u;
 }
-AlternateEffectConfig::AlternateEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+SnakeHueEffectConfig::SnakeHueEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, AlternateEffectConfig_class_data_.base()) {
+    : ::google::protobuf::Message(arena, SnakeHueEffectConfig_class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.AlternateEffectConfig)
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.SnakeHueEffectConfig)
 }
-PROTOBUF_NDEBUG_INLINE AlternateEffectConfig::Impl_::Impl_(
+PROTOBUF_NDEBUG_INLINE SnakeHueEffectConfig::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
-    const ::kivsee::proto::render::v1::AlternateEffectConfig& from_msg)
+    const ::kivsee::proto::render::v1::SnakeHueEffectConfig& from_msg)
       : _has_bits_{from._has_bits_},
         _cached_size_{0} {}
 
-AlternateEffectConfig::AlternateEffectConfig(
+SnakeHueEffectConfig::SnakeHueEffectConfig(
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
-    const AlternateEffectConfig& from)
+    const SnakeHueEffectConfig& from)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, AlternateEffectConfig_class_data_.base()) {
+    : ::google::protobuf::Message(arena, SnakeHueEffectConfig_class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  AlternateEffectConfig* const _this = this;
+  SnakeHueEffectConfig* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   ::uint32_t cached_has_bits = _impl_._has_bits_[0];
-  _impl_.hue_offset_ = ((cached_has_bits & 0x00000001u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.hue_offset_)
+  _impl_.head_ = ((cached_has_bits & 0x00000001u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.head_)
                 : nullptr;
-  _impl_.sat_mult_ = ((cached_has_bits & 0x00000002u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.sat_mult_)
+  _impl_.tail_length_ = ((cached_has_bits & 0x00000002u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.tail_length_)
                 : nullptr;
-  _impl_.brightness_mult_ = ((cached_has_bits & 0x00000004u) != 0)
-                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.brightness_mult_)
+  _impl_.offset_factor_ = ((cached_has_bits & 0x00000004u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.offset_factor_)
                 : nullptr;
-  _impl_.numberofpixels_ = from._impl_.numberofpixels_;
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, cyclic_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, cyclic_),
+           offsetof(Impl_, repeat_num_) -
+               offsetof(Impl_, cyclic_) +
+               sizeof(Impl_::repeat_num_));
 
-  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.AlternateEffectConfig)
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.SnakeHueEffectConfig)
 }
-PROTOBUF_NDEBUG_INLINE AlternateEffectConfig::Impl_::Impl_(
+PROTOBUF_NDEBUG_INLINE SnakeHueEffectConfig::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
       : _cached_size_{0} {}
 
-inline void AlternateEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+inline void SnakeHueEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
   ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, hue_offset_),
+               offsetof(Impl_, head_),
            0,
-           offsetof(Impl_, numberofpixels_) -
-               offsetof(Impl_, hue_offset_) +
-               sizeof(Impl_::numberofpixels_));
+           offsetof(Impl_, repeat_num_) -
+               offsetof(Impl_, head_) +
+               sizeof(Impl_::repeat_num_));
 }
-AlternateEffectConfig::~AlternateEffectConfig() {
-  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.AlternateEffectConfig)
+SnakeHueEffectConfig::~SnakeHueEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.SnakeHueEffectConfig)
   SharedDtor(*this);
 }
-inline void AlternateEffectConfig::SharedDtor(MessageLite& self) {
-  AlternateEffectConfig& this_ = static_cast<AlternateEffectConfig&>(self);
+inline void SnakeHueEffectConfig::SharedDtor(MessageLite& self) {
+  SnakeHueEffectConfig& this_ = static_cast<SnakeHueEffectConfig&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
-  delete this_._impl_.hue_offset_;
-  delete this_._impl_.sat_mult_;
-  delete this_._impl_.brightness_mult_;
+  delete this_._impl_.head_;
+  delete this_._impl_.tail_length_;
+  delete this_._impl_.offset_factor_;
   this_._impl_.~Impl_();
 }
 
-inline void* PROTOBUF_NONNULL AlternateEffectConfig::PlacementNew_(
+inline void* PROTOBUF_NONNULL SnakeHueEffectConfig::PlacementNew_(
     const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
     ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
-  return ::new (mem) AlternateEffectConfig(arena);
+  return ::new (mem) SnakeHueEffectConfig(arena);
 }
-constexpr auto AlternateEffectConfig::InternalNewImpl_() {
-  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(AlternateEffectConfig),
-                                            alignof(AlternateEffectConfig));
+constexpr auto SnakeHueEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(SnakeHueEffectConfig),
+                                            alignof(SnakeHueEffectConfig));
 }
-constexpr auto AlternateEffectConfig::InternalGenerateClassData_() {
+constexpr auto SnakeHueEffectConfig::InternalGenerateClassData_() {
   return ::google::protobuf::internal::ClassDataFull{
       ::google::protobuf::internal::ClassData{
-          &_AlternateEffectConfig_default_instance_._instance,
+          &_SnakeHueEffectConfig_default_instance_._instance,
           &_table_.header,
           nullptr,  // OnDemandRegisterArenaDtor
           nullptr,  // IsInitialized
-          &AlternateEffectConfig::MergeImpl,
-          ::google::protobuf::Message::GetNewImpl<AlternateEffectConfig>(),
+          &SnakeHueEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<SnakeHueEffectConfig>(),
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-          &AlternateEffectConfig::SharedDtor,
-          ::google::protobuf::Message::GetClearImpl<AlternateEffectConfig>(), &AlternateEffectConfig::ByteSizeLong,
-              &AlternateEffectConfig::_InternalSerialize,
+          &SnakeHueEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<SnakeHueEffectConfig>(), &SnakeHueEffectConfig::ByteSizeLong,
+              &SnakeHueEffectConfig::_InternalSerialize,
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_._cached_size_),
+          PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_._cached_size_),
           false,
       },
-      &AlternateEffectConfig::kDescriptorMethods,
+      &SnakeHueEffectConfig::kDescriptorMethods,
       &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
       nullptr,  // tracker
   };
 }
 
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
-    ::google::protobuf::internal::ClassDataFull AlternateEffectConfig_class_data_ =
-        AlternateEffectConfig::InternalGenerateClassData_();
+    ::google::protobuf::internal::ClassDataFull SnakeHueEffectConfig_class_data_ =
+        SnakeHueEffectConfig::InternalGenerateClassData_();
 
 PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
-AlternateEffectConfig::GetClassData() const {
-  ::google::protobuf::internal::PrefetchToLocalCache(&AlternateEffectConfig_class_data_);
-  ::google::protobuf::internal::PrefetchToLocalCache(AlternateEffectConfig_class_data_.tc_table);
-  return AlternateEffectConfig_class_data_.base();
+SnakeHueEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&SnakeHueEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(SnakeHueEffectConfig_class_data_.tc_table);
+  return SnakeHueEffectConfig_class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 3, 0, 2>
-AlternateEffectConfig::_table_ = {
+const ::_pbi::TcParseTable<3, 5, 3, 0, 2>
+SnakeHueEffectConfig::_table_ = {
   {
-    PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_._has_bits_),
+    PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_._has_bits_),
     0, // no _extensions_
-    4, 24,  // max_field_number, fast_idx_mask
+    5, 56,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967280,  // skipmap
+    4294967264,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    4,  // num_field_entries
+    5,  // num_field_entries
     3,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
-    AlternateEffectConfig_class_data_.base(),
+    SnakeHueEffectConfig_class_data_.base(),
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::AlternateEffectConfig>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeHueEffectConfig>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // .kivsee.proto.render.v1.FloatFunction brightness_mult = 4 [json_name = "brightnessMult"];
+    {::_pbi::TcParser::MiniParse, {}},
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
     {::_pbi::TcParser::FastMtS1,
-     {34, 2, 2, PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.brightness_mult_)}},
-    // uint32 numberOfPixels = 1 [json_name = "numberOfPixels"];
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(AlternateEffectConfig, _impl_.numberofpixels_), 3>(),
-     {8, 3, 0, PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.numberofpixels_)}},
-    // .kivsee.proto.render.v1.FloatFunction hue_offset = 2 [json_name = "hueOffset"];
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.head_)}},
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
     {::_pbi::TcParser::FastMtS1,
-     {18, 0, 0, PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.hue_offset_)}},
-    // .kivsee.proto.render.v1.FloatFunction sat_mult = 3 [json_name = "satMult"];
+     {18, 1, 1, PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.tail_length_)}},
+    // bool cyclic = 3 [json_name = "cyclic"];
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(SnakeHueEffectConfig, _impl_.cyclic_), 3>(),
+     {24, 3, 0, PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.cyclic_)}},
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    {::_pbi::TcParser::FastF32S1,
+     {37, 4, 0, PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.repeat_num_)}},
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 5 [json_name = "offsetFactor"];
     {::_pbi::TcParser::FastMtS1,
-     {26, 1, 1, PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.sat_mult_)}},
+     {42, 2, 2, PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.offset_factor_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
-    // uint32 numberOfPixels = 1 [json_name = "numberOfPixels"];
-    {PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.numberofpixels_), _Internal::kHasBitsOffset + 3, 0,
-    (0 | ::_fl::kFcOptional | ::_fl::kUInt32)},
-    // .kivsee.proto.render.v1.FloatFunction hue_offset = 2 [json_name = "hueOffset"];
-    {PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.hue_offset_), _Internal::kHasBitsOffset + 0, 0,
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+    {PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.head_), _Internal::kHasBitsOffset + 0, 0,
     (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
-    // .kivsee.proto.render.v1.FloatFunction sat_mult = 3 [json_name = "satMult"];
-    {PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.sat_mult_), _Internal::kHasBitsOffset + 1, 1,
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+    {PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.tail_length_), _Internal::kHasBitsOffset + 1, 1,
     (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
-    // .kivsee.proto.render.v1.FloatFunction brightness_mult = 4 [json_name = "brightnessMult"];
-    {PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.brightness_mult_), _Internal::kHasBitsOffset + 2, 2,
+    // bool cyclic = 3 [json_name = "cyclic"];
+    {PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.cyclic_), _Internal::kHasBitsOffset + 3, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kBool)},
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    {PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.repeat_num_), _Internal::kHasBitsOffset + 4, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kFloat)},
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 5 [json_name = "offsetFactor"];
+    {PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.offset_factor_), _Internal::kHasBitsOffset + 2, 2,
     (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
   }},
   {{
@@ -3474,8 +5751,8 @@ AlternateEffectConfig::_table_ = {
   {{
   }},
 };
-PROTOBUF_NOINLINE void AlternateEffectConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.AlternateEffectConfig)
+PROTOBUF_NOINLINE void SnakeHueEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.SnakeHueEffectConfig)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3484,66 +5761,79 @@ PROTOBUF_NOINLINE void AlternateEffectConfig::Clear() {
   cached_has_bits = _impl_._has_bits_[0];
   if ((cached_has_bits & 0x00000007u) != 0) {
     if ((cached_has_bits & 0x00000001u) != 0) {
-      ABSL_DCHECK(_impl_.hue_offset_ != nullptr);
-      _impl_.hue_offset_->Clear();
+      ABSL_DCHECK(_impl_.head_ != nullptr);
+      _impl_.head_->Clear();
     }
     if ((cached_has_bits & 0x00000002u) != 0) {
-      ABSL_DCHECK(_impl_.sat_mult_ != nullptr);
-      _impl_.sat_mult_->Clear();
+      ABSL_DCHECK(_impl_.tail_length_ != nullptr);
+      _impl_.tail_length_->Clear();
     }
     if ((cached_has_bits & 0x00000004u) != 0) {
-      ABSL_DCHECK(_impl_.brightness_mult_ != nullptr);
-      _impl_.brightness_mult_->Clear();
+      ABSL_DCHECK(_impl_.offset_factor_ != nullptr);
+      _impl_.offset_factor_->Clear();
     }
   }
-  _impl_.numberofpixels_ = 0u;
+  if ((cached_has_bits & 0x00000018u) != 0) {
+    ::memset(&_impl_.cyclic_, 0, static_cast<::size_t>(
+        reinterpret_cast<char*>(&_impl_.repeat_num_) -
+        reinterpret_cast<char*>(&_impl_.cyclic_)) + sizeof(_impl_.repeat_num_));
+  }
   _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-::uint8_t* PROTOBUF_NONNULL AlternateEffectConfig::_InternalSerialize(
+::uint8_t* PROTOBUF_NONNULL SnakeHueEffectConfig::_InternalSerialize(
     const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
     ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
-  const AlternateEffectConfig& this_ = static_cast<const AlternateEffectConfig&>(base);
+  const SnakeHueEffectConfig& this_ = static_cast<const SnakeHueEffectConfig&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-::uint8_t* PROTOBUF_NONNULL AlternateEffectConfig::_InternalSerialize(
+::uint8_t* PROTOBUF_NONNULL SnakeHueEffectConfig::_InternalSerialize(
     ::uint8_t* PROTOBUF_NONNULL target,
     ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
-  const AlternateEffectConfig& this_ = *this;
+  const SnakeHueEffectConfig& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.AlternateEffectConfig)
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.SnakeHueEffectConfig)
   ::uint32_t cached_has_bits = 0;
   (void)cached_has_bits;
 
-  // uint32 numberOfPixels = 1 [json_name = "numberOfPixels"];
-  if ((this_._impl_._has_bits_[0] & 0x00000008u) != 0) {
-    if (this_._internal_numberofpixels() != 0) {
+  cached_has_bits = this_._impl_._has_bits_[0];
+  // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        1, *this_._impl_.head_, this_._impl_.head_->GetCachedSize(), target,
+        stream);
+  }
+
+  // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+  if ((cached_has_bits & 0x00000002u) != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        2, *this_._impl_.tail_length_, this_._impl_.tail_length_->GetCachedSize(), target,
+        stream);
+  }
+
+  // bool cyclic = 3 [json_name = "cyclic"];
+  if ((cached_has_bits & 0x00000008u) != 0) {
+    if (this_._internal_cyclic() != 0) {
       target = stream->EnsureSpace(target);
-      target = ::_pbi::WireFormatLite::WriteUInt32ToArray(
-          1, this_._internal_numberofpixels(), target);
+      target = ::_pbi::WireFormatLite::WriteBoolToArray(
+          3, this_._internal_cyclic(), target);
     }
   }
 
-  cached_has_bits = this_._impl_._has_bits_[0];
-  // .kivsee.proto.render.v1.FloatFunction hue_offset = 2 [json_name = "hueOffset"];
-  if ((cached_has_bits & 0x00000001u) != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        2, *this_._impl_.hue_offset_, this_._impl_.hue_offset_->GetCachedSize(), target,
-        stream);
+  // float repeat_num = 4 [json_name = "repeatNum"];
+  if ((cached_has_bits & 0x00000010u) != 0) {
+    if (::absl::bit_cast<::uint32_t>(this_._internal_repeat_num()) != 0) {
+      target = stream->EnsureSpace(target);
+      target = ::_pbi::WireFormatLite::WriteFloatToArray(
+          4, this_._internal_repeat_num(), target);
+    }
   }
 
-  // .kivsee.proto.render.v1.FloatFunction sat_mult = 3 [json_name = "satMult"];
-  if ((cached_has_bits & 0x00000002u) != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        3, *this_._impl_.sat_mult_, this_._impl_.sat_mult_->GetCachedSize(), target,
-        stream);
-  }
-
-  // .kivsee.proto.render.v1.FloatFunction brightness_mult = 4 [json_name = "brightnessMult"];
+  // .kivsee.proto.render.v1.FloatFunction offset_factor = 5 [json_name = "offsetFactor"];
   if ((cached_has_bits & 0x00000004u) != 0) {
     target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-        4, *this_._impl_.brightness_mult_, this_._impl_.brightness_mult_->GetCachedSize(), target,
+        5, *this_._impl_.offset_factor_, this_._impl_.offset_factor_->GetCachedSize(), target,
         stream);
   }
 
@@ -3552,18 +5842,534 @@ PROTOBUF_NOINLINE void AlternateEffectConfig::Clear() {
         ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
             this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.AlternateEffectConfig)
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.SnakeHueEffectConfig)
   return target;
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-::size_t AlternateEffectConfig::ByteSizeLong(const MessageLite& base) {
-  const AlternateEffectConfig& this_ = static_cast<const AlternateEffectConfig&>(base);
+::size_t SnakeHueEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const SnakeHueEffectConfig& this_ = static_cast<const SnakeHueEffectConfig&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-::size_t AlternateEffectConfig::ByteSizeLong() const {
-  const AlternateEffectConfig& this_ = *this;
+::size_t SnakeHueEffectConfig::ByteSizeLong() const {
+  const SnakeHueEffectConfig& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.AlternateEffectConfig)
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.SnakeHueEffectConfig)
+  ::size_t total_size = 0;
+
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void)cached_has_bits;
+
+  ::_pbi::Prefetch5LinesFrom7Lines(&this_);
+  cached_has_bits = this_._impl_._has_bits_[0];
+  if ((cached_has_bits & 0x0000001fu) != 0) {
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+    if ((cached_has_bits & 0x00000001u) != 0) {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.head_);
+    }
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+    if ((cached_has_bits & 0x00000002u) != 0) {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.tail_length_);
+    }
+    // .kivsee.proto.render.v1.FloatFunction offset_factor = 5 [json_name = "offsetFactor"];
+    if ((cached_has_bits & 0x00000004u) != 0) {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.offset_factor_);
+    }
+    // bool cyclic = 3 [json_name = "cyclic"];
+    if ((cached_has_bits & 0x00000008u) != 0) {
+      if (this_._internal_cyclic() != 0) {
+        total_size += 2;
+      }
+    }
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    if ((cached_has_bits & 0x00000010u) != 0) {
+      if (::absl::bit_cast<::uint32_t>(this_._internal_repeat_num()) != 0) {
+        total_size += 5;
+      }
+    }
+  }
+  return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                             &this_._impl_._cached_size_);
+}
+
+void SnakeHueEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<SnakeHueEffectConfig*>(&to_msg);
+  auto& from = static_cast<const SnakeHueEffectConfig&>(from_msg);
+  ::google::protobuf::Arena* arena = _this->GetArena();
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.SnakeHueEffectConfig)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if ((cached_has_bits & 0x0000001fu) != 0) {
+    if ((cached_has_bits & 0x00000001u) != 0) {
+      ABSL_DCHECK(from._impl_.head_ != nullptr);
+      if (_this->_impl_.head_ == nullptr) {
+        _this->_impl_.head_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.head_);
+      } else {
+        _this->_impl_.head_->MergeFrom(*from._impl_.head_);
+      }
+    }
+    if ((cached_has_bits & 0x00000002u) != 0) {
+      ABSL_DCHECK(from._impl_.tail_length_ != nullptr);
+      if (_this->_impl_.tail_length_ == nullptr) {
+        _this->_impl_.tail_length_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.tail_length_);
+      } else {
+        _this->_impl_.tail_length_->MergeFrom(*from._impl_.tail_length_);
+      }
+    }
+    if ((cached_has_bits & 0x00000004u) != 0) {
+      ABSL_DCHECK(from._impl_.offset_factor_ != nullptr);
+      if (_this->_impl_.offset_factor_ == nullptr) {
+        _this->_impl_.offset_factor_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.offset_factor_);
+      } else {
+        _this->_impl_.offset_factor_->MergeFrom(*from._impl_.offset_factor_);
+      }
+    }
+    if ((cached_has_bits & 0x00000008u) != 0) {
+      if (from._internal_cyclic() != 0) {
+        _this->_impl_.cyclic_ = from._impl_.cyclic_;
+      }
+    }
+    if ((cached_has_bits & 0x00000010u) != 0) {
+      if (::absl::bit_cast<::uint32_t>(from._internal_repeat_num()) != 0) {
+        _this->_impl_.repeat_num_ = from._impl_.repeat_num_;
+      }
+    }
+  }
+  _this->_impl_._has_bits_[0] |= cached_has_bits;
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SnakeHueEffectConfig::CopyFrom(const SnakeHueEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.SnakeHueEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void SnakeHueEffectConfig::InternalSwap(SnakeHueEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+  using ::std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.repeat_num_)
+      + sizeof(SnakeHueEffectConfig::_impl_.repeat_num_)
+      - PROTOBUF_FIELD_OFFSET(SnakeHueEffectConfig, _impl_.head_)>(
+          reinterpret_cast<char*>(&_impl_.head_),
+          reinterpret_cast<char*>(&other->_impl_.head_));
+}
+
+::google::protobuf::Metadata SnakeHueEffectConfig::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class SnakeSaturationEffectConfig::_Internal {
+ public:
+  using HasBits =
+      decltype(::std::declval<SnakeSaturationEffectConfig>()._impl_._has_bits_);
+  static constexpr ::int32_t kHasBitsOffset =
+      8 * PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_._has_bits_);
+  static constexpr ::int32_t kOneofCaseOffset =
+      PROTOBUF_FIELD_OFFSET(::kivsee::proto::render::v1::SnakeSaturationEffectConfig, _impl_._oneof_case_);
+};
+
+void SnakeSaturationEffectConfig::clear_head() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.head_ != nullptr) _impl_.head_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+void SnakeSaturationEffectConfig::clear_tail_length() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.tail_length_ != nullptr) _impl_.tail_length_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+void SnakeSaturationEffectConfig::set_allocated_mult_factor_increase(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_increase) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_increase) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_increase)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_increase = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_increase, submessage_arena);
+    }
+    set_has_mult_factor_increase();
+    _impl_.mult_factor_.mult_factor_increase_ = mult_factor_increase;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.SnakeSaturationEffectConfig.mult_factor_increase)
+}
+void SnakeSaturationEffectConfig::clear_mult_factor_increase() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorIncrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_increase_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+    }
+    clear_has_mult_factor();
+  }
+}
+void SnakeSaturationEffectConfig::set_allocated_mult_factor_decrease(::kivsee::proto::render::v1::FloatFunction* PROTOBUF_NULLABLE mult_factor_decrease) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_mult_factor();
+  if (mult_factor_decrease) {
+    ::google::protobuf::Arena* submessage_arena = reinterpret_cast<::google::protobuf::Message*>(mult_factor_decrease)->GetArena();
+    if (message_arena != submessage_arena) {
+      mult_factor_decrease = ::google::protobuf::internal::GetOwnedMessage(message_arena, mult_factor_decrease, submessage_arena);
+    }
+    set_has_mult_factor_decrease();
+    _impl_.mult_factor_.mult_factor_decrease_ = mult_factor_decrease;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.SnakeSaturationEffectConfig.mult_factor_decrease)
+}
+void SnakeSaturationEffectConfig::clear_mult_factor_decrease() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (mult_factor_case() == kMultFactorDecrease) {
+    if (GetArena() == nullptr) {
+      delete _impl_.mult_factor_.mult_factor_decrease_;
+    } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+      ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+    }
+    clear_has_mult_factor();
+  }
+}
+SnakeSaturationEffectConfig::SnakeSaturationEffectConfig(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, SnakeSaturationEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE SnakeSaturationEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena, const Impl_& from,
+    const ::kivsee::proto::render::v1::SnakeSaturationEffectConfig& from_msg)
+      : _has_bits_{from._has_bits_},
+        _cached_size_{0},
+        mult_factor_{},
+        _oneof_case_{from._oneof_case_[0]} {}
+
+SnakeSaturationEffectConfig::SnakeSaturationEffectConfig(
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena,
+    const SnakeSaturationEffectConfig& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, SnakeSaturationEffectConfig_class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SnakeSaturationEffectConfig* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  ::uint32_t cached_has_bits = _impl_._has_bits_[0];
+  _impl_.head_ = ((cached_has_bits & 0x00000001u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.head_)
+                : nullptr;
+  _impl_.tail_length_ = ((cached_has_bits & 0x00000002u) != 0)
+                ? ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.tail_length_)
+                : nullptr;
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, cyclic_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, cyclic_),
+           offsetof(Impl_, repeat_num_) -
+               offsetof(Impl_, cyclic_) +
+               sizeof(Impl_::repeat_num_));
+  switch (mult_factor_case()) {
+    case MULT_FACTOR_NOT_SET:
+      break;
+      case kMultFactorIncrease:
+        _impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        break;
+      case kMultFactorDecrease:
+        _impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        break;
+  }
+
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+}
+PROTOBUF_NDEBUG_INLINE SnakeSaturationEffectConfig::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
+      : _cached_size_{0},
+        mult_factor_{},
+        _oneof_case_{} {}
+
+inline void SnakeSaturationEffectConfig::SharedCtor(::_pb::Arena* PROTOBUF_NULLABLE arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, head_),
+           0,
+           offsetof(Impl_, repeat_num_) -
+               offsetof(Impl_, head_) +
+               sizeof(Impl_::repeat_num_));
+}
+SnakeSaturationEffectConfig::~SnakeSaturationEffectConfig() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+  SharedDtor(*this);
+}
+inline void SnakeSaturationEffectConfig::SharedDtor(MessageLite& self) {
+  SnakeSaturationEffectConfig& this_ = static_cast<SnakeSaturationEffectConfig&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  delete this_._impl_.head_;
+  delete this_._impl_.tail_length_;
+  if (this_.has_mult_factor()) {
+    this_.clear_mult_factor();
+  }
+  this_._impl_.~Impl_();
+}
+
+void SnakeSaturationEffectConfig::clear_mult_factor() {
+// @@protoc_insertion_point(one_of_clear_start:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  switch (mult_factor_case()) {
+    case kMultFactorIncrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_increase_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_increase_);
+      }
+      break;
+    }
+    case kMultFactorDecrease: {
+      if (GetArena() == nullptr) {
+        delete _impl_.mult_factor_.mult_factor_decrease_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.mult_factor_.mult_factor_decrease_);
+      }
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = MULT_FACTOR_NOT_SET;
+}
+
+
+inline void* PROTOBUF_NONNULL SnakeSaturationEffectConfig::PlacementNew_(
+    const void* PROTOBUF_NONNULL, void* PROTOBUF_NONNULL mem,
+    ::google::protobuf::Arena* PROTOBUF_NULLABLE arena) {
+  return ::new (mem) SnakeSaturationEffectConfig(arena);
+}
+constexpr auto SnakeSaturationEffectConfig::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(SnakeSaturationEffectConfig),
+                                            alignof(SnakeSaturationEffectConfig));
+}
+constexpr auto SnakeSaturationEffectConfig::InternalGenerateClassData_() {
+  return ::google::protobuf::internal::ClassDataFull{
+      ::google::protobuf::internal::ClassData{
+          &_SnakeSaturationEffectConfig_default_instance_._instance,
+          &_table_.header,
+          nullptr,  // OnDemandRegisterArenaDtor
+          nullptr,  // IsInitialized
+          &SnakeSaturationEffectConfig::MergeImpl,
+          ::google::protobuf::Message::GetNewImpl<SnakeSaturationEffectConfig>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+          &SnakeSaturationEffectConfig::SharedDtor,
+          ::google::protobuf::Message::GetClearImpl<SnakeSaturationEffectConfig>(), &SnakeSaturationEffectConfig::ByteSizeLong,
+              &SnakeSaturationEffectConfig::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_._cached_size_),
+          false,
+      },
+      &SnakeSaturationEffectConfig::kDescriptorMethods,
+      &descriptor_table_kivsee_2fproto_2frender_2fv1_2feffects_2eproto,
+      nullptr,  // tracker
+  };
+}
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 const
+    ::google::protobuf::internal::ClassDataFull SnakeSaturationEffectConfig_class_data_ =
+        SnakeSaturationEffectConfig::InternalGenerateClassData_();
+
+PROTOBUF_ATTRIBUTE_WEAK const ::google::protobuf::internal::ClassData* PROTOBUF_NONNULL
+SnakeSaturationEffectConfig::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&SnakeSaturationEffectConfig_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(SnakeSaturationEffectConfig_class_data_.tc_table);
+  return SnakeSaturationEffectConfig_class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 6, 4, 0, 2>
+SnakeSaturationEffectConfig::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_._has_bits_),
+    0, // no _extensions_
+    6, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967232,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    6,  // num_field_entries
+    4,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    SnakeSaturationEffectConfig_class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeSaturationEffectConfig>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    {::_pbi::TcParser::FastF32S1,
+     {37, 3, 0, PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.repeat_num_)}},
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+    {::_pbi::TcParser::FastMtS1,
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.head_)}},
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+    {::_pbi::TcParser::FastMtS1,
+     {18, 1, 1, PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.tail_length_)}},
+    // bool cyclic = 3 [json_name = "cyclic"];
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(SnakeSaturationEffectConfig, _impl_.cyclic_), 2>(),
+     {24, 2, 0, PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.cyclic_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+    {PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.head_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+    {PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.tail_length_), _Internal::kHasBitsOffset + 1, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // bool cyclic = 3 [json_name = "cyclic"];
+    {PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.cyclic_), _Internal::kHasBitsOffset + 2, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kBool)},
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    {PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.repeat_num_), _Internal::kHasBitsOffset + 3, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kFloat)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 5 [json_name = "multFactorIncrease"];
+    {PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.mult_factor_.mult_factor_increase_), _Internal::kOneofCaseOffset + 0, 2,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 6 [json_name = "multFactorDecrease"];
+    {PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.mult_factor_.mult_factor_decrease_), _Internal::kOneofCaseOffset + 0, 3,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+  }},
+  {{
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::FloatFunction>()},
+  }},
+  {{
+  }},
+};
+PROTOBUF_NOINLINE void SnakeSaturationEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if ((cached_has_bits & 0x00000003u) != 0) {
+    if ((cached_has_bits & 0x00000001u) != 0) {
+      ABSL_DCHECK(_impl_.head_ != nullptr);
+      _impl_.head_->Clear();
+    }
+    if ((cached_has_bits & 0x00000002u) != 0) {
+      ABSL_DCHECK(_impl_.tail_length_ != nullptr);
+      _impl_.tail_length_->Clear();
+    }
+  }
+  if ((cached_has_bits & 0x0000000cu) != 0) {
+    ::memset(&_impl_.cyclic_, 0, static_cast<::size_t>(
+        reinterpret_cast<char*>(&_impl_.repeat_num_) -
+        reinterpret_cast<char*>(&_impl_.cyclic_)) + sizeof(_impl_.repeat_num_));
+  }
+  clear_mult_factor();
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::uint8_t* PROTOBUF_NONNULL SnakeSaturationEffectConfig::_InternalSerialize(
+    const ::google::protobuf::MessageLite& base, ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) {
+  const SnakeSaturationEffectConfig& this_ = static_cast<const SnakeSaturationEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::uint8_t* PROTOBUF_NONNULL SnakeSaturationEffectConfig::_InternalSerialize(
+    ::uint8_t* PROTOBUF_NONNULL target,
+    ::google::protobuf::io::EpsCopyOutputStream* PROTOBUF_NONNULL stream) const {
+  const SnakeSaturationEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+  ::uint32_t cached_has_bits = 0;
+  (void)cached_has_bits;
+
+  cached_has_bits = this_._impl_._has_bits_[0];
+  // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
+  if ((cached_has_bits & 0x00000001u) != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        1, *this_._impl_.head_, this_._impl_.head_->GetCachedSize(), target,
+        stream);
+  }
+
+  // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
+  if ((cached_has_bits & 0x00000002u) != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+        2, *this_._impl_.tail_length_, this_._impl_.tail_length_->GetCachedSize(), target,
+        stream);
+  }
+
+  // bool cyclic = 3 [json_name = "cyclic"];
+  if ((cached_has_bits & 0x00000004u) != 0) {
+    if (this_._internal_cyclic() != 0) {
+      target = stream->EnsureSpace(target);
+      target = ::_pbi::WireFormatLite::WriteBoolToArray(
+          3, this_._internal_cyclic(), target);
+    }
+  }
+
+  // float repeat_num = 4 [json_name = "repeatNum"];
+  if ((cached_has_bits & 0x00000008u) != 0) {
+    if (::absl::bit_cast<::uint32_t>(this_._internal_repeat_num()) != 0) {
+      target = stream->EnsureSpace(target);
+      target = ::_pbi::WireFormatLite::WriteFloatToArray(
+          4, this_._internal_repeat_num(), target);
+    }
+  }
+
+  switch (this_.mult_factor_case()) {
+    case kMultFactorIncrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          5, *this_._impl_.mult_factor_.mult_factor_increase_, this_._impl_.mult_factor_.mult_factor_increase_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kMultFactorDecrease: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          6, *this_._impl_.mult_factor_.mult_factor_decrease_, this_._impl_.mult_factor_.mult_factor_decrease_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    default:
+      break;
+  }
+  if (ABSL_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+    target =
+        ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+            this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
+  return target;
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+::size_t SnakeSaturationEffectConfig::ByteSizeLong(const MessageLite& base) {
+  const SnakeSaturationEffectConfig& this_ = static_cast<const SnakeSaturationEffectConfig&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+::size_t SnakeSaturationEffectConfig::ByteSizeLong() const {
+  const SnakeSaturationEffectConfig& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  // @@protoc_insertion_point(message_byte_size_start:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
   ::size_t total_size = 0;
 
   ::uint32_t cached_has_bits = 0;
@@ -3573,38 +6379,55 @@ PROTOBUF_NOINLINE void AlternateEffectConfig::Clear() {
   ::_pbi::Prefetch5LinesFrom7Lines(&this_);
   cached_has_bits = this_._impl_._has_bits_[0];
   if ((cached_has_bits & 0x0000000fu) != 0) {
-    // .kivsee.proto.render.v1.FloatFunction hue_offset = 2 [json_name = "hueOffset"];
+    // .kivsee.proto.render.v1.FloatFunction head = 1 [json_name = "head"];
     if ((cached_has_bits & 0x00000001u) != 0) {
       total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.hue_offset_);
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.head_);
     }
-    // .kivsee.proto.render.v1.FloatFunction sat_mult = 3 [json_name = "satMult"];
+    // .kivsee.proto.render.v1.FloatFunction tail_length = 2 [json_name = "tailLength"];
     if ((cached_has_bits & 0x00000002u) != 0) {
       total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.sat_mult_);
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.tail_length_);
     }
-    // .kivsee.proto.render.v1.FloatFunction brightness_mult = 4 [json_name = "brightnessMult"];
+    // bool cyclic = 3 [json_name = "cyclic"];
     if ((cached_has_bits & 0x00000004u) != 0) {
-      total_size += 1 +
-                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.brightness_mult_);
-    }
-    // uint32 numberOfPixels = 1 [json_name = "numberOfPixels"];
-    if ((cached_has_bits & 0x00000008u) != 0) {
-      if (this_._internal_numberofpixels() != 0) {
-        total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(
-            this_._internal_numberofpixels());
+      if (this_._internal_cyclic() != 0) {
+        total_size += 2;
       }
+    }
+    // float repeat_num = 4 [json_name = "repeatNum"];
+    if ((cached_has_bits & 0x00000008u) != 0) {
+      if (::absl::bit_cast<::uint32_t>(this_._internal_repeat_num()) != 0) {
+        total_size += 5;
+      }
+    }
+  }
+  switch (this_.mult_factor_case()) {
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_increase = 5 [json_name = "multFactorIncrease"];
+    case kMultFactorIncrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_increase_);
+      break;
+    }
+    // .kivsee.proto.render.v1.FloatFunction mult_factor_decrease = 6 [json_name = "multFactorDecrease"];
+    case kMultFactorDecrease: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.mult_factor_.mult_factor_decrease_);
+      break;
+    }
+    case MULT_FACTOR_NOT_SET: {
+      break;
     }
   }
   return this_.MaybeComputeUnknownFieldsSize(total_size,
                                              &this_._impl_._cached_size_);
 }
 
-void AlternateEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
-  auto* const _this = static_cast<AlternateEffectConfig*>(&to_msg);
-  auto& from = static_cast<const AlternateEffectConfig&>(from_msg);
+void SnakeSaturationEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<SnakeSaturationEffectConfig*>(&to_msg);
+  auto& from = static_cast<const SnakeSaturationEffectConfig&>(from_msg);
   ::google::protobuf::Arena* arena = _this->GetArena();
-  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.AlternateEffectConfig)
+  // @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3612,60 +6435,90 @@ void AlternateEffectConfig::MergeImpl(::google::protobuf::MessageLite& to_msg, c
   cached_has_bits = from._impl_._has_bits_[0];
   if ((cached_has_bits & 0x0000000fu) != 0) {
     if ((cached_has_bits & 0x00000001u) != 0) {
-      ABSL_DCHECK(from._impl_.hue_offset_ != nullptr);
-      if (_this->_impl_.hue_offset_ == nullptr) {
-        _this->_impl_.hue_offset_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.hue_offset_);
+      ABSL_DCHECK(from._impl_.head_ != nullptr);
+      if (_this->_impl_.head_ == nullptr) {
+        _this->_impl_.head_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.head_);
       } else {
-        _this->_impl_.hue_offset_->MergeFrom(*from._impl_.hue_offset_);
+        _this->_impl_.head_->MergeFrom(*from._impl_.head_);
       }
     }
     if ((cached_has_bits & 0x00000002u) != 0) {
-      ABSL_DCHECK(from._impl_.sat_mult_ != nullptr);
-      if (_this->_impl_.sat_mult_ == nullptr) {
-        _this->_impl_.sat_mult_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.sat_mult_);
+      ABSL_DCHECK(from._impl_.tail_length_ != nullptr);
+      if (_this->_impl_.tail_length_ == nullptr) {
+        _this->_impl_.tail_length_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.tail_length_);
       } else {
-        _this->_impl_.sat_mult_->MergeFrom(*from._impl_.sat_mult_);
+        _this->_impl_.tail_length_->MergeFrom(*from._impl_.tail_length_);
       }
     }
     if ((cached_has_bits & 0x00000004u) != 0) {
-      ABSL_DCHECK(from._impl_.brightness_mult_ != nullptr);
-      if (_this->_impl_.brightness_mult_ == nullptr) {
-        _this->_impl_.brightness_mult_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.brightness_mult_);
-      } else {
-        _this->_impl_.brightness_mult_->MergeFrom(*from._impl_.brightness_mult_);
+      if (from._internal_cyclic() != 0) {
+        _this->_impl_.cyclic_ = from._impl_.cyclic_;
       }
     }
     if ((cached_has_bits & 0x00000008u) != 0) {
-      if (from._internal_numberofpixels() != 0) {
-        _this->_impl_.numberofpixels_ = from._impl_.numberofpixels_;
+      if (::absl::bit_cast<::uint32_t>(from._internal_repeat_num()) != 0) {
+        _this->_impl_.repeat_num_ = from._impl_.repeat_num_;
       }
     }
   }
   _this->_impl_._has_bits_[0] |= cached_has_bits;
+  if (const uint32_t oneof_from_case = from._impl_._oneof_case_[0]) {
+    const uint32_t oneof_to_case = _this->_impl_._oneof_case_[0];
+    const bool oneof_needs_init = oneof_to_case != oneof_from_case;
+    if (oneof_needs_init) {
+      if (oneof_to_case != 0) {
+        _this->clear_mult_factor();
+      }
+      _this->_impl_._oneof_case_[0] = oneof_from_case;
+    }
+
+    switch (oneof_from_case) {
+      case kMultFactorIncrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_increase_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_increase_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_increase_->MergeFrom(*from._impl_.mult_factor_.mult_factor_increase_);
+        }
+        break;
+      }
+      case kMultFactorDecrease: {
+        if (oneof_needs_init) {
+          _this->_impl_.mult_factor_.mult_factor_decrease_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.mult_factor_.mult_factor_decrease_);
+        } else {
+          _this->_impl_.mult_factor_.mult_factor_decrease_->MergeFrom(*from._impl_.mult_factor_.mult_factor_decrease_);
+        }
+        break;
+      }
+      case MULT_FACTOR_NOT_SET:
+        break;
+    }
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void AlternateEffectConfig::CopyFrom(const AlternateEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.AlternateEffectConfig)
+void SnakeSaturationEffectConfig::CopyFrom(const SnakeSaturationEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.render.v1.SnakeSaturationEffectConfig)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 
-void AlternateEffectConfig::InternalSwap(AlternateEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
+void SnakeSaturationEffectConfig::InternalSwap(SnakeSaturationEffectConfig* PROTOBUF_RESTRICT PROTOBUF_NONNULL other) {
   using ::std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::google::protobuf::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.numberofpixels_)
-      + sizeof(AlternateEffectConfig::_impl_.numberofpixels_)
-      - PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, _impl_.hue_offset_)>(
-          reinterpret_cast<char*>(&_impl_.hue_offset_),
-          reinterpret_cast<char*>(&other->_impl_.hue_offset_));
+      PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.repeat_num_)
+      + sizeof(SnakeSaturationEffectConfig::_impl_.repeat_num_)
+      - PROTOBUF_FIELD_OFFSET(SnakeSaturationEffectConfig, _impl_.head_)>(
+          reinterpret_cast<char*>(&_impl_.head_),
+          reinterpret_cast<char*>(&other->_impl_.head_));
+  swap(_impl_.mult_factor_, other->_impl_.mult_factor_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
-::google::protobuf::Metadata AlternateEffectConfig::GetMetadata() const {
+::google::protobuf::Metadata SnakeSaturationEffectConfig::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // ===================================================================
@@ -4181,6 +7034,123 @@ void EffectProto::set_allocated_snake(::kivsee::proto::render::v1::SnakeEffectCo
   }
   // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.snake)
 }
+void EffectProto::set_allocated_timed_brightness(::kivsee::proto::render::v1::TimedBrightnessEffectConfig* PROTOBUF_NULLABLE timed_brightness) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (timed_brightness) {
+    ::google::protobuf::Arena* submessage_arena = timed_brightness->GetArena();
+    if (message_arena != submessage_arena) {
+      timed_brightness = ::google::protobuf::internal::GetOwnedMessage(message_arena, timed_brightness, submessage_arena);
+    }
+    set_has_timed_brightness();
+    _impl_.effect_.timed_brightness_ = timed_brightness;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.timed_brightness)
+}
+void EffectProto::set_allocated_timed_hue(::kivsee::proto::render::v1::TimedHueEffectConfig* PROTOBUF_NULLABLE timed_hue) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (timed_hue) {
+    ::google::protobuf::Arena* submessage_arena = timed_hue->GetArena();
+    if (message_arena != submessage_arena) {
+      timed_hue = ::google::protobuf::internal::GetOwnedMessage(message_arena, timed_hue, submessage_arena);
+    }
+    set_has_timed_hue();
+    _impl_.effect_.timed_hue_ = timed_hue;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.timed_hue)
+}
+void EffectProto::set_allocated_timed_saturation(::kivsee::proto::render::v1::TimedSaturationEffectConfig* PROTOBUF_NULLABLE timed_saturation) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (timed_saturation) {
+    ::google::protobuf::Arena* submessage_arena = timed_saturation->GetArena();
+    if (message_arena != submessage_arena) {
+      timed_saturation = ::google::protobuf::internal::GetOwnedMessage(message_arena, timed_saturation, submessage_arena);
+    }
+    set_has_timed_saturation();
+    _impl_.effect_.timed_saturation_ = timed_saturation;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.timed_saturation)
+}
+void EffectProto::set_allocated_position_brightness(::kivsee::proto::render::v1::PositionBrightnessEffectConfig* PROTOBUF_NULLABLE position_brightness) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (position_brightness) {
+    ::google::protobuf::Arena* submessage_arena = position_brightness->GetArena();
+    if (message_arena != submessage_arena) {
+      position_brightness = ::google::protobuf::internal::GetOwnedMessage(message_arena, position_brightness, submessage_arena);
+    }
+    set_has_position_brightness();
+    _impl_.effect_.position_brightness_ = position_brightness;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.position_brightness)
+}
+void EffectProto::set_allocated_position_hue(::kivsee::proto::render::v1::PositionHueEffectConfig* PROTOBUF_NULLABLE position_hue) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (position_hue) {
+    ::google::protobuf::Arena* submessage_arena = position_hue->GetArena();
+    if (message_arena != submessage_arena) {
+      position_hue = ::google::protobuf::internal::GetOwnedMessage(message_arena, position_hue, submessage_arena);
+    }
+    set_has_position_hue();
+    _impl_.effect_.position_hue_ = position_hue;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.position_hue)
+}
+void EffectProto::set_allocated_position_saturation(::kivsee::proto::render::v1::PositionSaturationEffectConfig* PROTOBUF_NULLABLE position_saturation) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (position_saturation) {
+    ::google::protobuf::Arena* submessage_arena = position_saturation->GetArena();
+    if (message_arena != submessage_arena) {
+      position_saturation = ::google::protobuf::internal::GetOwnedMessage(message_arena, position_saturation, submessage_arena);
+    }
+    set_has_position_saturation();
+    _impl_.effect_.position_saturation_ = position_saturation;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.position_saturation)
+}
+void EffectProto::set_allocated_snake_brightness(::kivsee::proto::render::v1::SnakeBrightnessEffectConfig* PROTOBUF_NULLABLE snake_brightness) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (snake_brightness) {
+    ::google::protobuf::Arena* submessage_arena = snake_brightness->GetArena();
+    if (message_arena != submessage_arena) {
+      snake_brightness = ::google::protobuf::internal::GetOwnedMessage(message_arena, snake_brightness, submessage_arena);
+    }
+    set_has_snake_brightness();
+    _impl_.effect_.snake_brightness_ = snake_brightness;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.snake_brightness)
+}
+void EffectProto::set_allocated_snake_hue(::kivsee::proto::render::v1::SnakeHueEffectConfig* PROTOBUF_NULLABLE snake_hue) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (snake_hue) {
+    ::google::protobuf::Arena* submessage_arena = snake_hue->GetArena();
+    if (message_arena != submessage_arena) {
+      snake_hue = ::google::protobuf::internal::GetOwnedMessage(message_arena, snake_hue, submessage_arena);
+    }
+    set_has_snake_hue();
+    _impl_.effect_.snake_hue_ = snake_hue;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.snake_hue)
+}
+void EffectProto::set_allocated_snake_saturation(::kivsee::proto::render::v1::SnakeSaturationEffectConfig* PROTOBUF_NULLABLE snake_saturation) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  clear_effect();
+  if (snake_saturation) {
+    ::google::protobuf::Arena* submessage_arena = snake_saturation->GetArena();
+    if (message_arena != submessage_arena) {
+      snake_saturation = ::google::protobuf::internal::GetOwnedMessage(message_arena, snake_saturation, submessage_arena);
+    }
+    set_has_snake_saturation();
+    _impl_.effect_.snake_saturation_ = snake_saturation;
+  }
+  // @@protoc_insertion_point(field_set_allocated:kivsee.proto.render.v1.EffectProto.snake_saturation)
+}
 EffectProto::EffectProto(::google::protobuf::Arena* PROTOBUF_NULLABLE arena)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
     : ::google::protobuf::Message(arena, EffectProto_class_data_.base()) {
@@ -4236,6 +7206,33 @@ EffectProto::EffectProto(
         break;
       case kSnake:
         _impl_.effect_.snake_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_);
+        break;
+      case kTimedBrightness:
+        _impl_.effect_.timed_brightness_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.timed_brightness_);
+        break;
+      case kTimedHue:
+        _impl_.effect_.timed_hue_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.timed_hue_);
+        break;
+      case kTimedSaturation:
+        _impl_.effect_.timed_saturation_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.timed_saturation_);
+        break;
+      case kPositionBrightness:
+        _impl_.effect_.position_brightness_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.position_brightness_);
+        break;
+      case kPositionHue:
+        _impl_.effect_.position_hue_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.position_hue_);
+        break;
+      case kPositionSaturation:
+        _impl_.effect_.position_saturation_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.position_saturation_);
+        break;
+      case kSnakeBrightness:
+        _impl_.effect_.snake_brightness_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_brightness_);
+        break;
+      case kSnakeHue:
+        _impl_.effect_.snake_hue_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_hue_);
+        break;
+      case kSnakeSaturation:
+        _impl_.effect_.snake_saturation_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_saturation_);
         break;
   }
 
@@ -4319,6 +7316,78 @@ void EffectProto::clear_effect() {
       }
       break;
     }
+    case kTimedBrightness: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.timed_brightness_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.timed_brightness_);
+      }
+      break;
+    }
+    case kTimedHue: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.timed_hue_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.timed_hue_);
+      }
+      break;
+    }
+    case kTimedSaturation: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.timed_saturation_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.timed_saturation_);
+      }
+      break;
+    }
+    case kPositionBrightness: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.position_brightness_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.position_brightness_);
+      }
+      break;
+    }
+    case kPositionHue: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.position_hue_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.position_hue_);
+      }
+      break;
+    }
+    case kPositionSaturation: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.position_saturation_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.position_saturation_);
+      }
+      break;
+    }
+    case kSnakeBrightness: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.snake_brightness_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.snake_brightness_);
+      }
+      break;
+    }
+    case kSnakeHue: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.snake_hue_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.snake_hue_);
+      }
+      break;
+    }
+    case kSnakeSaturation: {
+      if (GetArena() == nullptr) {
+        delete _impl_.effect_.snake_saturation_;
+      } else if (::google::protobuf::internal::DebugHardenClearOneofMessageOnArena()) {
+        ::google::protobuf::internal::MaybePoisonAfterClear(_impl_.effect_.snake_saturation_);
+      }
+      break;
+    }
     case EFFECT_NOT_SET: {
       break;
     }
@@ -4370,17 +7439,17 @@ EffectProto::GetClassData() const {
   return EffectProto_class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 7, 7, 0, 2>
+const ::_pbi::TcParseTable<0, 16, 16, 0, 2>
 EffectProto::_table_ = {
   {
     PROTOBUF_FIELD_OFFSET(EffectProto, _impl_._has_bits_),
     0, // no _extensions_
-    7, 0,  // max_field_number, fast_idx_mask
+    16, 0,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967168,  // skipmap
+    4294901760,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    7,  // num_field_entries
-    7,  // num_aux_entries
+    16,  // num_field_entries
+    16,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     EffectProto_class_data_.base(),
     nullptr,  // post_loop_handler
@@ -4416,6 +7485,33 @@ EffectProto::_table_ = {
     // .kivsee.proto.render.v1.SnakeEffectConfig snake = 7 [json_name = "snake"];
     {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.snake_), _Internal::kOneofCaseOffset + 0, 6,
     (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.TimedBrightnessEffectConfig timed_brightness = 8 [json_name = "timedBrightness"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.timed_brightness_), _Internal::kOneofCaseOffset + 0, 7,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.TimedHueEffectConfig timed_hue = 9 [json_name = "timedHue"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.timed_hue_), _Internal::kOneofCaseOffset + 0, 8,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.TimedSaturationEffectConfig timed_saturation = 10 [json_name = "timedSaturation"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.timed_saturation_), _Internal::kOneofCaseOffset + 0, 9,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.PositionBrightnessEffectConfig position_brightness = 11 [json_name = "positionBrightness"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.position_brightness_), _Internal::kOneofCaseOffset + 0, 10,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.PositionHueEffectConfig position_hue = 12 [json_name = "positionHue"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.position_hue_), _Internal::kOneofCaseOffset + 0, 11,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.PositionSaturationEffectConfig position_saturation = 13 [json_name = "positionSaturation"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.position_saturation_), _Internal::kOneofCaseOffset + 0, 12,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.SnakeBrightnessEffectConfig snake_brightness = 14 [json_name = "snakeBrightness"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.snake_brightness_), _Internal::kOneofCaseOffset + 0, 13,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.SnakeHueEffectConfig snake_hue = 15 [json_name = "snakeHue"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.snake_hue_), _Internal::kOneofCaseOffset + 0, 14,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .kivsee.proto.render.v1.SnakeSaturationEffectConfig snake_saturation = 16 [json_name = "snakeSaturation"];
+    {PROTOBUF_FIELD_OFFSET(EffectProto, _impl_.effect_.snake_saturation_), _Internal::kOneofCaseOffset + 0, 15,
+    (0 | ::_fl::kFcOneof | ::_fl::kMessage | ::_fl::kTvTable)},
   }},
   {{
       {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::EffectConfig>()},
@@ -4425,6 +7521,15 @@ EffectProto::_table_ = {
       {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::HueEffectConfig>()},
       {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SaturationEffectConfig>()},
       {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::TimedBrightnessEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::TimedHueEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::TimedSaturationEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::PositionBrightnessEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::PositionHueEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::PositionSaturationEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeBrightnessEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeHueEffectConfig>()},
+      {::_pbi::TcParser::GetTable<::kivsee::proto::render::v1::SnakeSaturationEffectConfig>()},
   }},
   {{
   }},
@@ -4506,6 +7611,60 @@ PROTOBUF_NOINLINE void EffectProto::Clear() {
           stream);
       break;
     }
+    case kTimedBrightness: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          8, *this_._impl_.effect_.timed_brightness_, this_._impl_.effect_.timed_brightness_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kTimedHue: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          9, *this_._impl_.effect_.timed_hue_, this_._impl_.effect_.timed_hue_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kTimedSaturation: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          10, *this_._impl_.effect_.timed_saturation_, this_._impl_.effect_.timed_saturation_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kPositionBrightness: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          11, *this_._impl_.effect_.position_brightness_, this_._impl_.effect_.position_brightness_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kPositionHue: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          12, *this_._impl_.effect_.position_hue_, this_._impl_.effect_.position_hue_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kPositionSaturation: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          13, *this_._impl_.effect_.position_saturation_, this_._impl_.effect_.position_saturation_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kSnakeBrightness: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          14, *this_._impl_.effect_.snake_brightness_, this_._impl_.effect_.snake_brightness_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kSnakeHue: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          15, *this_._impl_.effect_.snake_hue_, this_._impl_.effect_.snake_hue_->GetCachedSize(), target,
+          stream);
+      break;
+    }
+    case kSnakeSaturation: {
+      target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+          16, *this_._impl_.effect_.snake_saturation_, this_._impl_.effect_.snake_saturation_->GetCachedSize(), target,
+          stream);
+      break;
+    }
     default:
       break;
   }
@@ -4575,6 +7734,60 @@ PROTOBUF_NOINLINE void EffectProto::Clear() {
     case kSnake: {
       total_size += 1 +
                     ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.snake_);
+      break;
+    }
+    // .kivsee.proto.render.v1.TimedBrightnessEffectConfig timed_brightness = 8 [json_name = "timedBrightness"];
+    case kTimedBrightness: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.timed_brightness_);
+      break;
+    }
+    // .kivsee.proto.render.v1.TimedHueEffectConfig timed_hue = 9 [json_name = "timedHue"];
+    case kTimedHue: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.timed_hue_);
+      break;
+    }
+    // .kivsee.proto.render.v1.TimedSaturationEffectConfig timed_saturation = 10 [json_name = "timedSaturation"];
+    case kTimedSaturation: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.timed_saturation_);
+      break;
+    }
+    // .kivsee.proto.render.v1.PositionBrightnessEffectConfig position_brightness = 11 [json_name = "positionBrightness"];
+    case kPositionBrightness: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.position_brightness_);
+      break;
+    }
+    // .kivsee.proto.render.v1.PositionHueEffectConfig position_hue = 12 [json_name = "positionHue"];
+    case kPositionHue: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.position_hue_);
+      break;
+    }
+    // .kivsee.proto.render.v1.PositionSaturationEffectConfig position_saturation = 13 [json_name = "positionSaturation"];
+    case kPositionSaturation: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.position_saturation_);
+      break;
+    }
+    // .kivsee.proto.render.v1.SnakeBrightnessEffectConfig snake_brightness = 14 [json_name = "snakeBrightness"];
+    case kSnakeBrightness: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.snake_brightness_);
+      break;
+    }
+    // .kivsee.proto.render.v1.SnakeHueEffectConfig snake_hue = 15 [json_name = "snakeHue"];
+    case kSnakeHue: {
+      total_size += 1 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.snake_hue_);
+      break;
+    }
+    // .kivsee.proto.render.v1.SnakeSaturationEffectConfig snake_saturation = 16 [json_name = "snakeSaturation"];
+    case kSnakeSaturation: {
+      total_size += 2 +
+                    ::google::protobuf::internal::WireFormatLite::MessageSize(*this_._impl_.effect_.snake_saturation_);
       break;
     }
     case EFFECT_NOT_SET: {
@@ -4660,6 +7873,78 @@ void EffectProto::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
           _this->_impl_.effect_.snake_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_);
         } else {
           _this->_impl_.effect_.snake_->MergeFrom(*from._impl_.effect_.snake_);
+        }
+        break;
+      }
+      case kTimedBrightness: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.timed_brightness_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.timed_brightness_);
+        } else {
+          _this->_impl_.effect_.timed_brightness_->MergeFrom(*from._impl_.effect_.timed_brightness_);
+        }
+        break;
+      }
+      case kTimedHue: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.timed_hue_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.timed_hue_);
+        } else {
+          _this->_impl_.effect_.timed_hue_->MergeFrom(*from._impl_.effect_.timed_hue_);
+        }
+        break;
+      }
+      case kTimedSaturation: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.timed_saturation_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.timed_saturation_);
+        } else {
+          _this->_impl_.effect_.timed_saturation_->MergeFrom(*from._impl_.effect_.timed_saturation_);
+        }
+        break;
+      }
+      case kPositionBrightness: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.position_brightness_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.position_brightness_);
+        } else {
+          _this->_impl_.effect_.position_brightness_->MergeFrom(*from._impl_.effect_.position_brightness_);
+        }
+        break;
+      }
+      case kPositionHue: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.position_hue_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.position_hue_);
+        } else {
+          _this->_impl_.effect_.position_hue_->MergeFrom(*from._impl_.effect_.position_hue_);
+        }
+        break;
+      }
+      case kPositionSaturation: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.position_saturation_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.position_saturation_);
+        } else {
+          _this->_impl_.effect_.position_saturation_->MergeFrom(*from._impl_.effect_.position_saturation_);
+        }
+        break;
+      }
+      case kSnakeBrightness: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.snake_brightness_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_brightness_);
+        } else {
+          _this->_impl_.effect_.snake_brightness_->MergeFrom(*from._impl_.effect_.snake_brightness_);
+        }
+        break;
+      }
+      case kSnakeHue: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.snake_hue_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_hue_);
+        } else {
+          _this->_impl_.effect_.snake_hue_->MergeFrom(*from._impl_.effect_.snake_hue_);
+        }
+        break;
+      }
+      case kSnakeSaturation: {
+        if (oneof_needs_init) {
+          _this->_impl_.effect_.snake_saturation_ = ::google::protobuf::Message::CopyConstruct(arena, *from._impl_.effect_.snake_saturation_);
+        } else {
+          _this->_impl_.effect_.snake_saturation_->MergeFrom(*from._impl_.effect_.snake_saturation_);
         }
         break;
       }
