@@ -4,5 +4,9 @@ plugins:
     out: gen/python
   - remote: buf.build/protocolbuffers/cpp:v31.0
     out: gen/cpp
+  - remote: buf.build/protocolbuffers/csharp:v31.1
+    out: gen/csharp
+    opt:
+      - base_namespace=
 # inputs:
 #   - directory: kivsee/proto/v1
